@@ -1,0 +1,3 @@
+tellraw @s[tag=!ganon] [{"text":"You have selected ","color":"white"},{"text":"Ganondorf","color":"black"},{"text":"!","color":"white"}]
+execute as @s run function ssbrc:teams/remove_tags
+tag @s[tag=!ganon] add ganon
