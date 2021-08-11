@@ -1,5 +1,6 @@
-scoreboard players set $battlefield map 1
+scoreboard players reset * map
+scoreboard players set $finalDestination map 1
 
-forceload add 319 -545 288 -576
+forceload add 23408 8592 23503 8647
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/final_destination 2t replace

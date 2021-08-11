@@ -1,0 +1,8 @@
+summon minecraft:area_effect_cloud -292.5 18.0 182.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -299.5 23.0 200.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -296.5 12.0 180.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -302.5 10.0 194.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+
+function ssbrc:logic/start
+
+execute as @e[tag=tpDest,sort=random,limit=1] run function ssbrc:logic/teleport_player

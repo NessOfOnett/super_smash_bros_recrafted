@@ -1,5 +1,6 @@
-scoreboard players set $battlefield map 1
+scoreboard players reset * map
+scoreboard players set $saturnValley map 1
 
-forceload add 319 -545 288 -576
+forceload add -256 560 -177 639
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/saturn_valley 2t replace

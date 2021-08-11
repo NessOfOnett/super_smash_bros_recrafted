@@ -1,5 +1,6 @@
-scoreboard players set $battlefield map 1
+scoreboard players reset * map
+scoreboard players set $magicant map 1
 
-forceload add 319 -545 288 -576
+forceload add 608 -912 687 -833
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/magicant 2t replace

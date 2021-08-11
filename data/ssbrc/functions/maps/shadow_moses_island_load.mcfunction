@@ -1,5 +1,6 @@
-scoreboard players set $battlefield map 1
+scoreboard players reset * map
+scoreboard players set $shadowMosesIsland map 1
 
-forceload add 319 -545 288 -576
+forceload add 48 -1488 207 -1361
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/shadow_moses_island 2t replace

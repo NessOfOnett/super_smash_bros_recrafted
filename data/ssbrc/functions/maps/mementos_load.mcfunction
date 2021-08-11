@@ -1,5 +1,6 @@
-scoreboard players set $battlefield map 1
+scoreboard players reset * map
+scoreboard players set $mementos map 1
 
-forceload add 319 -545 288 -576
+forceload add -320 144 -273 223
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/mementos 2t replace

@@ -1,5 +1,6 @@
-scoreboard players set $battlefield map 1
+scoreboard players reset * map
+scoreboard players set $greatBay map 1
 
-forceload add 319 -545 288 -576
+forceload add 2624 32 2703 127
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/great_bay 2t replace

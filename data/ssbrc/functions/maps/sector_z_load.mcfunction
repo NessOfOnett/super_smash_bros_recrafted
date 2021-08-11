@@ -1,5 +1,6 @@
-scoreboard players set $battlefield map 1
+scoreboard players reset * map
+scoreboard players set $sectorZ map 1
 
-forceload add 319 -545 288 -576
+forceload add 240 3248 367 3327
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/sector_z 2t replace

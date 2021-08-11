@@ -1,5 +1,6 @@
-scoreboard players set $battlefield map 1
+scoreboard players reset * map
+scoreboard players set $greenHillZone map 1
 
-forceload add 319 -545 288 -576
+forceload add -64 208 31 255
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/green_hill_zone 2t replace

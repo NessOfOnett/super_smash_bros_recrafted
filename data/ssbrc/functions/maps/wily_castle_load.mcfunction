@@ -1,5 +1,5 @@
-scoreboard players set $battlefield map 1
+scoreboard players set $wilyCastle map 1
 
-forceload add 319 -545 288 -576
+forceload add 4912 5008 5055 5119
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/wily_castle 2t replace

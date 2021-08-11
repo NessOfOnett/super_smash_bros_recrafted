@@ -1,5 +1,6 @@
-scoreboard players set $battlefield map 1
+scoreboard players reset * map
+scoreboard players set $dreamLand map 1
 
-forceload add 319 -545 288 -576
+forceload add 2032 896 2143 1023
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/dream_land 2t replace

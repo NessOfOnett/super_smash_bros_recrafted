@@ -1,5 +1,6 @@
-scoreboard players set $battlefield map 1
+scoreboard players reset * map
+scoreboard players set $jungleJapes map 1
 
-forceload add 319 -545 288 -576
+forceload add 2208 1552 2319 1631
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/jungle_japes 2t replace
