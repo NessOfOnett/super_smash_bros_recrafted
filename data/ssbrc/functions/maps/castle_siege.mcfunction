@@ -5,4 +5,5 @@ summon minecraft:area_effect_cloud 1623.5 33.0 468.5 {Age:-2147483648,Duration:-
 
 function ssbrc:logic/start
 
-execute as @e[tag=tpDest,sort=random,limit=1] run function ssbrc:logic/teleport_player
+tag @a[team=!spectators] add teleportMe
+execute as @r[tag=teleportMe] run function ssbrc:logic/teleport_player

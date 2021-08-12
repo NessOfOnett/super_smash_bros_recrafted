@@ -13,4 +13,6 @@ scoreboard objectives add stocks dummy
 
 scoreboard objectives remove timer
 scoreboard objectives add timer dummy
-scoreboard players set $mapVote timer 16
+
+scoreboard objectives remove temp
+scoreboard objectives add temp dummy

@@ -13,6 +13,6 @@ weather clear
 #kill @e[type=!player]
 kill @e[tag=voteCounter]
 
-setworldspawn -520 5 55
-spawnpoint @a -520 5 55
+setworldspawn -521 5 55
+spawnpoint @a -521 5 55 90.0
 tp @a -520.5 5.0 55.5 90.0 0.0
