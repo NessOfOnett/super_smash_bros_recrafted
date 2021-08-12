@@ -11,6 +11,7 @@ time set noon
 weather clear
 
 #kill @e[type=!player]
+kill @e[tag=voteCounter]
 
 setworldspawn -520 5 55
 spawnpoint @a -520 5 55

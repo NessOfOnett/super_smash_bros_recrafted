@@ -1,44 +1,25 @@
-execute if entity @s[tag=battlefield] run scoreboard players remove $battlefield mapVote 1
-execute if entity @s[tag=castleSiege] run scoreboard players remove $castleSiege mapVote 1
-execute if entity @s[tag=draculasCastle] run scoreboard players remove $draculasCastle mapVote 1
-execute if entity @s[tag=dreamLand] run scoreboard players remove $dreamLand mapVote 1
-execute if entity @s[tag=finalDestination] run scoreboard players remove $finalDestination mapVote 1
-execute if entity @s[tag=flatZone] run scoreboard players remove $flatZone mapVote 1
-execute if entity @s[tag=gardenOfHope] run scoreboard players remove $gardenOfHope mapVote 1
-execute if entity @s[tag=greatBay] run scoreboard players remove $greatBay mapVote 1
-execute if entity @s[tag=greatPlateau] run scoreboard players remove $greatPlateau mapVote 1
-execute if entity @s[tag=greenHillZone] run scoreboard players remove $greenHillZone mapVote 1
-execute if entity @s[tag=icicleMountain] run scoreboard players remove $icicleMountain mapVote 1
-execute if entity @s[tag=jungleJapes] run scoreboard players remove $jungleJapes mapVote 1
-execute if entity @s[tag=magicant] run scoreboard players remove $magicant mapVote 1
-execute if entity @s[tag=mementos] run scoreboard players remove $mementos mapVote 1
-execute if entity @s[tag=mushroomKingdom] run scoreboard players remove $mushroomKingdom mapVote 1
-execute if entity @s[tag=saturnValley] run scoreboard players remove $saturnValley mapVote 1
-execute if entity @s[tag=sectorZ] run scoreboard players remove $sectorZ mapVote 1
-execute if entity @s[tag=shadowMosesIsland] run scoreboard players remove $shadowMosesIsland mapVote 1
-execute if entity @s[tag=spearPillar] run scoreboard players remove $spearPillar mapVote 1
-execute if entity @s[tag=wilyCastle] run scoreboard players remove $wilyCastle mapVote 1
+scoreboard players set $battlefield mapVote 0
+scoreboard players set $castleSiege mapVote 0
+scoreboard players set $draculasCastle mapVote 0
+scoreboard players set $dreamLand mapVote 0
+scoreboard players set $finalDestination mapVote 0
+scoreboard players set $flatZone mapVote 0
+scoreboard players set $gardenOfHope mapVote 0
+scoreboard players set $greatBay mapVote 0
+scoreboard players set $greatPlateau mapVote 0
+scoreboard players set $greenHillZone mapVote 0
+scoreboard players set $icicleMountain mapVote 0
+scoreboard players set $jungleJapes mapVote 0
+scoreboard players set $magicant mapVote 0
+scoreboard players set $mementos mapVote 0
+scoreboard players set $mushroomKingdom mapVote 0
+scoreboard players set $saturnValley mapVote 0
+scoreboard players set $sectorZ mapVote 0
+scoreboard players set $shadowMosesIsland mapVote 0
+scoreboard players set $spearPillar mapVote 0
+scoreboard players set $wilyCastle mapVote 0
 
-tag @s remove battlefield
-tag @s remove castleSiege
-tag @s remove draculasCastle
-tag @s remove dreamLand
-tag @s remove finalDestination
-tag @s remove flatZone
-tag @s remove gardenOfHope
-tag @s remove greatBay
-tag @s remove greatPlateau
-tag @s remove greenHillZone
-tag @s remove icicleMountain
-tag @s remove jungleJapes
-tag @s remove magicant
-tag @s remove mementos
-tag @s remove mushroomKingdom
-tag @s remove saturnValley
-tag @s remove sectorZ
-tag @s remove shadowMosesIsland
-tag @s remove spearPillar
-tag @s remove wilyCastle
+forceload add 5000000 5000000 5000015 5000015
 
 setblock 5000000 50 5000000 oak_sign{Text1:'[{"text":"Votes: ","color":"gold"},{"score":{"name":"$battlefield","objective":"mapVote"},"bold":true,"color":"yellow"}]',Text2:'[{"text":"Votes: ","color":"gold"},{"score":{"name":"$castleSiege","objective":"mapVote"},"bold":true,"color":"yellow"}]',Text3:'[{"text":"Votes: ","color":"gold"},{"score":{"name":"$draculasCastle","objective":"mapVote"},"bold":true,"color":"yellow"}]',Text4:'[{"text":"Votes: ","color":"gold"},{"score":{"name":"$dreamLand","objective":"mapVote"},"bold":true,"color":"yellow"}]',} destroy
 setblock 5000001 50 5000000 oak_sign{Text1:'[{"text":"Votes: ","color":"gold"},{"score":{"name":"$finalDestination","objective":"mapVote"},"bold":true,"color":"yellow"}]',Text2:'[{"text":"Votes: ","color":"gold"},{"score":{"name":"$flatZone","objective":"mapVote"},"bold":true,"color":"yellow"}]',Text3:'[{"text":"Votes: ","color":"gold"},{"score":{"name":"$gardenOfHope","objective":"mapVote"},"bold":true,"color":"yellow"}]',Text4:'[{"text":"Votes: ","color":"gold"},{"score":{"name":"$greatBay","objective":"mapVote"},"bold":true,"color":"yellow"}]',} destroy
@@ -88,3 +69,6 @@ data modify entity @e[tag=voteCounter,tag=sectorZ,limit=1] CustomName set from b
 data modify entity @e[tag=voteCounter,tag=shadowMosesIsland,limit=1] CustomName set from block 5000004 50 5000000 Text2
 data modify entity @e[tag=voteCounter,tag=spearPillar,limit=1] CustomName set from block 5000004 50 5000000 Text3
 data modify entity @e[tag=voteCounter,tag=wilyCastle,limit=1] CustomName set from block 5000004 50 5000000 Text4
+
+function ssbrc:logic/map_vote_timer_tick
+tp @a 3.5 3.0 21.5 0.0 0.0
