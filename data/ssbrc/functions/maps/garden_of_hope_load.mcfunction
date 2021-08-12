@@ -1,5 +1,6 @@
 scoreboard players reset * map
 scoreboard players set $gardenOfHope map 1
+scoreboard players set $mapPicked mapVote 1
 
 forceload add 512 480 607 575
 
