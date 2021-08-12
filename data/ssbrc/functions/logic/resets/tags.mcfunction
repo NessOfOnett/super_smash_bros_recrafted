@@ -18,3 +18,24 @@ tag @a remove ryu
 tag @a remove samus
 tag @a remove snake
 tag @a remove sonic
+
+tag @a remove battlefield
+tag @a remove castleSiege
+tag @a remove draculasCastle
+tag @a remove dreamLand
+tag @a remove finalDestination
+tag @a remove flatZone
+tag @a remove gardenOfHope
+tag @a remove greatBay
+tag @a remove greatPlateau
+tag @a remove greenHillZone
+tag @a remove icicleMountain
+tag @a remove jungleJapes
+tag @a remove magicant
+tag @a remove mementos
+tag @a remove mushroomKingdom
+tag @a remove saturnValley
+tag @a remove sectorZ
+tag @a remove shadowMosesIsland
+tag @a remove spearPillar
+tag @a remove wilyCastle

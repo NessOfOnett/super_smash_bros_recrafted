@@ -3,4 +3,7 @@ scoreboard players set $gardenOfHope map 1
 
 forceload add 512 480 607 575
 
+time set noon
+weather clear
+
 schedule function ssbrc:maps/garden_of_hope 2t replace

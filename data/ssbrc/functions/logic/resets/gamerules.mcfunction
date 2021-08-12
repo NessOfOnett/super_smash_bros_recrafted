@@ -2,7 +2,7 @@ gamerule announceAdvancements false
 gamerule commandBlockOutput false
 gamerule disableElytraMovementCheck false
 gamerule disableRaids true
-gamerule doDaylightCycle true
+gamerule doDaylightCycle false
 gamerule doEntityDrops false
 gamerule doFireTick false
 gamerule doImmediateRespawn true

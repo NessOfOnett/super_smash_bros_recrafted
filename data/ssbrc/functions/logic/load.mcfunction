@@ -7,9 +7,10 @@ function ssbrc:logic/resets/players
 
 forceload remove all
 
-#kill @e[type=!player]
+time set noon
+weather clear
 
-time set 0
+#kill @e[type=!player]
 
 setworldspawn -520 5 55
 spawnpoint @a -520 5 55
