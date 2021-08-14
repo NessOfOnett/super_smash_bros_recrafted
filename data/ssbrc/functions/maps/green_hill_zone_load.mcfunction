@@ -7,4 +7,4 @@ forceload add -64 208 31 255
 time set noon
 weather clear
 
-schedule function ssbrc:maps/green_hill_zone 2t replace
+schedule function ssbrc:maps/green_hill_zone 5t replace

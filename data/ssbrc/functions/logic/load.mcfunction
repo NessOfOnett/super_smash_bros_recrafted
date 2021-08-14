@@ -5,6 +5,7 @@ function ssbrc:logic/resets/scoreboards
 function ssbrc:logic/resets/teams
 function ssbrc:logic/resets/players
 
+function ssbrc:logic/resets/map_resets
 forceload remove all
 
 time set noon
@@ -16,3 +17,5 @@ kill @e[tag=voteCounter]
 setworldspawn -521 5 55
 spawnpoint @a -521 5 55 90.0
 tp @a -520.5 5.0 55.5 90.0 0.0
+
+stopsound @a music

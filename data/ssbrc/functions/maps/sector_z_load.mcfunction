@@ -7,4 +7,4 @@ forceload add 240 3248 367 3327
 time set midnight
 weather clear
 
-schedule function ssbrc:maps/sector_z 2t replace
+schedule function ssbrc:maps/sector_z 5t replace

@@ -7,4 +7,4 @@ forceload add -1120 0 -1041 79
 time set midnight
 weather thunder
 
-schedule function ssbrc:maps/draculas_castle 2t replace
+schedule function ssbrc:maps/draculas_castle 5t replace

@@ -7,4 +7,4 @@ forceload add 319 -545 288 -576
 time set noon
 weather clear
 
-schedule function ssbrc:maps/battlefield 2t replace
+schedule function ssbrc:maps/battlefield 5t replace

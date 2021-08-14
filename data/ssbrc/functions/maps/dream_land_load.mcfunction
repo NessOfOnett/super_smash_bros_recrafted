@@ -7,4 +7,4 @@ forceload add 2032 896 2143 1023
 time set noon
 weather clear
 
-schedule function ssbrc:maps/dream_land 2t replace
+schedule function ssbrc:maps/dream_land 5t replace

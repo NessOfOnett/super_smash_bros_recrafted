@@ -24,4 +24,5 @@ schedule function ssbrc:logic/start_teleport 2t replace
 scoreboard players set $startCountdown timer 4
 schedule function ssbrc:logic/start_countdown_timer_tick 1s replace
 
+execute as @a[team=!spectators] run attribute @s generic.max_health base set 40
 function ssbrc:logic/kits

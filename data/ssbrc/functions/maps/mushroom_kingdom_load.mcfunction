@@ -7,4 +7,4 @@ forceload add -256 -192 -193 -113
 time set noon
 weather clear
 
-schedule function ssbrc:maps/mushroom_kingdom 2t replace
+schedule function ssbrc:maps/mushroom_kingdom 5t replace
