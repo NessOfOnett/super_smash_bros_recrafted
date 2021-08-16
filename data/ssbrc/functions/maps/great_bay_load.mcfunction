@@ -7,4 +7,4 @@ forceload add 2624 32 2703 127
 time set noon
 weather clear
 
-schedule function ssbrc:maps/great_bay 5t replace
+schedule function ssbrc:maps/great_bay 1s replace

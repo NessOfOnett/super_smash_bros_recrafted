@@ -39,3 +39,6 @@ tag @a remove sectorZ
 tag @a remove shadowMosesIsland
 tag @a remove spearPillar
 tag @a remove wilyCastle
+
+tag @a remove needsHeal
+tag @a remove oracleUsed

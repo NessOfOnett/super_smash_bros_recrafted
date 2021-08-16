@@ -7,4 +7,4 @@ forceload add 784 -64 831 -1
 time set noon
 weather clear
 
-schedule function ssbrc:maps/spear_pillar 5t replace
+schedule function ssbrc:maps/spear_pillar 1s replace

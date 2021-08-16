@@ -17,4 +17,4 @@ function ssbrc:maps/flat_zone/zookeeper_2
 time set noon
 weather clear
 
-schedule function ssbrc:maps/flat_zone 5t replace
+schedule function ssbrc:maps/flat_zone 1s replace

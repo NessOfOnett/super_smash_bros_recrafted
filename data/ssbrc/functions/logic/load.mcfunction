@@ -12,6 +12,7 @@ time set noon
 weather clear
 
 #kill @e[type=!player]
+kill @e[type=minecraft:arrow]
 kill @e[tag=voteCounter]
 
 setworldspawn -521 5 55

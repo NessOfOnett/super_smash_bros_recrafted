@@ -7,4 +7,4 @@ forceload add 2208 1552 2319 1631
 time set noon
 weather clear
 
-schedule function ssbrc:maps/jungle_japes 5t replace
+schedule function ssbrc:maps/jungle_japes 1s replace

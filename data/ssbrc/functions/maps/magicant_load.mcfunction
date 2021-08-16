@@ -7,4 +7,4 @@ forceload add 608 -912 687 -833
 time set noon
 weather clear
 
-schedule function ssbrc:maps/magicant 5t replace
+schedule function ssbrc:maps/magicant 1s replace
