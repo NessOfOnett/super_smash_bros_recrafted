@@ -85,7 +85,7 @@ execute if score $mushroomKingdom map matches 1 if score result random matches 2
 execute if score $mushroomKingdom map matches 1 if score result random matches 3 run spawnpoint @s -213 7 -172
 
 execute if score $saturnValley map matches 1 if score result random matches 0 run spawnpoint @s -208 14 576
-execute if score $saturnValley map matches 1 if score result random matches 1 run spawnpoint @s -191 11 599
+execute if score $saturnValley map matches 1 if score result random matches 1 run spawnpoint @s -191 12 599
 execute if score $saturnValley map matches 1 if score result random matches 2 run spawnpoint @s -221 4 639
 execute if score $saturnValley map matches 1 if score result random matches 3 run spawnpoint @s -233 14 576
 
