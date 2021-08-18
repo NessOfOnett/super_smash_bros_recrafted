@@ -19,6 +19,6 @@ execute if entity @s[tag=samus] run title @a subtitle [{"text":"Selected Charact
 execute if entity @s[tag=snake] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Snake","bold":true,"color":"yellow"}]
 execute if entity @s[tag=sonic] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Sonic","bold":true,"color":"yellow"}]
 
-title @a title [{"selector":"@s","bold":true,"color":"yellow"},{"text":" has won the game!","color":"gold"}]
+title @a title [{"selector":"@s","bold":true,"color":"yellow"},{"text":" wins!","color":"gold"}]
 
 function ssbrc:logic/load

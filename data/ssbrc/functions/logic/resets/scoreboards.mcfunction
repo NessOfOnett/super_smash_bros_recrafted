@@ -4,6 +4,9 @@ scoreboard objectives add flag.dead deathCount
 scoreboard objectives remove health
 scoreboard objectives add health health
 
+scoreboard objectives remove itemCount
+scoreboard objectives add itemCount dummy
+
 scoreboard objectives remove map
 scoreboard objectives add map dummy
 scoreboard players set $none map 1

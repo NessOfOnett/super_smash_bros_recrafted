@@ -13,4 +13,6 @@ summon minecraft:armor_stand -29.5 5.5 -161.5 {Invulnerable:1b,ShowArms:0b,Invis
 kill @e[type=minecraft:armor_stand,x=-35.5,y=6.25,z=-152.5,distance=..1]
 summon minecraft:armor_stand 35.5 6.25 152.5 {Invulnerable:1b,ShowArms:0b,Invisible:1b,Marker:1b,NoBasePlate:1b,NoGravity:1b,CustomName:'{"text":"Start Game"}',CustomNameVisible:1b}
 
+kill @e[type=#ssbrc:kill_on_reload]
 kill @e[tag=tpDest]
+kill @e[tag=voteCounter]
