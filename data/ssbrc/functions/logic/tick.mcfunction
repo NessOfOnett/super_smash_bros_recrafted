@@ -5,6 +5,7 @@ execute unless score $none map matches 1 unless score $sectorZ map matches 1 run
 
 execute if score $greatPlateau map matches 1 run function ssbrc:logic/tick/great_plateau
 execute if score $greenHillZone map matches 1 run function ssbrc:logic/tick/green_hill_zone
+execute if score $icicleMountain map matches 1 run function ssbrc:logic/tick/icicle_mountain
 execute if score $sectorZ map matches 1 run function ssbrc:logic/tick/sector_z
 
 execute unless score $none map matches 1 as @a[scores={flag.dead=1..}] run function ssbrc:logic/death

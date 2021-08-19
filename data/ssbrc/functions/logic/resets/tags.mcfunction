@@ -40,5 +40,6 @@ tag @a remove shadowMosesIsland
 tag @a remove spearPillar
 tag @a remove wilyCastle
 
+tag @a remove jokerAbility
+tag @a remove jokerAbilityUsed
 tag @a remove needsHeal
-tag @a remove oracleUsed

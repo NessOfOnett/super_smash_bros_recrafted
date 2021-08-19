@@ -1,4 +1,6 @@
-attribute @s generic.knockback_resistance base set 1000000.0
+tag @s remove jokerAbility
+
+attribute @s generic.knockback_resistance base set 0.0
 
 effect clear @s
 effect give @s minecraft:fire_resistance 10 255 true
@@ -14,7 +16,4 @@ execute if score result random matches 0 run tellraw @s [{"text":"Oracle","color
 execute if score result random matches 1 run tellraw @s [{"text":"Oracle","color":"light_green"},{"text":": ","color":"white"},{"text":"Woah! Take it easy, okay?","color":"yellow"}]
 execute if score result random matches 2 run tellraw @s [{"text":"Oracle","color":"light_green"},{"text":": ","color":"white"},{"text":"Don't be so reckless!","color":"yellow"}]
 
-schedule function ssbrc:logic/abilities/joker_ability_restore 10s replace
-
-tag @s add jokerAbility
-tag @s add jokerAbilityUsed
+tag @s add oracleUsed

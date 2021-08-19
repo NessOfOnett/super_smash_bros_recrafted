@@ -12,4 +12,4 @@ item modify entity @a[tag=ryu] armor.head ssbrc:curse_of_binding
 item modify entity @a[tag=ryu] armor.chest ssbrc:curse_of_binding
 item modify entity @a[tag=ryu] armor.legs ssbrc:curse_of_binding
 
-schedule function ssbrc:logic/tick/items/ryu_ability_restore 30s replace
+schedule function ssbrc:logic/abilities/ryu_ability_restore 30s replace
