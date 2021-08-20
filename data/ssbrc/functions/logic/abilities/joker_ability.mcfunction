@@ -10,9 +10,9 @@ effect give @s minecraft:slowness 10 255 true
 scoreboard players set max random 3
 function ssbrc:rng/lcg
 
-execute if score result random matches 0 run tellraw @s [{"text":"Oracle","color":"light_green"},{"text":": ","color":"white"},{"text":"Be careful out there!","color":"yellow"}]
-execute if score result random matches 1 run tellraw @s [{"text":"Oracle","color":"light_green"},{"text":": ","color":"white"},{"text":"Woah! Take it easy, okay?","color":"yellow"}]
-execute if score result random matches 2 run tellraw @s [{"text":"Oracle","color":"light_green"},{"text":": ","color":"white"},{"text":"Don't be so reckless!","color":"yellow"}]
+execute if score result random matches 0 run tellraw @s [{"text":"Oracle","color":"green"},{"text":": ","color":"white"},{"text":"Be careful out there!","color":"yellow"}]
+execute if score result random matches 1 run tellraw @s [{"text":"Oracle","color":"green"},{"text":": ","color":"white"},{"text":"Woah! Take it easy, okay?","color":"yellow"}]
+execute if score result random matches 2 run tellraw @s [{"text":"Oracle","color":"green"},{"text":": ","color":"white"},{"text":"Don't be so reckless!","color":"yellow"}]
 
 schedule function ssbrc:logic/abilities/joker_ability_restore 10s replace
 

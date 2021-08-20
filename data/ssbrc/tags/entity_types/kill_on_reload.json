@@ -1,6 +1,7 @@
 {
 	"values": [
 		"minecraft:arrow",
+		"minecraft:item",
 		"minecraft:spectral_arrow",
 		"minecraft:trident"
 	]
