@@ -16,4 +16,4 @@ effect give @a[tag=greninja] minecraft:dolphins_grace 1000000 255 true
 
 effect give @a[team=!spectators] minecraft:slow_falling 1000000 255 true
 
-kill @a[predicate=ssbrc:below_y_15]
+kill @a[predicate=ssbrc:below_y_-15]

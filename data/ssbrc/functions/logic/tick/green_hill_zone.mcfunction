@@ -3,4 +3,4 @@ execute if entity @a[team=!spectators,x=-25,y=15,z=252,distance=4..] run setbloc
 
 fill -4 14 229 0 14 233 minecraft:campfire[facing=east,lit=false] replace
 
-kill @a[predicate=ssbrc:below_y_00]
+kill @a[predicate=ssbrc:below_y_01]

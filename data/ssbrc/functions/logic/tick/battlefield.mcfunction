@@ -1,1 +1,1 @@
-kill @a[predicate=ssbrc:below_y_00]
+kill @a[predicate=ssbrc:below_y_01]

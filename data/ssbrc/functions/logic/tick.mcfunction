@@ -14,8 +14,3 @@ execute unless score $none map matches 1 as @a[scores={flag.dead=1..}] run funct
 execute unless score $none map matches 1 as @e[type=minecraft:arrow,tag=!counted] if entity @s run function ssbrc:logic/tick/arrows
 execute unless score $none map matches 1 as @a run function ssbrc:logic/tick/health_check
 execute unless score $none map matches 1 run function ssbrc:logic/tick/items
-
-
-
-
-execute unless score $none map matches 1 run function ssbrc:logic/tick/yee

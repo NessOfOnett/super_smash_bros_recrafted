@@ -7,7 +7,8 @@ execute if score $startCountdown timer matches 2 run title @a title {"text":"2",
 execute if score $startCountdown timer matches 1 run title @a title {"text":"1","color":"gold"}
 execute if score $startCountdown timer matches 0 run title @a title {"text":"GO!","color":"dark_green"}
 
-execute if score $startCountdown timer matches 0 run effect clear @a slowness
 execute if score $startCountdown timer matches 0 run effect clear @a jump_boost
-execute if score $startCountdown timer matches 0 run function ssbrc:logic/start_music
+execute if score $startCountdown timer matches 0 run effect clear @a slowness
 execute if score $startCountdown timer matches 0 run function ssbrc:logic/kits
+execute if score $startCountdown timer matches 0 run function ssbrc:logic/start_music
+execute if score $startCountdown timer matches 0 run function ssbrc:logic/snake_timer_tick
