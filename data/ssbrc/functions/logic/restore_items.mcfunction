@@ -21,9 +21,9 @@ item replace entity @s[tag=pit] armor.chest with minecraft:elytra{Damage:417,dis
 
 execute if score @s[tag=ryu] stocks matches 1 run item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'[{"text":"Satsui no Hado Rage","italic":false,"color":"#660000","bold":true}]'},Unbreakable:1,CustomModelData:1919218301,ryuAbility:1} 1
 
-
 clear @s[tag=captainfalcon] minecraft:arrow
-item replace entity @s[tag=captainfalcon] hotbar.8 with minecraft:arrow 5
-item modify entity @s[tag=charizard,tag=fox] hotbar.8 ssbrc:arrows_4
-item modify entity @s[tag=samus] hotbar.8 ssbrc:arrows_5
-item modify entity @s[tag=snake] hotbar.8 ssbrc:arrows_3
+give @s[tag=captainfalcon] minecraft:arrow 5
+give @s[tag=charizard] minecraft:arrow 4
+give @s[tag=fox] minecraft:arrow 4
+give @s[tag=samus] minecraft:arrow 5
+give @s[tag=snake] minecraft:arrow 3

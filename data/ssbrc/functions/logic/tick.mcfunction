@@ -3,6 +3,7 @@ execute unless score $none map matches 1 run function ssbrc:logic/tick/generic
 
 execute unless score $none map matches 1 unless score $sectorZ map matches 1 run function ssbrc:logic/tick/effects
 
+execute if score $battlefield map matches 1 run function ssbrc:logic/tick/battlefield
 execute if score $greatPlateau map matches 1 run function ssbrc:logic/tick/great_plateau
 execute if score $greenHillZone map matches 1 run function ssbrc:logic/tick/green_hill_zone
 execute if score $icicleMountain map matches 1 run function ssbrc:logic/tick/icicle_mountain

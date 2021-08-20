@@ -4,10 +4,10 @@ effect give @a[tag=!snake,team=!spectators] minecraft:glowing 1000000 255 true
 
 effect give @a[tag=mario] minecraft:jump_boost 1000000 6 true
 effect give @a[tag=!bowser,tag=!donkeykong,tag=!ganon,tag=!krool,tag=!mario,team=!spectators] minecraft:jump_boost 1000000 5 true
-effect give @a[tag=boswer] minecraft:jump_boost 1000000 0 true
-effect give @a[tag=donkeykong] minecraft:jump_boost 1000000 0 true
-effect give @a[tag=ganon] minecraft:jump_boost 1000000 0 true
-effect give @a[tag=krool] minecraft:jump_boost 1000000 0 true
+effect give @a[tag=boswer] minecraft:jump_boost 1000000 4 true
+effect give @a[tag=donkeykong] minecraft:jump_boost 1000000 4 true
+effect give @a[tag=ganon] minecraft:jump_boost 1000000 4 true
+effect give @a[tag=krool] minecraft:jump_boost 1000000 4 true
 
 effect give @a[tag=sonic] minecraft:speed 1000000 0 true
 

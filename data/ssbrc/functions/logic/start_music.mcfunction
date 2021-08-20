@@ -18,3 +18,5 @@ execute if score $sectorZ map matches 1 as @a at @s run playsound minecraft:enti
 execute if score $shadowMosesIsland map matches 1 as @a at @s run playsound minecraft:entity.hoglin.converted_to_zombified music @s
 execute if score $spearPillar map matches 1 as @a at @s run playsound minecraft:entity.donkey.angry music @s
 execute if score $wilyCastle map matches 1 as @a at @s run playsound minecraft:entity.husk.converted_to_zombie music @s
+
+schedule function ssbrc:logic/start_music 300s replace
