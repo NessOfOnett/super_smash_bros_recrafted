@@ -8,7 +8,7 @@ execute if score $battlefield map matches 1 if score result random matches 3 run
 execute if score $battlefield map matches 1 if score result random matches 4 run spawnpoint @s 302 16 -557
 execute if score $battlefield map matches 1 if score result random matches 5 run spawnpoint @s 302 16 -567
 execute if score $battlefield map matches 1 if score result random matches 6 run spawnpoint @s 308 16 -562
-execute if score $battlefield map matches 1 if score result random matches 7 run spawnpoint @s 296 16 -36
+execute if score $battlefield map matches 1 if score result random matches 7 run spawnpoint @s 296 16 -562
 
 execute if score $castleSiege map matches 1 if score result random matches 0 run spawnpoint @s 1654 29 437
 execute if score $castleSiege map matches 1 if score result random matches 1 run spawnpoint @s 1659 14 462
