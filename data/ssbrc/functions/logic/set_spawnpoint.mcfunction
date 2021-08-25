@@ -118,14 +118,14 @@ execute if score $magicant map matches 1 if score result random matches 5 run sp
 execute if score $magicant map matches 1 if score result random matches 6 run spawnpoint @s 653 14 -873
 execute if score $magicant map matches 1 if score result random matches 7 run spawnpoint @s 657 13 -888
 
-execute if score $mementos map matches 1 if score result random matches 0 run spawnpoint @s -293 18 182
-execute if score $mementos map matches 1 if score result random matches 1 run spawnpoint @s -300 23 200
-execute if score $mementos map matches 1 if score result random matches 2 run spawnpoint @s -297 12 180
-execute if score $mementos map matches 1 if score result random matches 3 run spawnpoint @s -303 10 194
-execute if score $mementos map matches 1 if score result random matches 4 run spawnpoint @s -296 23 173
-execute if score $mementos map matches 1 if score result random matches 5 run spawnpoint @s -288 20 186
-execute if score $mementos map matches 1 if score result random matches 6 run spawnpoint @s -291 10 182
-execute if score $mementos map matches 1 if score result random matches 7 run spawnpoint @s -298 12 197
+execute if score $mementos map matches 1 if score result random matches 0 run spawnpoint @s -1185 23 865
+execute if score $mementos map matches 1 if score result random matches 1 run spawnpoint @s -1190 23 892
+execute if score $mementos map matches 1 if score result random matches 2 run spawnpoint @s -1183 18 874
+execute if score $mementos map matches 1 if score result random matches 3 run spawnpoint @s -1178 20 878
+execute if score $mementos map matches 1 if score result random matches 4 run spawnpoint @s -1193 10 886
+execute if score $mementos map matches 1 if score result random matches 5 run spawnpoint @s -1188 12 890
+execute if score $mementos map matches 1 if score result random matches 6 run spawnpoint @s -1187 12 872
+execute if score $mementos map matches 1 if score result random matches 7 run spawnpoint @s -1181 10 874
 
 execute if score $mushroomKingdom map matches 1 if score result random matches 0 run spawnpoint @s -231 18 -155
 execute if score $mushroomKingdom map matches 1 if score result random matches 1 run spawnpoint @s -228 6 -154
