@@ -1,11 +1,11 @@
-summon minecraft:area_effect_cloud -292.5 18.0 182.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud -299.5 23.0 200.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud -296.5 12.0 180.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud -302.5 10.0 194.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud -295.5 23.0 173.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud -287.5 20.0 186.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud -290.5 10.0 182.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud -297.5 12.0 197.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -1184.5 23.0 865.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -1189.5 23.0 892.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -1182.5 18.0 874.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -1177.5 20.0 878.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -1192.5 10.0 886.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -1187.5 12.0 890.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -1186.5 12.0 872.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:area_effect_cloud -1180.5 10.0 874.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
 
 function ssbrc:logic/start
 
