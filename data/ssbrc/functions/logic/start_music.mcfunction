@@ -1,7 +1,7 @@
 execute if score $battlefield map matches 1 as @a at @s run playsound minecraft:entity.axolotl.death music @s
 execute if score $castleSiege map matches 1 as @a at @s run playsound minecraft:entity.bee.death music @s
 execute if score $draculasCastle map matches 1 as @a at @s run playsound minecraft:entity.cat.eat music @s
-execute if score $deamLand map matches 1 as @a at @s run playsound minecraft:entity.cat.purreow music @s
+execute if score $dreamLand map matches 1 as @a at @s run playsound minecraft:entity.cat.purreow music @s
 execute if score $finalDestination map matches 1 as @a at @s run playsound minecraft:entity.chicken.hurt music @s
 execute if score $flatZone map matches 1 as @a at @s run playsound minecraft:entity.chicken.step music @s
 execute if score $gardenOfHope map matches 1 as @a at @s run playsound minecraft:entity.dolphin.death music @s
