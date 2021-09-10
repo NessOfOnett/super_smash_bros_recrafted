@@ -1,4 +1,5 @@
-scoreboard players set @s abilityActive 1
+tag @s add kaclangUsed
+
 clear @s minecraft:carrot_on_a_stick{heroAbility:3}
 
 effect clear @s minecraft:blindness

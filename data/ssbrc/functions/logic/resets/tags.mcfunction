@@ -43,5 +43,6 @@ tag @a remove wilyCastle
 tag @a remove oracleUsed
 tag @a remove jokerAbility
 tag @a remove jokerAbilityUsed
+tag @a remove magicUsed
 tag @a remove needsHeal
 tag @a remove teleportMe
