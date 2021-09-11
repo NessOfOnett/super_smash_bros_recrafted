@@ -9,9 +9,10 @@ item replace entity @s[tag=donkeykong] hotbar.3 with minecraft:splash_potion{Cus
 clear @s[tag=hero] minecraft:carrot_on_a_stick
 clear @s[tag=hero] minecraft:shield
 item replace entity @s[tag=hero] hotbar.0 with minecraft:iron_sword{heroAbility:1,Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:8,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12164,22807,92130,-45614]},{AttributeName:"generic.attack_speed",Amount:-2.6,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-12164,22907,92130,-45814]}],display:{Name:'[{"text":"Flame Slash","italic":false,"color":"red","bold":true}]',Lore:['[{"text":"8 Attack Damage","italic":false,"color":"gray"}]','[{"text":"Fire Aspect I","italic":false,"color":"gray"}]']},Enchantments:[{id:"fire_aspect",lvl:1}],HideFlags:127} 1
-item replace entity @s[tag=hero] hotbar.1 with minecraft:carrot_on_a_stick{heroAbility:2,Unbreakable:1,display:{Name:'[{"text":"Frizzle","italic":false,"color":"yellow","bold":true}]'},HideFlags:126} 1
-item replace entity @s[tag=hero] hotbar.2 with minecraft:carrot_on_a_stick{heroAbility:3,Unbreakable:1,display:{Name:'[{"text":"Kaclang","italic":false,"color":"gray","bold":true}]'},HideFlags:126} 1
-scoreboard players add @s[tag=hero] mana 2
+item replace entity @s[tag=hero] hotbar.1 with minecraft:carrot_on_a_stick{heroAbility:2,Unbreakable:1,display:{Name:'[{"text":"Bang","italic":false,"color":"yellow","bold":true}]'},HideFlags:127} 1
+item replace entity @s[tag=hero] hotbar.2 with minecraft:carrot_on_a_stick{heroAbility:3,Unbreakable:1,display:{Name:'[{"text":"Kaclang","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
+scoreboard players add @s[tag=hero] mana 8
+scoreboard players set @s[tag=hero,scores={mana=22..}] mana 21
 tag @s[tag=hero] remove kaclangUsed
 tag @s[tag=hero] remove magicLost
 

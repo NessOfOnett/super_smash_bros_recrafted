@@ -14,6 +14,9 @@ scoreboard players set #7 integers 7
 scoreboard objectives remove itemCount
 scoreboard objectives add itemCount dummy
 
+scoreboard objectives remove magicBurst
+scoreboard objectives add magicBurst dummy
+
 scoreboard objectives remove mana
 scoreboard objectives add mana dummy
 

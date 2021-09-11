@@ -1,3 +1,5 @@
+execute as @a run attribute @s minecraft:generic.max_health base set 40
+
 # Lobby
 execute if score $none map matches 1 run function ssbrc:logic/tick/lobby
 
@@ -7,7 +9,6 @@ execute if score $start map matches 1 run function ssbrc:logic/tick/generic
 execute if score $start map matches 1 as @e[type=minecraft:arrow,tag=!counted] if entity @s run function ssbrc:logic/tick/arrows
 execute if score $start map matches 1 run function ssbrc:logic/tick/fireballs
 execute if score $start map matches 1 as @a run function ssbrc:logic/tick/health_check
-execute if score $start map matches 1 run function ssbrc:logic/tick/hero
 execute if score $start map matches 1 run function ssbrc:logic/tick/items
 
 execute if score $start map matches 1 unless score $sectorZ map matches 1 run function ssbrc:logic/tick/effects
@@ -20,6 +21,10 @@ execute if score $greatPlateau map matches 1 run function ssbrc:logic/tick/great
 execute if score $greenHillZone map matches 1 run function ssbrc:logic/tick/green_hill_zone
 execute if score $icicleMountain map matches 1 run function ssbrc:logic/tick/icicle_mountain
 execute if score $sectorZ map matches 1 run function ssbrc:logic/tick/sector_z
+
+# Specific characters
+execute if score $start map matches 1 run function ssbrc:logic/tick/hero_magic_burst
+execute if score $start map matches 1 run function ssbrc:logic/tick/hero_mana
 
 # When a player dies
 execute if score $start map matches 1 as @a[scores={flag.dead=1..}] run function ssbrc:logic/death
