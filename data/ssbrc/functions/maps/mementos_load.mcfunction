@@ -4,7 +4,7 @@ scoreboard players set $mapPicked mapVote 1
 
 forceload add -1248 800 -1121 959
 
-time set noon
+time set night
 weather clear
 
 schedule function ssbrc:maps/mementos 1s replace
