@@ -77,3 +77,6 @@ team empty temp
 scoreboard players set $mapVote timer 26
 function ssbrc:logic/map_vote_timer_tick
 tp @a 3.5 3.0 21.5 0.0 0.0
+
+team join waiting @a
+effect give @a minecraft:glowing 1000000 0 true

@@ -47,4 +47,6 @@ tag @a remove jokerAbility
 tag @a remove jokerAbilityUsed
 tag @a remove magicLost
 tag @a remove needsHeal
+tag @a remove pickingCharacter
+tag @a remove pickingMap
 tag @a remove teleportMe
