@@ -8,7 +8,7 @@ gamerule doFireTick false
 gamerule doImmediateRespawn true
 gamerule doInsomnia false
 gamerule doLimitedCrafting true
-gamerule doMobLoot true
+gamerule doMobLoot false
 gamerule doPatrolSpawning false
 gamerule doTileDrops false
 gamerule doTraderSpawning false

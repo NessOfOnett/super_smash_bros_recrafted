@@ -1,5 +1,5 @@
 scoreboard players reset * map
-scoreboard players set $greatPlateau map 1
+schedule function ssbrc:maps/great_plateau_on 3s replace
 scoreboard players set $mapPicked mapVote 1
 
 forceload add 1536 1328 1631 1407
