@@ -19,7 +19,8 @@ title @a[tag=hero,scores={mana=17}] actionbar [{"text":"Mana: ","bold":true,"col
 title @a[tag=hero,scores={mana=18}] actionbar [{"text":"Mana: ","bold":true,"color":"white"},{"text":"\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae","color":"aqua"},{"text":"\u25ae\u25ae","color":"yellow"}]
 title @a[tag=hero,scores={mana=19}] actionbar [{"text":"Mana: ","bold":true,"color":"white"},{"text":"\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae","color":"aqua"},{"text":"\u25ae","color":"yellow"}]
 title @a[tag=hero,scores={mana=20}] actionbar [{"text":"Mana: ","bold":true,"color":"white"},{"text":"\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae\u25ae","color":"aqua"}]
-title @a[tag=hero,scores={mana=21..}] actionbar [{"text":"Mana: ","bold":true,"color":"white"},{"text":"OVERFLOW SWITCH","color":"light_purple"}]
+title @a[tag=hero,tag=!magicBurstUsed,scores={mana=21..}] actionbar [{"text":"Mana: ","bold":true,"color":"white"},{"text":"OVERFLOW SWITCH","color":"light_purple"}]
+scoreboard players set @a[tag=hero,tag=magicBurstUsed,scores={mana=21..}] mana 20
 
-item replace entity @a[tag=hero,tag=!overflowReached,scores={mana=21..}] hotbar.4 with minecraft:carrot_on_a_stick{heroAbility:4,Unbreakable:1,display:{Name:'[{"text":"Magic Burst","italic":false,"color":"light_purple","bold":true}]'},HideFlags:127} 1
-tag @a[tag=hero,tag=!overflowReached,scores={mana=21..}] add overflowReached
+item replace entity @a[tag=hero,tag=!magicBurstUsed,scores={mana=21..}] hotbar.4 with minecraft:carrot_on_a_stick{heroAbility:4,Unbreakable:1,display:{Name:'[{"text":"Magic Burst","italic":false,"color":"light_purple","bold":true}]'},HideFlags:127} 1
+clear @a[tag=hero,scores={mana=..20}] minecraft:carrot_on_a_stick{heroAbility:4}
