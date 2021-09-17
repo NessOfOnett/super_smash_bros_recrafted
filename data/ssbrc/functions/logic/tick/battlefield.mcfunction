@@ -1,1 +1,1 @@
-kill @a[predicate=ssbrc:below_y_01]
+kill @a[team=alive,predicate=ssbrc:below_y_01]

@@ -10,8 +10,18 @@ scoreboard objectives add flag.dead deathCount
 scoreboard objectives remove health
 scoreboard objectives add health health
 
+scoreboard objectives remove integers
+scoreboard objectives add integers dummy
+scoreboard players set #7 integers 7
+
 scoreboard objectives remove itemCount
 scoreboard objectives add itemCount dummy
+
+scoreboard objectives remove magicBurst
+scoreboard objectives add magicBurst dummy
+
+scoreboard objectives remove mana
+scoreboard objectives add mana dummy
 
 scoreboard objectives remove map
 scoreboard objectives add map dummy
@@ -19,6 +29,18 @@ scoreboard players set $none map 1
 
 scoreboard objectives remove mapVote
 scoreboard objectives add mapVote dummy
+
+scoreboard objectives remove motionX
+scoreboard objectives add motionX dummy
+
+scoreboard objectives remove motionY
+scoreboard objectives add motionY dummy
+
+scoreboard objectives remove motionZ
+scoreboard objectives add motionZ dummy
+
+scoreboard objectives remove pos
+scoreboard objectives add pos dummy
 
 scoreboard objectives remove stocks
 scoreboard objectives add stocks dummy

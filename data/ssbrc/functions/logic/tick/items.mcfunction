@@ -1,5 +1,10 @@
-execute as @a[scores={useAbility=1..},tag=ryu] run function ssbrc:logic/abilities/ryu_ability
-execute as @a[scores={useAbility=1..},tag=igohard] run function ssbrc:logic/abilities/urbosas_fury
+execute as @a[tag=hero,tag=!magicLost,scores={mana=0}] run function ssbrc:logic/abilities/hero_lose_magic
+execute as @a[tag=hero,scores={useAbility=1..,mana=1..},nbt={SelectedItem:{tag:{heroAbility:1}}}] at @s run function ssbrc:logic/abilities/hero_ability_flame_slash
+execute as @a[tag=hero,scores={useAbility=1..,mana=2..},nbt={SelectedItem:{tag:{heroAbility:2}}}] at @s run function ssbrc:logic/abilities/hero_ability_bang
+execute as @a[tag=hero,scores={useAbility=1..,mana=3..},nbt={SelectedItem:{tag:{heroAbility:3}}}] run function ssbrc:logic/abilities/hero_ability_kaclang
+execute as @a[tag=hero,scores={useAbility=1..,mana=21..},nbt={SelectedItem:{tag:{heroAbility:4}}}] run function ssbrc:logic/abilities/hero_ability_magic_burst_activate
+
+execute as @a[tag=ryu,scores={useAbility=1..}] run function ssbrc:logic/abilities/ryu_ability
 
 scoreboard players set @a useAbility 0
 
