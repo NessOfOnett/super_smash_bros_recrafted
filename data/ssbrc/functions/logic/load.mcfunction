@@ -4,6 +4,7 @@ function ssbrc:logic/resets/schedule
 function ssbrc:logic/resets/scoreboards
 function ssbrc:logic/resets/teams
 function ssbrc:logic/resets/players
+function ssbrc:logic/resets/variables
 
 function ssbrc:logic/resets/map_resets
 forceload remove all

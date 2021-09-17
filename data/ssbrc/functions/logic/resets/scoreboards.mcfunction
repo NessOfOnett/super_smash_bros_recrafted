@@ -1,3 +1,9 @@
+scoreboard objectives remove abilityActive
+scoreboard objectives add abilityActive dummy
+
+scoreboard objectives remove capacity
+scoreboard objectives add capacity dummy
+
 scoreboard objectives remove flag.dead
 scoreboard objectives add flag.dead deathCount
 
@@ -26,3 +32,9 @@ scoreboard players set #arrowMax temp 10
 
 scoreboard objectives remove useAbility
 scoreboard objectives add useAbility minecraft.used:minecraft.carrot_on_a_stick
+
+scoreboard objectives remove useChargeAbility
+scoreboard objectives add useChargeAbility minecraft.used:minecraft.warped_fungus_on_a_stick
+
+scoreboard objectives remove vars
+scoreboard objectives add vars dummy

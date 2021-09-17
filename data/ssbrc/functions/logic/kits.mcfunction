@@ -191,10 +191,13 @@ item replace entity @a[tag=snake] armor.chest with minecraft:leather_chestplate{
 item replace entity @a[tag=snake] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:9609900},HideFlags:68} 1
 item replace entity @a[tag=snake] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:2369332},HideFlags:68} 1
 
-item replace entity @a[tag=snake] hotbar.0 with minecraft:iron_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:6,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,34731,13025,-69462]},{AttributeName:"generic.attack_speed",Amount:-3.1,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,34831,13025,-69662]}],display:{Name:'[{"text":"CQC Knife","italic":false,"color":"green","bold":true}]'},HideFlags:4} 1
-item replace entity @a[tag=snake] hotbar.1 with minecraft:crossbow{Unbreakable:1,display:{Name:'[{"text":"Thor .45-70","italic":false,"color":"green","bold":true}]'},Enchantments:[{id:"piercing",lvl:1},{id:"quick_charge",lvl:2}],HideFlags:5} 1
-item replace entity @a[tag=snake] hotbar.2 with minecraft:crossbow{Unbreakable:1,display:{Name:'[{"text":"S1000 Shotgun","italic":false,"color":"green","bold":true}]'},Enchantments:[{id:"multishot",lvl:1},{id:"quick_charge",lvl:1}],HideFlags:4} 1
-item replace entity @a[tag=snake] hotbar.8 with minecraft:arrow 14
+give @a[tag=snake,tag=snakePsg1] minecraft:carrot_on_a_stick{PSG1:1,Unbreakable:1,display:{Name:'[{"text":"PSG-1","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snakeFamas] minecraft:carrot_on_a_stick{Famas:1,Unbreakable:1,display:{Name:'[{"text":"FAMAS","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snakeS1000] minecraft:carrot_on_a_stick{S1000:1,Unbreakable:1,display:{Name:'[{"text":"S1000","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snakeSocom] minecraft:carrot_on_a_stick{Socom:1,Unbreakable:1,display:{Name:'[{"text":"SOCOM","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snakeAntiPersonnelMine] minecraft:carrot_on_a_stick{AntiPersonnelMine:1,Unbreakable:1,display:{Name:'[{"text":"Anti-Personnel Mine","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snakeSmokeGrenade] minecraft:carrot_on_a_stick{SmokeGrenade:1,Unbreakable:1,display:{Name:'[{"text":"Smoke Grenade","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake] minecraft:iron_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:6,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,34731,13025,-69462]},{AttributeName:"generic.attack_speed",Amount:-3.1,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,34831,13025,-69662]}],display:{Name:'[{"text":"CQC Knife","italic":false,"color":"green","bold":true}]'},HideFlags:4} 1
 
 # Sonic
 item replace entity @a[tag=sonic] armor.head with minecraft:player_head{display:{Name:'{"text":"Sonic"}'},SkullOwner:{Id:[I;1298989397,1555318664,-1438256815,-1766009294],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTAzODE3MzdkNGRhNTI4ODIzNTQ3MjUxYjE0NTU2OGQxNTI1M2E4N2IxMTE5M2MzZGFmZjZhZTM1NTc3NSJ9fX0="}]}}} 1
