@@ -25,6 +25,6 @@
 		}
 	},
 	"rewards": {
-		"function": "ssbrc:logic/abilities/hero_get_kill"
+		"function": "ssbrc:characters/hero/get_kill"
 	}
 }

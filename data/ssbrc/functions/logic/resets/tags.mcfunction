@@ -49,4 +49,15 @@ tag @a remove magicLost
 tag @a remove needsHeal
 tag @a remove pickingCharacter
 tag @a remove pickingMap
+tag @a remove selectingLoadout
+tag @a remove snake.apm
+tag @a remove snake.famas
+tag @a remove snake.famasR
+tag @a remove snake.psg1
+tag @a remove snake.psg1R
+tag @a remove snake.s1000
+tag @a remove snake.s1000R
+tag @a remove snake.sg
+tag @a remove snake.socom
+tag @a remove snake.socomR
 tag @a remove teleportMe

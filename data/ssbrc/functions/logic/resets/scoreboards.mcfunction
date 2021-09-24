@@ -42,6 +42,21 @@ scoreboard objectives add motionZ dummy
 scoreboard objectives remove pos
 scoreboard objectives add pos dummy
 
+scoreboard objectives remove snake.apm
+scoreboard objectives add snake.apm dummy
+
+scoreboard objectives remove snake.famas
+scoreboard objectives add snake.famas dummy
+
+scoreboard objectives remove snake.psg1
+scoreboard objectives add snake.psg1 dummy
+
+scoreboard objectives remove snake.s1000
+scoreboard objectives add snake.s1000 dummy
+
+scoreboard objectives remove snake.socom
+scoreboard objectives add snake.socom dummy
+
 scoreboard objectives remove stocks
 scoreboard objectives add stocks dummy
 

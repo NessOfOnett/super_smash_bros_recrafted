@@ -193,12 +193,12 @@ item replace entity @a[tag=snake] armor.chest with minecraft:leather_chestplate{
 item replace entity @a[tag=snake] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:9609900},HideFlags:68} 1
 item replace entity @a[tag=snake] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:2369332},HideFlags:68} 1
 
-give @a[tag=snake,tag=snakePsg1] minecraft:carrot_on_a_stick{PSG1:1,Unbreakable:1,display:{Name:'[{"text":"PSG-1","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
-give @a[tag=snake,tag=snakeFamas] minecraft:carrot_on_a_stick{Famas:1,Unbreakable:1,display:{Name:'[{"text":"FAMAS","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
-give @a[tag=snake,tag=snakeS1000] minecraft:carrot_on_a_stick{S1000:1,Unbreakable:1,display:{Name:'[{"text":"S1000","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
-give @a[tag=snake,tag=snakeSocom] minecraft:carrot_on_a_stick{Socom:1,Unbreakable:1,display:{Name:'[{"text":"SOCOM","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
-give @a[tag=snake,tag=snakeAntiPersonnelMine] minecraft:carrot_on_a_stick{AntiPersonnelMine:1,Unbreakable:1,display:{Name:'[{"text":"Anti-Personnel Mine","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
-give @a[tag=snake,tag=snakeSmokeGrenade] minecraft:carrot_on_a_stick{SmokeGrenade:1,Unbreakable:1,display:{Name:'[{"text":"Smoke Grenade","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snake.psg1] minecraft:carrot_on_a_stick{PSG1:1,Unbreakable:1,display:{Name:'[{"text":"PSG-1","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snake.famas] minecraft:carrot_on_a_stick{Famas:1,Unbreakable:1,display:{Name:'[{"text":"FAMAS","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snake.s1000] minecraft:carrot_on_a_stick{S1000:1,Unbreakable:1,display:{Name:'[{"text":"S1000","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snake.socom] minecraft:carrot_on_a_stick{Socom:1,Unbreakable:1,display:{Name:'[{"text":"SOCOM","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snake.apm] minecraft:light_gray_terracotta{display:{Name:'[{"text":"Anti-Personnel Mine (Drop to Activate)","italic":false,"color":"green","bold":true}]'},HideFlags:127} 2
+give @a[tag=snake,tag=snake.sg] minecraft:splash_potion{SG:1,display:{Name:'[{"text":"Smoke Grenade","italic":false,"color":"green","bold":true}]'},HideFlags:127} 3
 give @a[tag=snake] minecraft:iron_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:6,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,34731,13025,-69462]},{AttributeName:"generic.attack_speed",Amount:-3.1,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,34831,13025,-69662]}],display:{Name:'[{"text":"CQC Knife","italic":false,"color":"green","bold":true}]'},HideFlags:4} 1
 
 # Sonic
