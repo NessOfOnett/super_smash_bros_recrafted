@@ -22,3 +22,5 @@ kill @e[tag=direction]
 
 tag @s add snake.socomR
 scoreboard players set @s snake.socom 5
+clear @s minecraft:carrot_on_a_stick{Socom:1}
+give @s minecraft:feather
