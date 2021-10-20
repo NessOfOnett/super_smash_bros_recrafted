@@ -11,7 +11,7 @@ scoreboard players operation #targetX pos -= #playerX pos
 scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
-execute at @s anchored eyes run summon minecraft:arrow ^ ^ ^1 {damage:0.75,Tags:["bullet","projectile"]}
+execute at @s anchored eyes run summon minecraft:arrow ^ ^ ^1 {damage:0.4,Tags:["bullet","projectile"]}
 
 execute store result entity @e[tag=projectile,limit=1] Motion[0] double 0.01 run scoreboard players get #targetX pos
 execute store result entity @e[tag=projectile,limit=1] Motion[1] double 0.01 run scoreboard players get #targetY pos
