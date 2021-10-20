@@ -10,3 +10,5 @@ xp set @a 0 points
 recipe take @a *
 
 effect clear @a
+
+title @a actionbar ""
