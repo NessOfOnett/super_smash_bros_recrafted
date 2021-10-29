@@ -23,7 +23,7 @@ title @a[tag=hero,scores={mana=20}] actionbar [{"text":"Mana: ","bold":true,"col
 title @a[tag=hero,tag=!magicBurstUsed,scores={mana=21..}] actionbar [{"text":"Mana: ","bold":true,"color":"white"},{"text":"OVERFLOW SWITCH","color":"light_purple"}]
 scoreboard players set @a[tag=hero,tag=magicBurstUsed,scores={mana=21..}] mana 20
 
-item replace entity @a[tag=hero,tag=!magicBurstUsed,scores={mana=21..}] hotbar.4 with minecraft:carrot_on_a_stick{heroAbility:4,Unbreakable:1,display:{Name:'[{"text":"Magic Burst","italic":false,"color":"light_purple","bold":true}]'},HideFlags:127} 1
+item replace entity @a[tag=hero,tag=!magicBurstUsed,scores={mana=21..}] hotbar.4 with minecraft:carrot_on_a_stick{heroAbility:4,CustomModelData:3,Unbreakable:1,display:{Name:'[{"text":"Magic Burst","italic":false,"color":"light_purple","bold":true}]'},HideFlags:127} 1
 clear @a[tag=hero,scores={mana=..20}] minecraft:carrot_on_a_stick{heroAbility:4}
 
 # Fireballs

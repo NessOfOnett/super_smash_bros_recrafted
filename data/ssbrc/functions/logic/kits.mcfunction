@@ -76,9 +76,9 @@ item replace entity @a[tag=hero] armor.chest with minecraft:leather_chestplate{U
 item replace entity @a[tag=hero] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:6575676,Name:'[{"text":"Hero Armor","italic":false,"color":"yellow","bold":true}]'},HideFlags:127} 1
 item replace entity @a[tag=hero] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:10528354,Name:'[{"text":"Hero Armor","italic":false,"color":"yellow","bold":true}]'},HideFlags:127} 1
 
-item replace entity @a[tag=hero] hotbar.0 with minecraft:iron_sword{heroAbility:1,Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:8,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12164,22807,92130,-45614]},{AttributeName:"generic.attack_speed",Amount:-2.6,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-12164,22907,92130,-45814]}],display:{Name:'[{"text":"Flame Slash","italic":false,"color":"red","bold":true}]',Lore:['[{"text":"8 Attack Damage","italic":false,"color":"gray"}]','[{"text":"Fire Aspect I","italic":false,"color":"gray"}]']},Enchantments:[{id:"fire_aspect",lvl:1}],HideFlags:127} 1
-item replace entity @a[tag=hero] hotbar.1 with minecraft:carrot_on_a_stick{heroAbility:2,Unbreakable:1,display:{Name:'[{"text":"Bang","italic":false,"color":"yellow","bold":true}]'},HideFlags:127} 1
-item replace entity @a[tag=hero] hotbar.2 with minecraft:carrot_on_a_stick{heroAbility:3,Unbreakable:1,display:{Name:'[{"text":"Kaclang","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
+item replace entity @a[tag=hero] hotbar.0 with minecraft:iron_sword{heroAbility:1,CustomModelData:1,Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:8,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12164,22807,92130,-45614]},{AttributeName:"generic.attack_speed",Amount:-2.6,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-12164,22907,92130,-45814]}],display:{Name:'[{"text":"Flame Slash","italic":false,"color":"red","bold":true}]',Lore:['[{"text":"8 Attack Damage","italic":false,"color":"gray"}]','[{"text":"Fire Aspect I","italic":false,"color":"gray"}]']},Enchantments:[{id:"fire_aspect",lvl:1}],HideFlags:127} 1
+item replace entity @a[tag=hero] hotbar.1 with minecraft:carrot_on_a_stick{heroAbility:2,CustomModelData:1,Unbreakable:1,display:{Name:'[{"text":"Bang","italic":false,"color":"yellow","bold":true}]'},HideFlags:127} 1
+item replace entity @a[tag=hero] hotbar.2 with minecraft:carrot_on_a_stick{heroAbility:3,CustomModelData:2,Unbreakable:1,display:{Name:'[{"text":"Kaclang","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
 
 scoreboard players set @a[tag=hero] mana 15
 
@@ -200,6 +200,11 @@ give @a[tag=snake,tag=snake.socom] minecraft:carrot_on_a_stick{Socom:1,Unbreakab
 give @a[tag=snake,tag=snake.apm] minecraft:light_gray_terracotta{display:{Name:'[{"text":"Anti-Personnel Mine (Drop to Activate)","italic":false,"color":"green","bold":true}]'},HideFlags:127} 2
 give @a[tag=snake,tag=snake.sg] minecraft:splash_potion{SG:1,display:{Name:'[{"text":"Smoke Grenade","italic":false,"color":"green","bold":true}]'},HideFlags:127} 3
 give @a[tag=snake] minecraft:iron_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:2,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,34731,13025,-69462]},{AttributeName:"generic.attack_speed",Amount:1.5,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,34831,13025,-69662]}],display:{Name:'[{"text":"CQC Knife","italic":false,"color":"green","bold":true}]'},HideFlags:4} 1
+
+give @a[tag=snake,tag=snake.psg1] minecraft:feather{PSG1Mag:1,display:{Name:'[{"text":"PSG-1 Magazine","italic":false,"color":"green"}]'},HideFlags:127} 16
+give @a[tag=snake,tag=snake.famas] minecraft:feather{FamasMag:1,display:{Name:'[{"text":"FAMAS Magazine","italic":false,"color":"green"}]'},HideFlags:127} 12
+give @a[tag=snake,tag=snake.s1000] minecraft:feather{S1000Mag:1,display:{Name:'[{"text":"S1000 Slug","italic":false,"color":"green"}]'},HideFlags:127} 8
+give @a[tag=snake,tag=snake.socom] minecraft:feather{SOCOMMag:1,display:{Name:'[{"text":"SOCOM Magazine","italic":false,"color":"green"}]'},HideFlags:127} 8
 
 # Sonic
 item replace entity @a[tag=sonic] armor.head with minecraft:player_head{display:{Name:'{"text":"Sonic"}'},SkullOwner:{Id:[I;1298989397,1555318664,-1438256815,-1766009294],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTAzODE3MzdkNGRhNTI4ODIzNTQ3MjUxYjE0NTU2OGQxNTI1M2E4N2IxMTE5M2MzZGFmZjZhZTM1NTc3NSJ9fX0="}]}}} 1

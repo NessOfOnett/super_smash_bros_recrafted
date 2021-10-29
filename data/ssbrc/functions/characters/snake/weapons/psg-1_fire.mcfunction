@@ -24,3 +24,5 @@ execute at @s run playsound minecraft:entity.bat.loop player @a
 
 tag @s add snake.psg1R
 scoreboard players set @s snake.psg1 100
+
+clear @s minecraft:feather{PSG1Mag:1} 1

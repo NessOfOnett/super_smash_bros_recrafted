@@ -47,12 +47,20 @@ scoreboard objectives add snake.apm dummy
 
 scoreboard objectives remove snake.famas
 scoreboard objectives add snake.famas dummy
+scoreboard objectives remove snake.famasR
+scoreboard objectives add snake.famasR dummy
 
 scoreboard objectives remove snake.psg1
 scoreboard objectives add snake.psg1 dummy
+scoreboard objectives remove snake.psg1A
+scoreboard objectives add snake.psg1A dummy
+scoreboard objectives remove snake.psg1R
+scoreboard objectives add snake.psg1R dummy
 
 scoreboard objectives remove snake.s1000
 scoreboard objectives add snake.s1000 dummy
+scoreboard objectives remove snake.s1000R
+scoreboard objectives add snake.s1000R dummy
 
 scoreboard objectives remove snake.socom
 scoreboard objectives add snake.socom dummy

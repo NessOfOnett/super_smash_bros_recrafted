@@ -1,7 +1,7 @@
 # Bullet Trails
 execute at @e[tag=sniperBullet] run particle minecraft:end_rod ~ ~ ~ 0.0 0.0 0.0 0.0 5 normal @a
 
-# Reload
+# Rate of Fire
 scoreboard players remove @a[tag=snake.famasR] snake.famas 1
 scoreboard players remove @a[tag=snake.psg1R] snake.psg1 1
 scoreboard players remove @a[tag=snake.s1000R] snake.s1000 1
@@ -10,8 +10,6 @@ scoreboard players remove @a[tag=snake.socomR] snake.socom 1
 execute as @a[tag=snake,tag=snake.famasR] if score @s snake.famas matches 0 run tag @s remove snake.famasR
 execute as @a[tag=snake,tag=snake.psg1R] if score @s snake.psg1 matches 0 run tag @s remove snake.psg1R
 execute as @a[tag=snake,tag=snake.s1000R] if score @s snake.s1000 matches 0 run tag @s remove snake.s1000R
-execute as @a[tag=snake,tag=snake.socomR] if score @s snake.socom matches 0 run clear @s minecraft:feather
-execute as @a[tag=snake,tag=snake.socomR] if score @s snake.socom matches 0 run give @s minecraft:carrot_on_a_stick{Socom:1,Unbreakable:1,display:{Name:'[{"text":"SOCOM","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
 execute as @a[tag=snake,tag=snake.socomR] if score @s snake.socom matches 0 run tag @s remove snake.socomR
 
 # Anti-Personnel Mine
