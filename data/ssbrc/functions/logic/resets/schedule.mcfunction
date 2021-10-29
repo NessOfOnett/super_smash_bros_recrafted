@@ -1,6 +1,7 @@
 schedule clear ssbrc:logic/map_vote_timer_tick
 schedule clear ssbrc:logic/snake_timer_tick
 schedule clear ssbrc:logic/start_countdown_timer_tick
+schedule clear ssbrc:logic/start_music
 
 # Characters
 schedule clear ssbrc:characters/ryu/ability_off
