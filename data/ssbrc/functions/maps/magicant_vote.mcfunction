@@ -1,6 +1,6 @@
-scoreboard players add $magicant mapVote 1
+scoreboard players add @e[tag=voteCounter,tag=magicant] mapVote 1
 
-function ssbrc:logic/map_votes
+function ssbrc:logic/map_voting/update_counters
 tag @s add magicant
 
 team leave @s

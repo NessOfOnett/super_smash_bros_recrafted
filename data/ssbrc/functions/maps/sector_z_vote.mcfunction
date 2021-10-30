@@ -1,6 +1,6 @@
-scoreboard players add $sectorZ mapVote 1
+scoreboard players add @e[tag=voteCounter,tag=sectorZ] mapVote 1
 
-function ssbrc:logic/map_votes
+function ssbrc:logic/map_voting/update_counters
 tag @s add sectorZ
 
 team leave @s

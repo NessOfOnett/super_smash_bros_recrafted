@@ -18,12 +18,30 @@
 				}
 			]
 		},
-		"description": "",
-		"frame": "challenge"
+		"description": {
+			"text": "Complete challenges and feats to unlock new character skins",
+			"color": "gray",
+			"bold": false,
+			"italic": false
+		},
+		"background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+		"frame": "challenge",
+		"show_toast": false
 	},
 	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:tick"
+		"mario_play_1_game": {
+			"trigger": "minecraft:impossible"
+		},
+		"mario_three_trouble_kings": {
+			"trigger": "minecraft:impossible"
 		}
-	}
+	},
+	"requirements": [
+		[
+			"mario_play_1_game"
+		],
+		[
+			"mario_three_trouble_kings"
+		]
+	]
 }

@@ -18,12 +18,19 @@
 				}
 			]
 		},
-		"description": "",
-		"frame": "challenge"
+		"description": {
+			"text": "Complete challenges and feats to unlock new character skins",
+			"color": "gray",
+			"bold": false,
+			"italic": false
+		},
+		"background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+		"frame": "challenge",
+		"show_toast": false
 	},
 	"criteria": {
 		"requirement": {
-			"trigger": "minecraft:tick"
+			"trigger": "minecraft:impossible"
 		}
 	}
 }

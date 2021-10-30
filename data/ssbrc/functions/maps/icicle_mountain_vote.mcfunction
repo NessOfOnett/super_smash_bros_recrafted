@@ -1,6 +1,6 @@
-scoreboard players add $icicleMountain mapVote 1
+scoreboard players add @e[tag=voteCounter,tag=icicleMountain] mapVote 1
 
-function ssbrc:logic/map_votes
+function ssbrc:logic/map_voting/update_counters
 tag @s add icicleMountain
 
 team leave @s

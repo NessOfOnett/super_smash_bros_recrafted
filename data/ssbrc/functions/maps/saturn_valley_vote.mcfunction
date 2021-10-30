@@ -1,6 +1,6 @@
-scoreboard players add $saturnValley mapVote 1
+scoreboard players add @e[tag=voteCounter,tag=saturnValley] mapVote 1
 
-function ssbrc:logic/map_votes
+function ssbrc:logic/map_voting/update_counters
 tag @s add saturnValley
 
 team leave @s

@@ -5,7 +5,11 @@ function ssbrc:logic/resets/teams
 function ssbrc:logic/resets/players
 function ssbrc:logic/resets/variables
 
-function ssbrc:logic/resets/lobby
+forceload add -544 32 -497 79
+forceload add 0 96 63 175
+forceload add -64 -208 -1 -145
+
+schedule function ssbrc:logic/resets/lobby 1s replace
 
 time set noon
 weather clear
@@ -15,5 +19,3 @@ spawnpoint @a -521 5 55 90.0
 tp @a -520.5 5.0 55.5 90.0 0.0
 
 stopsound @a music
-
-forceload remove all
