@@ -11,7 +11,7 @@ scoreboard players operation #targetX pos -= #playerX pos
 scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
-execute at @s anchored eyes run summon minecraft:arrow ^ ^ ^1 {damage:0.4,Tags:["bullet","projectile"]}
+execute at @s anchored eyes run summon minecraft:arrow ^ ^ ^1 {damage:0.4,Tags:["bullet","projectile"],NoGravity:1b}
 
 execute store result entity @e[tag=projectile,limit=1] Motion[0] double 0.01 run scoreboard players get #targetX pos
 execute store result entity @e[tag=projectile,limit=1] Motion[1] double 0.01 run scoreboard players get #targetY pos
@@ -22,5 +22,8 @@ kill @e[tag=direction]
 
 execute at @s run playsound minecraft:entity.bat.takeoff player @a
 
-tag @s add snake.famasR
-scoreboard players set @s snake.famas 3
+scoreboard players remove @s snake.famasA 1
+scoreboard players set @s snake.famasF 4
+
+execute if score @s snake.famasA matches 0 run tag @s add famasReload
+scoreboard players set @s[tag=famasReload] snake.famasR 50

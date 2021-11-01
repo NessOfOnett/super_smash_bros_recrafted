@@ -11,11 +11,4 @@ item replace entity @a[tag=pit,nbt={Inventory:[{id:"minecraft:elytra",Slot:102b,
 # Ryu
 execute as @a[tag=ryu,scores={useAbility=1..}] run function ssbrc:characters/ryu/ability
 
-# Snake
-execute as @a[tag=snake,tag=snake.psg1,tag=!snake.psg1R,scores={useAbility=1..},nbt={SelectedItem:{tag:{PSG1:1}}}] run function ssbrc:characters/snake/weapons/psg-1
-execute as @a[tag=snake,tag=snake.famas,tag=!snake.famasR,scores={useAbility=1..},nbt={SelectedItem:{tag:{Famas:1}}}] at @s run function ssbrc:characters/snake/famas
-execute as @a[tag=snake,tag=snake.s1000,tag=!snake.s1000R,scores={useAbility=1..},nbt={SelectedItem:{tag:{S1000:1}}}] at @s run function ssbrc:characters/snake/s1000
-execute as @a[tag=snake,tag=snake.socom,tag=!snake.socomR,scores={useAbility=1..},nbt={SelectedItem:{tag:{Socom:1}}}] at @s run function ssbrc:characters/snake/socom
-execute as @a[tag=snake,tag=snake.sg,scores={useAbility=1..},nbt={SelectedItem:{tag:{SmokeGrenade:1}}}] at @s run function ssbrc:characters/snake/smoke_grenade
-
-scoreboard players set @a useAbility 0
+#scoreboard players set @a useAbility 0

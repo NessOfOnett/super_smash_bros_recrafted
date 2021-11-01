@@ -1,16 +1,32 @@
-# Bullet Trails
-execute at @e[tag=sniperBullet] run particle minecraft:end_rod ~ ~ ~ 0.0 0.0 0.0 0.0 5 normal @a
+# Weapons
+execute as @s[tag=snake.psg1,tag=!psg1Reload,scores={useAbility=1..},nbt={SelectedItem:{tag:{PSG1:1}}}] run function ssbrc:characters/snake/weapons/psg-1
+execute as @s[tag=snake.famas,tag=!snake.famasR,scores={useAbility=1..},nbt={SelectedItem:{tag:{Famas:1}}}] at @s run function ssbrc:characters/snake/weapons/famas
+execute as @s[tag=snake.s1000,tag=!snake.s1000R,scores={useAbility=1..},nbt={SelectedItem:{tag:{S1000:1}}}] at @s run function ssbrc:characters/snake/weapons/s1000
+execute as @s[tag=snake.socom,tag=!snake.socomR,scores={useAbility=1..},nbt={SelectedItem:{tag:{Socom:1}}}] at @s run function ssbrc:characters/snake/weapons/socom
+execute as @s[tag=snake.sg,scores={useAbility=1..},nbt={SelectedItem:{tag:{SmokeGrenade:1}}}] at @s run function ssbrc:characters/snake/weapons/smoke_grenade
+
+scoreboard players set @s useAbility 0
+
+# Ammo HUD
+title @s actionbar ""
+title @s[tag=snake.psg1,nbt={SelectedItem:{tag:{PSG1:1}}},scores={snake.psg1M=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.psg1M"},"color":"dark_green"},{"text":" | "},{"score":{"name":"@s","objective":"snake.psg1A"},"color":"green"}]
+title @s[tag=snake.psg1,nbt={SelectedItem:{tag:{PSG1:1}}},scores={snake.psg1M=..0,snake.psg1A=..0}] actionbar {"text":"Out of Ammo!","color":"red"}
+title @s[tag=snake.famas,nbt={SelectedItem:{tag:{Famas:1}}},scores={snake.famasM=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.famasM"},"color":"dark_green"},{"text":" | "},{"score":{"name":"@s","objective":"snake.famasA"},"color":"green"}]
+title @s[tag=snake.famas,nbt={SelectedItem:{tag:{Famas:1}}},scores={snake.famasM=..0,snake.famasA=..0}] actionbar {"text":"Out of Ammo!","color":"red"}
+
+# Reload
+scoreboard players remove @s[tag=psg1Reload] snake.psg1R 1
+scoreboard players remove @s[tag=famasReload] snake.famasR 1
+scoreboard players remove @s[tag=snake.s1000Reload] snake.s1000R 1
+scoreboard players remove @s[tag=snake.socomReload] snake.socomR 1
+
+execute if score @s[tag=psg1Reload] snake.psg1R matches ..0 run function ssbrc:characters/snake/weapons/psg-1_reload
+execute if score @s[tag=famasReload] snake.famasR matches ..0 run function ssbrc:characters/snake/weapons/famas_reload
+execute as @s[tag=snake.s1000R] if score @s snake.s1000 matches 0 run tag @s remove snake.s1000R
+execute as @s[tag=snake.socomR] if score @s snake.socom matches 0 run tag @s remove snake.socomR
 
 # Rate of Fire
-scoreboard players remove @a[tag=snake.famasR] snake.famas 1
-scoreboard players remove @a[tag=snake.psg1R] snake.psg1 1
-scoreboard players remove @a[tag=snake.s1000R] snake.s1000 1
-scoreboard players remove @a[tag=snake.socomR] snake.socom 1
-
-execute as @a[tag=snake,tag=snake.famasR] if score @s snake.famas matches 0 run tag @s remove snake.famasR
-execute as @a[tag=snake,tag=snake.psg1R] if score @s snake.psg1 matches 0 run tag @s remove snake.psg1R
-execute as @a[tag=snake,tag=snake.s1000R] if score @s snake.s1000 matches 0 run tag @s remove snake.s1000R
-execute as @a[tag=snake,tag=snake.socomR] if score @s snake.socom matches 0 run tag @s remove snake.socomR
+scoreboard players remove @s[scores={snake.famasF=1..}] snake.famasF 1
 
 # Anti-Personnel Mine
 scoreboard players add @e[type=minecraft:item,nbt={Item:{id:"minecraft:light_gray_terracotta",Count:1b}}] snake.apm 1
@@ -26,3 +42,6 @@ execute as @e[scores={snake.apm=80..}] run scoreboard players reset @s snake.apm
 
 execute at @e[tag=apmPrimed] as @e[tag=!apmPrimed,distance=..2] if entity @s run function ssbrc:characters/snake/anti_personnel_mine
 execute as @e[tag=apmPrimed] at @s if entity @e[tag=!apmPrimed,distance=..2] run kill @s
+
+# Bullet Trails
+execute at @e[tag=sniperBullet] run particle minecraft:end_rod ~ ~ ~ 0.0 0.0 0.0 0.0 5 normal @s

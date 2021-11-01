@@ -41,7 +41,7 @@ tag @a remove spearPillar
 tag @a remove wilyCastle
 
 tag @a remove alive
-tag @a remove oracleUsed
+tag @a remove characterPicked
 tag @a remove overflowReached
 tag @a remove jokerAbility
 tag @a remove jokerAbilityUsed
@@ -50,6 +50,7 @@ tag @a remove needsHeal
 tag @a remove pickingCharacter
 tag @a remove pickingMap
 tag @a remove selectingLoadout
+tag @a remove shiny
 tag @a remove snake.apm
 tag @a remove snake.famas
 tag @a remove snake.famasR

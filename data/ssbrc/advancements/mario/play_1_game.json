@@ -25,7 +25,8 @@
 			}
 		],
 		"frame": "task",
-		"show_toast": true
+		"show_toast": true,
+		"hidden": false
 	},
 	"parent": "ssbrc:mario/root",
 	"criteria": {

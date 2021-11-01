@@ -19,20 +19,21 @@
 			]
 		},
 		"description": {
-			"text": "Complete challenges and feats to unlock new character skins",
+			"text": "Complete challenges and feats to unlock new character skins and effects",
 			"color": "gray",
 			"bold": false,
 			"italic": false
 		},
 		"background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
 		"frame": "challenge",
-		"show_toast": false
+		"show_toast": false,
+		"hidden": false
 	},
 	"criteria": {
 		"mario_play_1_game": {
 			"trigger": "minecraft:impossible"
 		},
-		"mario_three_trouble_kings": {
+		"link_four_swords_adventures": {
 			"trigger": "minecraft:impossible"
 		}
 	},

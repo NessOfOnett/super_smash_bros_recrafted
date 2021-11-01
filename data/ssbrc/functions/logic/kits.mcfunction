@@ -1,3 +1,7 @@
+execute as @a[tag=charizard,predicate=ssbrc:shiny_chance] run tag @s add shiny
+execute as @a[tag=greninja,predicate=ssbrc:shiny_chance] run tag @s add shiny
+advancement grant @a[tag=charizard,tag=shiny] only ssbrc:charizard/shiny
+advancement grant @a[tag=greninja,tag=shiny] only ssbrc:greninja/shiny
 # Bowser
 item replace entity @a[tag=bowser] armor.head with minecraft:player_head{display:{Name:'{"text":"Bowser"}'},SkullOwner:{Id:[I;1997989670,-1264106587,-1898783288,740078058],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQzMDU5ZWJiOGE1YTcxZTIwYzBhYTc1MmIzZWE0MThhZmQwOGFhZjIxYzYzMzc0NGY5YzVkZTE1YzY5OWJjZSJ9fX0="}]}}} 1
 item replace entity @a[tag=bowser] armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{color:825675,Name:'[{"text":"Bowser Armor","italic":false,"color":"red","bold":true}]'},Enchantments:[{id:"protection",lvl:1},{id:"thorns",lvl:1}],HideFlags:126} 1
@@ -19,10 +23,15 @@ item replace entity @a[tag=captainfalcon] hotbar.2 with minecraft:golden_sword{D
 item replace entity @a[tag=captainfalcon] hotbar.8 with minecraft:arrow 5
 
 # Charizard
-item replace entity @a[tag=charizard] armor.head with minecraft:player_head{display:{Name:'{"text":"Charizard"}'},SkullOwner:{Id:[I;574623668,-763343276,-1344638568,-717182398],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGMxZTNlZThmMWRhZjE1NmYxNmZhNGE0OGZhZjEwOTg2ZGQ0NjU5ZDkxZmYxYzg0NGVjOGJjNTZkM2EzNmM5In19fQ=="}]}}} 1
-item replace entity @a[tag=charizard] armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{color:15766848,Name:'[{"text":"Charizard Armor","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"fire_protection",lvl:1}],HideFlags:126} 1
-item replace entity @a[tag=charizard] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:15766848,Name:'[{"text":"Charizard Armor","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"fire_protection",lvl:1}],HideFlags:126} 1
-item replace entity @a[tag=charizard] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:15766848,Name:'[{"text":"Charizard Armor","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"fire_protection",lvl:1}],HideFlags:126} 1
+item replace entity @a[tag=charizard,tag=!shiny] armor.head with minecraft:player_head{display:{Name:'{"text":"Charizard"}'},SkullOwner:{Id:[I;574623668,-763343276,-1344638568,-717182398],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGMxZTNlZThmMWRhZjE1NmYxNmZhNGE0OGZhZjEwOTg2ZGQ0NjU5ZDkxZmYxYzg0NGVjOGJjNTZkM2EzNmM5In19fQ=="}]}}} 1
+item replace entity @a[tag=charizard,tag=!shiny] armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{color:15766848,Name:'[{"text":"Charizard Armor","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"fire_protection",lvl:1}],HideFlags:126} 1
+item replace entity @a[tag=charizard,tag=!shiny] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:15766848,Name:'[{"text":"Charizard Armor","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"fire_protection",lvl:1}],HideFlags:126} 1
+item replace entity @a[tag=charizard,tag=!shiny] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:15766848,Name:'[{"text":"Charizard Armor","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"fire_protection",lvl:1}],HideFlags:126} 1
+
+item replace entity @a[tag=charizard,tag=shiny] armor.head with minecraft:player_head{display:{Name:'{"text":"Shiny Charizard"}'},SkullOwner:{Id:[I;-1313783624,-929870164,-1708293250,-1686085350],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY2YzhlOTRjZWU4ZGIyZjYwMmY1MjEwZWY1MTE2YzdkZWI5MjE2M2ZiNDEzYTA4MjJkMDVjMzJlNTg2YTk4MiJ9fX0="}]}}} 1
+item replace entity @a[tag=charizard,tag=shiny] armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{color:5921386,Name:'[{"text":"Shiny Charizard Armor","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"fire_protection",lvl:1}],HideFlags:126} 1
+item replace entity @a[tag=charizard,tag=shiny] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:5921386,Name:'[{"text":"Shiny Charizard Armor","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"fire_protection",lvl:1}],HideFlags:126} 1
+item replace entity @a[tag=charizard,tag=shiny] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:5921386,Name:'[{"text":"Shiny Charizard Armor","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"fire_protection",lvl:1}],HideFlags:126} 1
 
 item replace entity @a[tag=charizard] hotbar.0 with minecraft:stone_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:6,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121512,48020,123840,-96040]},{AttributeName:"generic.attack_speed",Amount:-2.6,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121512,48120,123840,-96240]}],display:{Name:'[{"text":"Rock Smash","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
 item replace entity @a[tag=charizard] hotbar.1 with minecraft:bow{Unbreakable:1,display:{Name:'[{"text":"Fire Blast","italic":false,"color":"gold","bold":true}]',Lore:['[{"text":"Power II","italic":false,"color":"gray"}]','[{"text":"Flame","italic":false,"color":"gray"}]']},Enchantments:[{id:"flame",lvl:1},{id:"power",lvl:2}],HideFlags:127} 1
@@ -63,10 +72,15 @@ item replace entity @a[tag=ganon] hotbar.1 with minecraft:trident{Unbreakable:1,
 execute as @a[tag=ganondorf] run attribute @s minecraft:generic.movement_speed modifier add 0e3d2f24-511d-4c62-b31b-608e4cf9a0c4 "moveSpeed" -0.015 add
 
 # Greninja
-item replace entity @a[tag=greninja] armor.head with minecraft:player_head{display:{Name:'{"text":"Greninja"}'},SkullOwner:{Id:[I;1618951540,-1006943949,-1530596227,1823935312],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkyZmQyNjRjZmMwMmY1OGNjYTdhZGYwZmE2OThhYWY4ZWYyMzM5YjJlZTQ5N2MzYmNmZjc0ZWI5YWViYTkxMiJ9fX0="}]}}} 1
-item replace entity @a[tag=greninja] armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{color:15856052,Name:'[{"text":"Greninja Armor","italic":false,"color":"blue","bold":true}]'},HideFlags:127} 1
-item replace entity @a[tag=greninja] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:3491733,Name:'[{"text":"Greninja Armor","italic":false,"color":"blue","bold":true}]'},HideFlags:127} 1
-item replace entity @a[tag=greninja] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:3491733,Name:'[{"text":"Greninja Armor","italic":false,"bold":true,"color":"blue"}]'},Enchantments:[{id:"fire_protection",lvl:2}],HideFlags:101} 1
+item replace entity @a[tag=greninja,tag=!shiny] armor.head with minecraft:player_head{display:{Name:'{"text":"Greninja"}'},SkullOwner:{Id:[I;1618951540,-1006943949,-1530596227,1823935312],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkyZmQyNjRjZmMwMmY1OGNjYTdhZGYwZmE2OThhYWY4ZWYyMzM5YjJlZTQ5N2MzYmNmZjc0ZWI5YWViYTkxMiJ9fX0="}]}}} 1
+item replace entity @a[tag=greninja,tag=!shiny] armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{color:15856052,Name:'[{"text":"Greninja Armor","italic":false,"color":"blue","bold":true}]'},HideFlags:127} 1
+item replace entity @a[tag=greninja,tag=!shiny] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:3491733,Name:'[{"text":"Greninja Armor","italic":false,"color":"blue","bold":true}]'},HideFlags:127} 1
+item replace entity @a[tag=greninja,tag=!shiny] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:3491733,Name:'[{"text":"Greninja Armor","italic":false,"bold":true,"color":"blue"}]'},Enchantments:[{id:"fire_protection",lvl:2}],HideFlags:101} 1
+
+item replace entity @a[tag=greninja,tag=shiny] armor.head with minecraft:player_head{display:{Name:'{"text":"Shiny Greninja"}'},SkullOwner:{Id:[I;-617310692,-28816347,-1428300741,1342697055],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQzMDgzNjQwMmNjM2IwM2YzODJkYzdmNmU2Y2JiMTc4ZDkzN2UxOGZjMmUzYWNlYWM4ZGNjMDg0ZGY2NiJ9fX0="}]}}} 1
+item replace entity @a[tag=greninja,tag=shiny] armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{color:2240050 ,Name:'[{"text":"Shiny Greninja Armor","italic":false,"color":"blue","bold":true}]'},HideFlags:127} 1
+item replace entity @a[tag=greninja,tag=shiny] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:2240050 ,Name:'[{"text":"Shiny Greninja Armor","italic":false,"color":"blue","bold":true}]'},HideFlags:127} 1
+item replace entity @a[tag=greninja,tag=shiny] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:2240050 ,Name:'[{"text":"Shiny Greninja Armor","italic":false,"bold":true,"color":"blue"}]'},Enchantments:[{id:"fire_protection",lvl:2}],HideFlags:101} 1
 
 item replace entity @a[tag=greninja] hotbar.0 with minecraft:diamond_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:6,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12164,12507,92130,-25014]},{AttributeName:"generic.attack_speed",Amount:-2,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-12164,12607,92130,-25214]}],display:{Name:'[{"text":"Waterfall","italic":false,"color":"blue","bold":true}]',Lore:['[{"text":"6 Attack Damage","italic":false,"color":"gray"}]']},Enchantments:[{}],HideFlags:127} 1
 
@@ -193,18 +207,23 @@ item replace entity @a[tag=snake] armor.chest with minecraft:leather_chestplate{
 item replace entity @a[tag=snake] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:9609900},HideFlags:68} 1
 item replace entity @a[tag=snake] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:2369332},HideFlags:68} 1
 
-give @a[tag=snake,tag=snake.psg1] minecraft:carrot_on_a_stick{PSG1:1,Unbreakable:1,display:{Name:'[{"text":"PSG-1","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
-give @a[tag=snake,tag=snake.famas] minecraft:carrot_on_a_stick{Famas:1,Unbreakable:1,display:{Name:'[{"text":"FAMAS","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
-give @a[tag=snake,tag=snake.s1000] minecraft:carrot_on_a_stick{S1000:1,Unbreakable:1,display:{Name:'[{"text":"S1000","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snake.psg1] minecraft:carrot_on_a_stick{PSG1:1,Unbreakable:1,display:{Name:'[{"text":"PSG-1","italic":false,"color":"green","bold":true}]'},HideFlags:127,AttributeModifiers:[{AttributeName:"generic.movement_speed",Amount:-0.03,Slot:mainhand,Name:"generic.movement_speed",UUID:[I;-121931,25316,1626,-50632]}]} 1
+give @a[tag=snake,tag=snake.famas] minecraft:carrot_on_a_stick{Famas:1,Unbreakable:1,display:{Name:'[{"text":"FAMAS","italic":false,"color":"green","bold":true}]'},HideFlags:127,AttributeModifiers:[{AttributeName:"generic.movement_speed",Amount:-0.01,Slot:mainhand,Name:"generic.movement_speed",UUID:[I;-121931,25316,1626,-50632]}]} 1
+give @a[tag=snake,tag=snake.s1000] minecraft:carrot_on_a_stick{S1000:1,Unbreakable:1,display:{Name:'[{"text":"S1000","italic":false,"color":"green","bold":true}]'},HideFlags:127,AttributeModifiers:[{AttributeName:"generic.movement_speed",Amount:-0.005,Slot:mainhand,Name:"generic.movement_speed",UUID:[I;-121931,25316,1626,-50632]}]} 1
 give @a[tag=snake,tag=snake.socom] minecraft:carrot_on_a_stick{Socom:1,Unbreakable:1,display:{Name:'[{"text":"SOCOM","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake] minecraft:iron_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:2,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,34731,13025,-69462]},{AttributeName:"generic.attack_speed",Amount:1.5,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,34831,13025,-69662]}],display:{Name:'[{"text":"CQC Knife","italic":false,"color":"green","bold":true}]'},HideFlags:4} 1
 give @a[tag=snake,tag=snake.apm] minecraft:light_gray_terracotta{display:{Name:'[{"text":"Anti-Personnel Mine (Drop to Activate)","italic":false,"color":"green","bold":true}]'},HideFlags:127} 2
 give @a[tag=snake,tag=snake.sg] minecraft:splash_potion{SG:1,display:{Name:'[{"text":"Smoke Grenade","italic":false,"color":"green","bold":true}]'},HideFlags:127} 3
-give @a[tag=snake] minecraft:iron_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:2,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,34731,13025,-69462]},{AttributeName:"generic.attack_speed",Amount:1.5,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,34831,13025,-69662]}],display:{Name:'[{"text":"CQC Knife","italic":false,"color":"green","bold":true}]'},HideFlags:4} 1
 
-give @a[tag=snake,tag=snake.psg1] minecraft:feather{PSG1Mag:1,display:{Name:'[{"text":"PSG-1 Magazine","italic":false,"color":"green"}]'},HideFlags:127} 16
-give @a[tag=snake,tag=snake.famas] minecraft:feather{FamasMag:1,display:{Name:'[{"text":"FAMAS Magazine","italic":false,"color":"green"}]'},HideFlags:127} 12
-give @a[tag=snake,tag=snake.s1000] minecraft:feather{S1000Mag:1,display:{Name:'[{"text":"S1000 Slug","italic":false,"color":"green"}]'},HideFlags:127} 8
-give @a[tag=snake,tag=snake.socom] minecraft:feather{SOCOMMag:1,display:{Name:'[{"text":"SOCOM Magazine","italic":false,"color":"green"}]'},HideFlags:127} 8
+scoreboard players set @a[tag=snake,tag=snake.psg1] snake.psg1M 15
+scoreboard players set @a[tag=snake,tag=snake.psg1] snake.psg1A 1
+scoreboard players set @a[tag=snake,tag=snake.famas] snake.famasM 1
+scoreboard players set @a[tag=snake,tag=snake.famas] snake.famasA 24
+scoreboard players set @a[tag=snake,tag=snake.famas] snake.famasF 0
+scoreboard players set @a[tag=snake,tag=snake.s1000] snake.s1000M 5
+scoreboard players set @a[tag=snake,tag=snake.s1000] snake.s1000A 2
+scoreboard players set @a[tag=snake,tag=snake.socom] snake.socomM 2
+scoreboard players set @a[tag=snake,tag=snake.socom] snake.socomA 8
 
 # Sonic
 item replace entity @a[tag=sonic] armor.head with minecraft:player_head{display:{Name:'{"text":"Sonic"}'},SkullOwner:{Id:[I;1298989397,1555318664,-1438256815,-1766009294],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTAzODE3MzdkNGRhNTI4ODIzNTQ3MjUxYjE0NTU2OGQxNTI1M2E4N2IxMTE5M2MzZGFmZjZhZTM1NTc3NSJ9fX0="}]}}} 1

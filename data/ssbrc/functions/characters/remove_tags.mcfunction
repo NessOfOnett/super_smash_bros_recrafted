@@ -24,3 +24,5 @@ tag @s remove snake.s1000
 tag @s remove snake.sg
 tag @s remove snake.socom
 tag @s remove sonic
+
+tag @s remove characterPicked

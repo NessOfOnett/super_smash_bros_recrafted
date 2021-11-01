@@ -19,18 +19,30 @@
 			]
 		},
 		"description": {
-			"text": "Complete challenges and feats to unlock new character skins",
+			"text": "Complete challenges and feats to unlock new character skins and effects",
 			"color": "gray",
 			"bold": false,
 			"italic": false
 		},
 		"background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
 		"frame": "challenge",
-		"show_toast": false
+		"show_toast": false,
+		"hidden": false
 	},
 	"criteria": {
-		"requirement": {
+		"link_play_1_game": {
+			"trigger": "minecraft:impossible"
+		},
+		"link_four_swords_adventure": {
 			"trigger": "minecraft:impossible"
 		}
-	}
+	},
+	"requirements": [
+		[
+			"link_play_1_game"
+		],
+		[
+			"link_four_swords_adventure"
+		]
+	]
 }

@@ -1,4 +1,7 @@
-execute unless score @s[tag=selectingLoadout] capacity <= #snake.sgWeight vars run title @s actionbar {"text":"You're overencumbered! You can't hold this.","color":"red"}
+scoreboard players operation $item temp = @s capacity
+scoreboard players operation $item temp += #snake.sgWeight vars
+
+execute unless score $item temp <= #10 integers run title @s actionbar {"text":"You're overencumbered! You can't hold this.","color":"red"}
 title @s[tag=selectingLoadout,tag=snake.sg] actionbar {"text":"You already have this selected.","color":"red"}
 
-execute if score @s[tag=selectingLoadout,tag=!snake.sg] capacity <= #snake.sgWeight vars run function ssbrc:characters/snake/loadout/smoke_grenade
+execute unless entity @s[tag=snake.sg] if score $item temp <= #10 integers run function ssbrc:characters/snake/loadout/smoke_grenade
