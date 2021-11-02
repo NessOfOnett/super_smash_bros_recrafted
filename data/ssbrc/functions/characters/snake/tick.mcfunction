@@ -3,15 +3,15 @@ execute as @s[tag=snake.psg1,tag=!psg1Reload,scores={useAbility=1..},nbt={Select
 execute as @s[tag=snake.famas,tag=!snake.famasR,scores={useAbility=1..},nbt={SelectedItem:{tag:{Famas:1}}}] at @s run function ssbrc:characters/snake/weapons/famas
 execute as @s[tag=snake.s1000,tag=!snake.s1000R,scores={useAbility=1..},nbt={SelectedItem:{tag:{S1000:1}}}] at @s run function ssbrc:characters/snake/weapons/s1000
 execute as @s[tag=snake.socom,tag=!snake.socomR,scores={useAbility=1..},nbt={SelectedItem:{tag:{Socom:1}}}] at @s run function ssbrc:characters/snake/weapons/socom
-execute as @s[tag=snake.sg,scores={useAbility=1..},nbt={SelectedItem:{tag:{SmokeGrenade:1}}}] at @s run function ssbrc:characters/snake/weapons/smoke_grenade
+execute as @s[tag=snake.sg,scores={useAbility=1..},nbt={SelectedItem:{tag:{SG:1}}}] at @s run function ssbrc:characters/snake/weapons/smoke_grenade
 
 scoreboard players set @s useAbility 0
 
 # Ammo HUD
 title @s actionbar ""
-title @s[tag=snake.psg1,nbt={SelectedItem:{tag:{PSG1:1}}},scores={snake.psg1M=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.psg1M"},"color":"dark_green"},{"text":" | "},{"score":{"name":"@s","objective":"snake.psg1A"},"color":"green"}]
+title @s[tag=snake.psg1,nbt={SelectedItem:{tag:{PSG1:1}}},scores={snake.psg1M=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.psg1A"},"color":"green"},{"text":" | ","color":"white"},{"score":{"name":"@s","objective":"snake.psg1M"},"color":"dark_green"}]
 title @s[tag=snake.psg1,nbt={SelectedItem:{tag:{PSG1:1}}},scores={snake.psg1M=..0,snake.psg1A=..0}] actionbar {"text":"Out of Ammo!","color":"red"}
-title @s[tag=snake.famas,nbt={SelectedItem:{tag:{Famas:1}}},scores={snake.famasM=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.famasM"},"color":"dark_green"},{"text":" | "},{"score":{"name":"@s","objective":"snake.famasA"},"color":"green"}]
+title @s[tag=snake.famas,nbt={SelectedItem:{tag:{Famas:1}}},scores={snake.famasM=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.famasA"},"color":"green"},{"text":" | ","color":"white"},{"score":{"name":"@s","objective":"snake.famasM"},"color":"dark_green"}]
 title @s[tag=snake.famas,nbt={SelectedItem:{tag:{Famas:1}}},scores={snake.famasM=..0,snake.famasA=..0}] actionbar {"text":"Out of Ammo!","color":"red"}
 
 # Reload
@@ -40,8 +40,16 @@ execute as @e[scores={snake.apm=80..}] run tag @s remove apm
 execute as @e[scores={snake.apm=80..}] run tag @s add apmPrimed
 execute as @e[scores={snake.apm=80..}] run scoreboard players reset @s snake.apm
 
-execute at @e[tag=apmPrimed] as @e[tag=!apmPrimed,distance=..2] if entity @s run function ssbrc:characters/snake/anti_personnel_mine
+execute at @e[tag=apmPrimed] as @e[tag=!apmPrimed,distance=..2] if entity @s run function ssbrc:characters/snake/weapons/anti_personnel_mine
 execute as @e[tag=apmPrimed] at @s if entity @e[tag=!apmPrimed,distance=..2] run kill @s
+
+# Smoke Grenade
+execute as @e[tag=smokeGrenade,tag=!active,predicate=ssbrc:no_vehicle] run function ssbrc:characters/snake/weapons/smoke_grenade_fire
+execute at @e[tag=smokeGrenade,tag=active] run particle minecraft:smoke ~ ~ ~ 1.5 1.5 1.5 0.05 500 force @a
+
+scoreboard players remove @e[tag=smokeGrenade,tag=active] timer 1
+kill @e[tag=smokeGrenade,tag=active,scores={timer=..0}]
+
 
 # Bullet Trails
 execute at @e[tag=sniperBullet] run particle minecraft:end_rod ~ ~ ~ 0.0 0.0 0.0 0.0 5 normal @s
