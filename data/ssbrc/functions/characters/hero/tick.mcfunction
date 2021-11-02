@@ -1,3 +1,12 @@
+# Magic
+execute as @a[tag=hero,tag=!magicLost,scores={mana=0}] run function ssbrc:characters/hero/lose_magic
+execute as @a[tag=hero,scores={useAbility=1..,mana=1..},nbt={SelectedItem:{tag:{heroAbility:1}}}] at @s run function ssbrc:characters/hero/magic/flame_slash
+execute as @a[tag=hero,scores={useAbility=1..,mana=2..},nbt={SelectedItem:{tag:{heroAbility:2}}}] at @s run function ssbrc:characters/hero/magic/bang
+execute as @a[tag=hero,scores={useAbility=1..,mana=3..},nbt={SelectedItem:{tag:{heroAbility:3}}}] run function ssbrc:characters/hero/magic/kaclang
+execute as @a[tag=hero,scores={useAbility=1..,mana=21..},nbt={SelectedItem:{tag:{heroAbility:4}}}] run function ssbrc:characters/hero/magic/magic_burst_activate
+
+scoreboard players set @s useAbility 0
+
 # Mana
 title @s[tag=!magicLost,scores={mana=..0}] actionbar [{"text":"Out of Mana: Warrior Switch","bold":true,"color":"red"}]
 title @s[scores={mana=1}] actionbar [{"text":"Mana: ","bold":true,"color":"white"},{"text":"\u25ae","color":"yellow"}]

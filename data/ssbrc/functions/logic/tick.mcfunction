@@ -21,9 +21,10 @@ execute if score $icicleMountain map matches 1 run function ssbrc:logic/tick/ici
 execute if score $sectorZ map matches 1 run function ssbrc:logic/tick/sector_z
 
 # Specific characters
-execute if score $start map matches 1 as @a[tag=hero] run function ssbrc:characters/hero/tick
-execute if score $start map matches 1 as @a[tag=joker] run function ssbrc:characters/joker/tick
-execute if score $start map matches 1 as @a[tag=snake] run function ssbrc:characters/snake/tick
+execute if score $start map matches 1 as @a[tag=hero] if entity @s run function ssbrc:characters/hero/tick
+execute if score $start map matches 1 as @a[tag=joker] if entity @s run function ssbrc:characters/joker/tick
+execute if score $start map matches 1 as @a[tag=ryu] if entity @s run function ssbrc:characters/ryu/tick
+execute if score $start map matches 1 as @a[tag=snake] if entity @s run function ssbrc:characters/snake/tick
 
 # When a player dies
 execute if score $start map matches 1 as @a[scores={flag.dead=1..}] run function ssbrc:logic/death
