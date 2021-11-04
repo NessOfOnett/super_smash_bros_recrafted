@@ -78,9 +78,9 @@ execute if score $greatPlateau map matches 1 if score result random matches 1 ru
 execute if score $greatPlateau map matches 1 if score result random matches 2 run spawnpoint @s 1617 57 1374
 execute if score $greatPlateau map matches 1 if score result random matches 3 run spawnpoint @s 1559 52 1389
 execute if score $greatPlateau map matches 1 if score result random matches 4 run spawnpoint @s 1617 50 1376
-execute if score $greatPlateau map matches 1 if score result random matches 5 run spawnpoint @s 1588 52 1363
-execute if score $greatPlateau map matches 1 if score result random matches 6 run spawnpoint @s 1606 52 1369
-execute if score $greatPlateau map matches 1 if score result random matches 7 run spawnpoint @s 1574 52 1378
+execute if score $greatPlateau map matches 1 if score result random matches 5 run spawnpoint @s 1588 53 1363
+execute if score $greatPlateau map matches 1 if score result random matches 6 run spawnpoint @s 1606 53 1369
+execute if score $greatPlateau map matches 1 if score result random matches 7 run spawnpoint @s 1574 53 1378
 
 execute if score $greenHillZone map matches 1 if score result random matches 0 run spawnpoint @s -29 29 230
 execute if score $greenHillZone map matches 1 if score result random matches 1 run spawnpoint @s 3 19 239
