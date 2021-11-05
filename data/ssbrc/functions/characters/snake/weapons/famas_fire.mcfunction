@@ -25,5 +25,5 @@ execute at @s run playsound minecraft:entity.bat.takeoff player @a
 scoreboard players remove @s snake.famasA 1
 scoreboard players set @s snake.famasF 4
 
-execute if score @s snake.famasA matches 0 run tag @s add famasReload
-scoreboard players set @s[tag=famasReload] snake.famasR 50
+execute if score @s snake.famasA matches 0 run tag @s add snake.famasR
+scoreboard players set @s[tag=snake.famasR] snake.famasR 50

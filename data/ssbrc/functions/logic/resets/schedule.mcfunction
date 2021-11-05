@@ -3,9 +3,6 @@ schedule clear ssbrc:logic/snake_timer_tick
 schedule clear ssbrc:logic/start_countdown_timer_tick
 schedule clear ssbrc:logic/start_music
 
-# Characters
-schedule clear ssbrc:characters/ryu/ability_off
-
 # Maps
 schedule clear ssbrc:maps/battlefield
 schedule clear ssbrc:maps/castle_siege

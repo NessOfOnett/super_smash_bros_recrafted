@@ -11,7 +11,7 @@
 							"equipment": {
 								"mainhand": {
 									"tag": "ssbrc:swords",
-									"nbt": "{heroAbility:1}"
+									"nbt": "{ability.hero:1}"
 								}
 							}
 						}

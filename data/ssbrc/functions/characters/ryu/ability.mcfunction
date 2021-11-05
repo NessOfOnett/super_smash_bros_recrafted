@@ -1,5 +1,4 @@
-scoreboard players set @s abilityActive 1
-clear @s minecraft:carrot_on_a_stick{ryuAbility:1}
+clear @s minecraft:carrot_on_a_stick{ability.ryu:1}
 
 effect clear @s minecraft:blindness
 effect clear @s minecraft:hunger
@@ -20,3 +19,6 @@ item modify entity @s armor.chest ssbrc:curse_of_binding
 item modify entity @s armor.legs ssbrc:curse_of_binding
 
 schedule function ssbrc:characters/ryu/ability_off 30s replace
+
+scoreboard players set @s timer 600
+tag @s add ability.ryu

@@ -40,11 +40,12 @@ tag @a remove shadowMosesIsland
 tag @a remove spearPillar
 tag @a remove wilyCastle
 
+tag @a remove ability.joker
+tag @a remove ability.jokerUsed
+tag @a remove ability.ryu
 tag @a remove alive
 tag @a remove characterPicked
 tag @a remove overflowReached
-tag @a remove jokerAbility
-tag @a remove jokerAbilityUsed
 tag @a remove magicLost
 tag @a remove needsHeal
 tag @a remove pickingCharacter

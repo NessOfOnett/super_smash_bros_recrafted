@@ -1,6 +1,3 @@
-scoreboard objectives remove abilityActive
-scoreboard objectives add abilityActive dummy
-
 scoreboard objectives remove capacity
 scoreboard objectives add capacity dummy
 

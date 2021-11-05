@@ -1,5 +1,5 @@
 # Weapons
-execute as @s[tag=snake.psg1,tag=!psg1Reload,scores={useAbility=1..},nbt={SelectedItem:{tag:{PSG1:1}}}] run function ssbrc:characters/snake/weapons/psg-1
+execute as @s[tag=snake.psg1,tag=!snake.psg1R,scores={useAbility=1..},nbt={SelectedItem:{tag:{PSG1:1}}}] run function ssbrc:characters/snake/weapons/psg-1
 execute as @s[tag=snake.famas,tag=!snake.famasR,scores={useAbility=1..},nbt={SelectedItem:{tag:{Famas:1}}}] at @s run function ssbrc:characters/snake/weapons/famas
 execute as @s[tag=snake.s1000,tag=!snake.s1000R,scores={useAbility=1..},nbt={SelectedItem:{tag:{S1000:1}}}] at @s run function ssbrc:characters/snake/weapons/s1000
 execute as @s[tag=snake.socom,tag=!snake.socomR,scores={useAbility=1..},nbt={SelectedItem:{tag:{Socom:1}}}] at @s run function ssbrc:characters/snake/weapons/socom
@@ -15,13 +15,13 @@ title @s[tag=snake.famas,nbt={SelectedItem:{tag:{Famas:1}}},scores={snake.famasM
 title @s[tag=snake.famas,nbt={SelectedItem:{tag:{Famas:1}}},scores={snake.famasM=..0,snake.famasA=..0}] actionbar {"text":"Out of Ammo!","color":"red"}
 
 # Reload
-scoreboard players remove @s[tag=psg1Reload] snake.psg1R 1
-scoreboard players remove @s[tag=famasReload] snake.famasR 1
+scoreboard players remove @s[tag=snake.psg1R] snake.psg1R 1
+scoreboard players remove @s[tag=snake.famasR] snake.famasR 1
 scoreboard players remove @s[tag=snake.s1000Reload] snake.s1000R 1
 scoreboard players remove @s[tag=snake.socomReload] snake.socomR 1
 
-execute if score @s[tag=psg1Reload] snake.psg1R matches ..0 run function ssbrc:characters/snake/weapons/psg-1_reload
-execute if score @s[tag=famasReload] snake.famasR matches ..0 run function ssbrc:characters/snake/weapons/famas_reload
+execute if score @s[tag=snake.psg1R] snake.psg1R matches ..0 run function ssbrc:characters/snake/weapons/psg-1_reload
+execute if score @s[tag=snake.famasR] snake.famasR matches ..0 run function ssbrc:characters/snake/weapons/famas_reload
 execute as @s[tag=snake.s1000R] if score @s snake.s1000 matches 0 run tag @s remove snake.s1000R
 execute as @s[tag=snake.socomR] if score @s snake.socom matches 0 run tag @s remove snake.socomR
 

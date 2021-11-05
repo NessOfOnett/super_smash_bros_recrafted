@@ -1,5 +1,5 @@
-effect clear @a[tag=jokerAbility]
+effect clear @a[tag=ability.joker]
 
-execute as @a[tag=jokerAbility] run attribute @s generic.knockback_resistance base set 0.0
+execute as @a[tag=ability.joker] run attribute @s generic.knockback_resistance base set 0.0
 
-tag @a[tag=jokerAbility] remove jokerAbility
+tag @a[tag=ability.joker] remove ability.joker
