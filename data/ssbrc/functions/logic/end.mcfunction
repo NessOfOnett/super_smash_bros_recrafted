@@ -3,7 +3,7 @@ execute if entity @s[tag=captainfalcon] run title @a subtitle [{"text":"Selected
 execute if entity @s[tag=charizard] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Charizard","bold":true,"color":"yellow"}]
 execute if entity @s[tag=donkeykong] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Donkey Kong","bold":true,"color":"yellow"}]
 execute if entity @s[tag=fox] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Fox","bold":true,"color":"yellow"}]
-execute if entity @s[tag=ganon] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Ganon","bold":true,"color":"yellow"}]
+execute if entity @s[tag=ganon] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Ganondorf","bold":true,"color":"yellow"}]
 execute if entity @s[tag=greninja] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Greninja","bold":true,"color":"yellow"}]
 execute if entity @s[tag=hero] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Hero","bold":true,"color":"yellow"}]
 execute if entity @s[tag=joker] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Joker","bold":true,"color":"yellow"}]
@@ -18,6 +18,8 @@ execute if entity @s[tag=ryu] run title @a subtitle [{"text":"Selected Character
 execute if entity @s[tag=samus] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Samus","bold":true,"color":"yellow"}]
 execute if entity @s[tag=snake] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Snake","bold":true,"color":"yellow"}]
 execute if entity @s[tag=sonic] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Sonic","bold":true,"color":"yellow"}]
+
+function ssbrc:logic/advancements
 
 title @a title [{"selector":"@s","bold":true,"color":"yellow"},{"text":" wins!","color":"gold"}]
 

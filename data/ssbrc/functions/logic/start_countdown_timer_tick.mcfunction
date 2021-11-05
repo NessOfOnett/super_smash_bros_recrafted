@@ -13,4 +13,6 @@ execute if score $startCountdown timer matches 0 run function ssbrc:logic/kits
 execute if score $startCountdown timer matches 0 run function ssbrc:logic/start_music
 execute if score $startCountdown timer matches 0 run function ssbrc:logic/snake_timer_tick
 
+execute if score $startCountdown timer matches 0 run kill @e[tag=tpDest]
+
 execute if score $startCountdown timer matches 0 run scoreboard players set $start map 1

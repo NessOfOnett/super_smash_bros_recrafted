@@ -1,4 +1,4 @@
 gamemode spectator @a[team=dead]
 gamemode spectator @a[team=spectators]
 
-kill @a[predicate=ssbrc:below_y_50]
+kill @e[type=#minecraft:arrows,tag=bullet,nbt={inGround:1b}]

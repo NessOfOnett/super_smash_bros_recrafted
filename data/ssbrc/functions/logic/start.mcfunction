@@ -24,3 +24,5 @@ schedule function ssbrc:logic/start_teleport 2t replace
 
 scoreboard players set $startCountdown timer 4
 schedule function ssbrc:logic/start_countdown_timer_tick 1s replace
+
+forceload add 0 0 0 0

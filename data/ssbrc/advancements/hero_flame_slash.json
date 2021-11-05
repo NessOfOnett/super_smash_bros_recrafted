@@ -11,7 +11,7 @@
 							"equipment": {
 								"mainhand": {
 									"tag": "ssbrc:swords",
-									"nbt": "{heroAbility:1}"
+									"nbt": "{ability.hero:1}"
 								}
 							}
 						}
@@ -21,6 +21,6 @@
 		}
 	},
 	"rewards": {
-		"function": "ssbrc:logic/abilities/hero_ability_flame_slash"
+		"function": "ssbrc:characters/hero/magic/flame_slash"
 	}
 }

@@ -8,16 +8,16 @@ item replace entity @s[tag=donkeykong] hotbar.3 with minecraft:splash_potion{Cus
 
 clear @s[tag=hero] minecraft:carrot_on_a_stick
 clear @s[tag=hero] minecraft:shield
-item replace entity @s[tag=hero] hotbar.0 with minecraft:iron_sword{heroAbility:1,Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:8,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12164,22807,92130,-45614]},{AttributeName:"generic.attack_speed",Amount:-2.6,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-12164,22907,92130,-45814]}],display:{Name:'[{"text":"Flame Slash","italic":false,"color":"red","bold":true}]',Lore:['[{"text":"8 Attack Damage","italic":false,"color":"gray"}]','[{"text":"Fire Aspect I","italic":false,"color":"gray"}]']},Enchantments:[{id:"fire_aspect",lvl:1}],HideFlags:127} 1
-item replace entity @s[tag=hero] hotbar.1 with minecraft:carrot_on_a_stick{heroAbility:2,Unbreakable:1,display:{Name:'[{"text":"Bang","italic":false,"color":"yellow","bold":true}]'},HideFlags:127} 1
-item replace entity @s[tag=hero] hotbar.2 with minecraft:carrot_on_a_stick{heroAbility:3,Unbreakable:1,display:{Name:'[{"text":"Kaclang","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
+item replace entity @s[tag=hero] hotbar.0 with minecraft:iron_sword{ability.hero:1,CustomModelData:1,Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:8,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12164,22807,92130,-45614]},{AttributeName:"generic.attack_speed",Amount:-2.6,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-12164,22907,92130,-45814]}],display:{Name:'[{"text":"Flame Slash","italic":false,"color":"red","bold":true}]',Lore:['[{"text":"8 Attack Damage","italic":false,"color":"gray"}]','[{"text":"Fire Aspect I","italic":false,"color":"gray"}]']},Enchantments:[{id:"fire_aspect",lvl:1}],HideFlags:127} 1
+item replace entity @s[tag=hero] hotbar.1 with minecraft:carrot_on_a_stick{ability.hero:2,CustomModelData:1,Unbreakable:1,display:{Name:'[{"text":"Bang","italic":false,"color":"yellow","bold":true}]'},HideFlags:127} 1
+item replace entity @s[tag=hero] hotbar.2 with minecraft:carrot_on_a_stick{ability.hero:3,CustomModelData:2,Unbreakable:1,display:{Name:'[{"text":"Kaclang","italic":false,"color":"gray","bold":true}]'},HideFlags:127} 1
 scoreboard players add @s[tag=hero] mana 8
 scoreboard players set @s[tag=hero,scores={mana=22..}] mana 21
 tag @s[tag=hero] remove kaclangUsed
 tag @s[tag=hero] remove magicLost
 
-clear @s[tag=joker] minecraft:lingering_potion{CustomPotionColor:1470985,display:{Name:'[{"text":"Eiagon","italic":false,"color":"gold","bold":true}]'},HideFlags:127,CustomPotionEffects:[{Id:7b,Duration:1,Amplifier:0b,ShowParticles:0b,ShowIcon:0b},{Id:9b,Duration:160,Amplifier:0b,ShowParticles:0b,ShowIcon:0b},{Id:20b,Duration:320,Amplifier:0b,ShowParticles:0b,ShowIcon:0b}]} 1
-item replace entity @s[tag=joker] hotbar.2 with minecraft:lingering_potion{CustomPotionColor:1470985,display:{Name:'[{"text":"Eiagon","italic":false,"color":"gold","bold":true}]'},HideFlags:127,CustomPotionEffects:[{Id:7b,Duration:1,Amplifier:0b,ShowParticles:0b,ShowIcon:0b},{Id:9b,Duration:160,Amplifier:0b,ShowParticles:0b,ShowIcon:0b},{Id:20b,Duration:320,Amplifier:0b,ShowParticles:0b,ShowIcon:0b}]} 1
+clear @s[tag=joker] minecraft:lingering_potion{CustomPotionColor:11538705,display:{Name:'[{"text":"Eiagon","italic":false,"color":"gold","bold":true}]'},HideFlags:127,CustomPotionEffects:[{Id:7b,Duration:1,Amplifier:0b,ShowParticles:0b,ShowIcon:0b},{Id:9b,Duration:160,Amplifier:0b,ShowParticles:0b,ShowIcon:0b},{Id:20b,Duration:320,Amplifier:0b,ShowParticles:0b,ShowIcon:0b}]} 1
+item replace entity @s[tag=joker] hotbar.2 with minecraft:lingering_potion{CustomPotionColor:11538705,display:{Name:'[{"text":"Eiagon","italic":false,"color":"gold","bold":true}]'},HideFlags:127,CustomPotionEffects:[{Id:7b,Duration:1,Amplifier:0b,ShowParticles:0b,ShowIcon:0b},{Id:9b,Duration:160,Amplifier:0b,ShowParticles:0b,ShowIcon:0b},{Id:20b,Duration:320,Amplifier:0b,ShowParticles:0b,ShowIcon:0b}]} 1
 
 clear @s[tag=link] minecraft:shield
 item replace entity @s[tag=link] weapon.offhand with minecraft:shield{Damage:300,BlockEntityTag:{Base:11,Patterns:[{Pattern:"flo",Color:14},{Pattern:"hh",Color:11},{Pattern:"tt",Color:4},{Pattern:"ts",Color:11},{Pattern:"cbo",Color:8}]},HideFlags:127} 1
@@ -32,11 +32,10 @@ execute if score @s[tag=ness] itemCount matches 1 run item replace entity @s hot
 
 item replace entity @s[tag=pit] armor.chest with minecraft:elytra{Damage:417,display:{Name:'[{"text":"Clipped Wings","italic":false,"color":"yellow"}]'},HideFlags:127} 1
 
-execute if score @s[tag=ryu] stocks matches 1 run item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'[{"text":"Satsui no Hado Rage","italic":false,"color":"#660000","bold":true}]'},Unbreakable:1,CustomModelData:1919218301,ryuAbility:1} 1
+execute if score @s[tag=ryu] stocks matches 1 run item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'[{"text":"Satsui no Hado Rage","italic":false,"color":"#660000","bold":true}]'},Unbreakable:1,CustomModelData:4,ability.ryu:1} 1
 
 clear @s[tag=captainfalcon] minecraft:arrow
 give @s[tag=captainfalcon] minecraft:arrow 5
 give @s[tag=charizard] minecraft:arrow 4
 give @s[tag=fox] minecraft:arrow 4
 give @s[tag=samus] minecraft:arrow 5
-give @s[tag=snake] minecraft:arrow 3

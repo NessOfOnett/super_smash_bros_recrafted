@@ -1,6 +1,6 @@
-scoreboard players add $finalDestination mapVote 1
+scoreboard players add @e[tag=voteCounter,tag=finalDestination] mapVote 1
 
-function ssbrc:logic/map_votes
+function ssbrc:logic/map_voting/update_counters
 tag @s add finalDestination
 
 team leave @s
