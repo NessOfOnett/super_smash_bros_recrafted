@@ -18,7 +18,6 @@ item modify entity @s armor.head ssbrc:curse_of_binding
 item modify entity @s armor.chest ssbrc:curse_of_binding
 item modify entity @s armor.legs ssbrc:curse_of_binding
 
-schedule function ssbrc:characters/ryu/ability_off 30s replace
-
 scoreboard players set @s timer 600
+
 tag @s add ability.ryu

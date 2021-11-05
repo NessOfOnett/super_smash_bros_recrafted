@@ -16,5 +16,7 @@ execute if score result random matches 2 run tellraw @s [{"text":"Oracle","color
 
 schedule function ssbrc:characters/joker/ability_off 4s replace
 
+scoreboard players set @s timer 80
+
 tag @s add ability.joker
 tag @s add ability.jokerUsed
