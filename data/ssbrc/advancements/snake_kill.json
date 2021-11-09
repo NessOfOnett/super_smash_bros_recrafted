@@ -8,7 +8,14 @@
 						"condition": "minecraft:entity_properties",
 						"entity": "this",
 						"predicate": {
-							"nbt": "{Tags:[\"hero\"]}"
+							"nbt": "{Tags:[\"snake\"]}",
+							"equipment": {
+								"mainhand": {
+									"items": [
+										"minecraft:iron_sword"
+									]
+								}
+							}
 						}
 					}
 				]
@@ -16,6 +23,6 @@
 		}
 	},
 	"rewards": {
-		"function": "ssbrc:characters/hero/get_kill"
+		"function": "ssbrc:characters/snake/get_kill"
 	}
 }

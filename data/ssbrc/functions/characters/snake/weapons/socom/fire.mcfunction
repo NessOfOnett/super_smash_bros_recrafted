@@ -11,13 +11,19 @@ scoreboard players operation #targetX pos -= #playerX pos
 scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
-execute as @s at @s anchored eyes run summon minecraft:snowball ~ ~ ~ {Passengers:[{id:"minecraft:area_effect_cloud",Tags:["smokeGrenade"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}]}
+execute at @s anchored eyes run summon minecraft:arrow ^ ^ ^1 {damage:0.5,Tags:["bullet","projectile"],NoGravity:1b}
 
-execute store result entity @e[tag=projectile,limit=1] Motion[0] double 0.001 run scoreboard players get #targetX pos
-execute store result entity @e[tag=projectile,limit=1] Motion[1] double 0.001 run scoreboard players get #targetY pos
-execute store result entity @e[tag=projectile,limit=1] Motion[2] double 0.001 run scoreboard players get #targetZ pos
+execute store result entity @e[tag=projectile,limit=1] Motion[0] double 0.01 run scoreboard players get #targetX pos
+execute store result entity @e[tag=projectile,limit=1] Motion[1] double 0.01 run scoreboard players get #targetY pos
+execute store result entity @e[tag=projectile,limit=1] Motion[2] double 0.01 run scoreboard players get #targetZ pos
 
 tag @e[tag=projectile] remove projectile
 kill @e[tag=direction]
 
-item replace entity @s weapon.mainhand with minecraft:air
+execute at @s run playsound minecraft:entity.bat.loop player @a
+
+scoreboard players remove @s snake.socomA 1
+scoreboard players set @s snake.socomF 10
+
+execute if score @s snake.socomA matches 0 run tag @s add snake.socomR
+scoreboard players set @s[tag=snake.socomR] snake.socomR 20

@@ -9,6 +9,7 @@ scoreboard objectives add health health
 
 scoreboard objectives remove integers
 scoreboard objectives add integers dummy
+scoreboard players set #-1 integers -1
 scoreboard players set #7 integers 7
 scoreboard players set #10 integers 10
 
@@ -76,6 +77,13 @@ scoreboard objectives remove snake.socomR
 scoreboard objectives add snake.socomR dummy
 scoreboard objectives remove snake.socomF
 scoreboard objectives add snake.socomF dummy
+
+scoreboard objectives remove snake.sgA
+scoreboard objectives add snake.sgA dummy
+scoreboard objectives remove snake.sgM
+scoreboard objectives add snake.sgM dummy
+scoreboard objectives remove snake.sgR
+scoreboard objectives add snake.sgR dummy
 
 scoreboard objectives remove stocks
 scoreboard objectives add stocks dummy

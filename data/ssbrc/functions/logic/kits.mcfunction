@@ -212,18 +212,22 @@ give @a[tag=snake,tag=snake.famas] minecraft:carrot_on_a_stick{Famas:1,CustomMod
 give @a[tag=snake,tag=snake.s1000] minecraft:carrot_on_a_stick{S1000:1,CustomModelData:7,Unbreakable:1,display:{Name:'[{"text":"S1000","italic":false,"color":"green","bold":true}]'},HideFlags:127,AttributeModifiers:[{AttributeName:"generic.movement_speed",Amount:-0.005,Slot:mainhand,Name:"generic.movement_speed",UUID:[I;-121931,25316,1626,-50632]}]} 1
 give @a[tag=snake,tag=snake.socom] minecraft:carrot_on_a_stick{Socom:1,CustomModelData:8,Unbreakable:1,display:{Name:'[{"text":"SOCOM","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
 give @a[tag=snake] minecraft:iron_sword{CustomModelData:2,Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:2,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,34731,13025,-69462]},{AttributeName:"generic.attack_speed",Amount:1.5,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,34831,13025,-69662]}],display:{Name:'[{"text":"CQC Knife","italic":false,"color":"green","bold":true}]'},HideFlags:4} 1
-give @a[tag=snake,tag=snake.apm] minecraft:light_gray_terracotta{display:{Name:'[{"text":"Anti-Personnel Mine (Drop to Activate)","italic":false,"color":"green","bold":true}]'},HideFlags:127} 2
-give @a[tag=snake,tag=snake.sg] minecraft:carrot_on_a_stick{SG:1,CustomModelData:9,Unbreakable:1b,display:{Name:'[{"text":"Smoke Grenade","italic":false,"color":"green","bold":true}]'},HideFlags:127} 3
+give @a[tag=snake,tag=snake.apm] minecraft:gray_terracotta{CustomModelData:1,display:{Name:'[{"text":"Anti-Personnel Mine (Drop to Activate)","italic":false,"color":"green","bold":true}]'},HideFlags:127} 2
+give @a[tag=snake,tag=snake.sg] minecraft:carrot_on_a_stick{SG:1,CustomModelData:9,Unbreakable:1b,display:{Name:'[{"text":"Smoke Grenade","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
 
-scoreboard players set @a[tag=snake,tag=snake.psg1] snake.psg1M 15
+scoreboard players set @a[tag=snake,tag=snake.psg1] snake.psg1M 7
 scoreboard players set @a[tag=snake,tag=snake.psg1] snake.psg1A 1
 scoreboard players set @a[tag=snake,tag=snake.famas] snake.famasM 1
 scoreboard players set @a[tag=snake,tag=snake.famas] snake.famasA 24
 scoreboard players set @a[tag=snake,tag=snake.famas] snake.famasF 0
 scoreboard players set @a[tag=snake,tag=snake.s1000] snake.s1000M 5
 scoreboard players set @a[tag=snake,tag=snake.s1000] snake.s1000A 2
+scoreboard players set @a[tag=snake,tag=snake.s1000] snake.s1000F 0
 scoreboard players set @a[tag=snake,tag=snake.socom] snake.socomM 2
 scoreboard players set @a[tag=snake,tag=snake.socom] snake.socomA 8
+scoreboard players set @a[tag=snake,tag=snake.socom] snake.socomF 0
+scoreboard players set @a[tag=snake,tag=snake.sg] snake.sgM 2
+scoreboard players set @a[tag=snake,tag=snake.sg] snake.sgA 1
 
 # Sonic
 item replace entity @a[tag=sonic] armor.head with minecraft:player_head{display:{Name:'{"text":"Sonic"}'},SkullOwner:{Id:[I;1298989397,1555318664,-1438256815,-1766009294],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTAzODE3MzdkNGRhNTI4ODIzNTQ3MjUxYjE0NTU2OGQxNTI1M2E4N2IxMTE5M2MzZGFmZjZhZTM1NTc3NSJ9fX0="}]}}} 1
@@ -233,6 +237,7 @@ item replace entity @a[tag=sonic] armor.feet with minecraft:leather_boots{Unbrea
 
 item replace entity @a[tag=sonic] hotbar.0 with minecraft:diamond_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_speed",Amount:5,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,33831,13025,-67662]},{AttributeName:"generic.attack_damage",Amount:3,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,33931,13025,-67862]}],display:{Name:'[{"text":"Mania Punch","italic":false,"color":"#3366cc","bold":true}]'},HideFlags:4} 1
 
+# All
 item modify entity @a[tag=alive] armor.feet ssbrc:feather_falling
 
 item modify entity @a[tag=alive] armor.head ssbrc:curse_of_binding

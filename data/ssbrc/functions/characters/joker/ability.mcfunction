@@ -14,8 +14,6 @@ execute if score result random matches 0 run tellraw @s [{"text":"Oracle","color
 execute if score result random matches 1 run tellraw @s [{"text":"Oracle","color":"green"},{"text":": ","color":"white"},{"text":"Woah! Take it easy, okay?","color":"yellow"}]
 execute if score result random matches 2 run tellraw @s [{"text":"Oracle","color":"green"},{"text":": ","color":"white"},{"text":"Don't be so reckless!","color":"yellow"}]
 
-schedule function ssbrc:characters/joker/ability_off 4s replace
-
 scoreboard players set @s timer 80
 
 tag @s add ability.joker
