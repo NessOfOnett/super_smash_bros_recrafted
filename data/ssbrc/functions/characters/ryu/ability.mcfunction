@@ -18,6 +18,6 @@ item modify entity @s armor.head ssbrc:curse_of_binding
 item modify entity @s armor.chest ssbrc:curse_of_binding
 item modify entity @s armor.legs ssbrc:curse_of_binding
 
-scoreboard players set @s timer 600
+scoreboard players set @s timer 400
 
 tag @s add ability.ryu

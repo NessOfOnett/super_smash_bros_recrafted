@@ -40,17 +40,19 @@ scoreboard players remove @s[scores={snake.socomF=1..}] snake.socomF 1
 
 # Anti-Personnel Mine
 scoreboard players add @e[type=minecraft:item,nbt={Item:{id:"minecraft:gray_terracotta",Count:1b,tag:{CustomModelData:1}}}] snake.apm 1
-execute as @e[type=minecraft:item,scores={snake.apm=45..}] at @s run summon minecraft:armor_stand ~ ~-1.65 ~ {Invisible:1b,NoBasePlate:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:gray_terracotta",Count:1b,tag:{CustomModelData:2}}],Tags:["apm"]}
+execute at @e[type=minecraft:item,scores={snake.apm=45..}] run summon minecraft:glow_item_frame ~ ~-0.5 ~ {Facing:1b,Fixed:1b,Invisible:1b,Item:{id:"minecraft:gray_terracotta",Count:1b,tag:{CustomModelData:2}},Tags:["apm.inactive"]}
 kill @e[type=minecraft:item,scores={snake.apm=45..}]
 
-scoreboard players add @e[type=minecraft:armor_stand,tag=apm] snake.apm 1
-execute as @e[scores={snake.apm=40..}] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:gray_terracotta",Count:1b,tag:{CustomModelData:3}}]}
-execute as @e[scores={snake.apm=80..}] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:gray_terracotta",Count:1b,tag:{CustomModelData:4}}]}
-execute as @e[scores={snake.apm=80..}] run tag @s remove apm
-execute as @e[scores={snake.apm=80..}] run tag @s add apmPrimed
-execute as @e[scores={snake.apm=80..}] run scoreboard players reset @s snake.apm
+scoreboard players add @e[tag=apm.inactive] snake.apm 1
+execute as @e[tag=apm.inactive,scores={snake.apm=40..}] run data merge entity @s {Item:{id:"minecraft:gray_terracotta",Count:1b,tag:{CustomModelData:3}}}
+execute as @e[tag=apm.inactive,scores={snake.apm=80..}] run data merge entity @s {Item:{id:"minecraft:gray_terracotta",Count:1b,tag:{CustomModelData:4}}}
+execute as @e[tag=apm.inactive,scores={snake.apm=80..}] run tag @s add apm.active
+execute as @e[tag=apm.inactive,scores={snake.apm=80..}] run tag @s remove apm.inactive
+execute as @e[tag=apm.active,scores={snake.apm=80..}] run scoreboard players reset @s snake.apm
 
-execute as @e[tag=apmPrimed] at @s if entity @e[type=!#ssbrc:undetectable,distance=..2] run function ssbrc:characters/snake/weapons/anti_personnel_mine
+execute as @e[tag=apm.inactive] at @s positioned ~ ~0.5 ~ if entity @e[type=!#ssbrc:undetectable,distance=..1] run kill @s
+execute as @e[tag=apm.active] at @s positioned ~ ~0.5 ~ if entity @e[type=!#ssbrc:undetectable,distance=..1] run function ssbrc:characters/snake/weapons/anti_personnel_mine
+execute as @e[tag=apm.active] at @s positioned ~ ~0.5 ~ if entity @a[distance=..2] run function ssbrc:characters/snake/weapons/anti_personnel_mine
 
 # Smoke Grenade
 execute as @e[tag=smokeGrenade,tag=!active,predicate=ssbrc:no_vehicle] run function ssbrc:characters/snake/weapons/smoke_grenade/fire
