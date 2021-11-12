@@ -1,5 +1,3 @@
-execute as @a run attribute @s minecraft:generic.max_health base set 40
-
 # Lobby
 execute if score $none map matches 1 run function ssbrc:logic/tick/lobby
 

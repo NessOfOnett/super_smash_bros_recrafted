@@ -1,7 +1,7 @@
 function ssbrc:logic/resets/gamerules
 
 scoreboard players set $mapVote timer 0
-schedule clear ssbrc:logic/map_vote_timer_tick
+schedule clear ssbrc:logic/map_voting/timer_tick
 title @a actionbar ""
 
 gamemode adventure @a

@@ -1,6 +1,6 @@
-tellraw @s[tag=!ganon] [{"text":"You have selected ","color":"white"},{"text":"Ganondorf","color":"black"},{"text":"!","color":"white"}]
+tellraw @s[tag=!ganondorf] [{"text":"You have selected ","color":"white"},{"text":"Ganondorf","color":"black"},{"text":"!","color":"white"}]
 execute as @s run function ssbrc:characters/remove_tags
-tag @s[tag=!ganon] add ganon
+tag @s[tag=!ganondorf] add ganondorf
 tag @s add characterPicked
 
 team leave @s

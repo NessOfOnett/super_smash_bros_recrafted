@@ -61,15 +61,15 @@ item replace entity @a[tag=fox] hotbar.1 with minecraft:crossbow{Unbreakable:1,d
 item replace entity @a[tag=fox] hotbar.8 with minecraft:arrow 5
 
 # Ganondorf
-item replace entity @a[tag=ganon] armor.head with minecraft:player_head{display:{Name:'{"text":"Ganondorf"}'},SkullOwner:{Id:[I;1482869269,1796688058,-1981259047,-946338927],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ5MDQxMjhhOWVjMzI2ZmE3YWIwZWFmN2U3YTZiMzVmMTE0YTMzNjhjOGRhYjEwOWFmODJjM2EyYWIyOGYifX19"}]}}} 1
-item replace entity @a[tag=ganon] armor.chest with minecraft:netherite_chestplate{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.armor",Amount:4,Slot:chest,Name:"generic.armor",UUID:[I;-121517,52629,151944,-105258]}],display:{Name:'[{"text":"Ganondorf Armor","italic":false,"color":"dark_gray","bold":true}]'},HideFlags:127} 1
-item replace entity @a[tag=ganon] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:5456970,Name:'[{"text":"Ganondorf Armor","italic":false,"color":"dark_gray","bold":true}]'},HideFlags:127} 1
-item replace entity @a[tag=ganon] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:5456970,Name:'[{"text":"Ganondorf Armor","italic":false,"color":"dark_gray","bold":true}]'},HideFlags:127} 1
+item replace entity @a[tag=ganondorf] armor.head with minecraft:player_head{display:{Name:'{"text":"Ganondorf"}'},SkullOwner:{Id:[I;1482869269,1796688058,-1981259047,-946338927],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ5MDQxMjhhOWVjMzI2ZmE3YWIwZWFmN2U3YTZiMzVmMTE0YTMzNjhjOGRhYjEwOWFmODJjM2EyYWIyOGYifX19"}]}}} 1
+item replace entity @a[tag=ganondorf] armor.chest with minecraft:netherite_chestplate{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.armor",Amount:4,Slot:chest,Name:"generic.armor",UUID:[I;-121517,52629,151944,-105258]}],display:{Name:'[{"text":"Ganondorf Armor","italic":false,"color":"dark_gray","bold":true}]'},HideFlags:127} 1
+item replace entity @a[tag=ganondorf] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:5456970,Name:'[{"text":"Ganondorf Armor","italic":false,"color":"dark_gray","bold":true}]'},HideFlags:127} 1
+item replace entity @a[tag=ganondorf] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:5456970,Name:'[{"text":"Ganondorf Armor","italic":false,"color":"dark_gray","bold":true}]'},HideFlags:127} 1
 
-item replace entity @a[tag=ganon] hotbar.0 with minecraft:iron_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:8,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121517,48629,151944,-97258]},{AttributeName:"generic.attack_speed",Amount:-3.1,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121517,48729,151944,-97458]}],display:{Name:'[{"text":"Sword of the Six Sages","italic":false,"color":"dark_gray","bold":true}]',Lore:['[{"text":"8 Attack Damage","italic":false,"color":"blue"}]']},Enchantments:[{}],HideFlags:127} 1
-item replace entity @a[tag=ganon] hotbar.1 with minecraft:trident{Unbreakable:1,display:{Name:'[{"text":"Trident of Power","italic":false,"color":"dark_gray","bold":true}]'},Enchantments:[{id:"loyalty",lvl:1}],HideFlags:127} 1
+item replace entity @a[tag=ganondorf] hotbar.0 with minecraft:iron_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:8,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121517,48629,151944,-97258]},{AttributeName:"generic.attack_speed",Amount:-3.1,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121517,48729,151944,-97458]}],display:{Name:'[{"text":"Sword of the Six Sages","italic":false,"color":"dark_gray","bold":true}]',Lore:['[{"text":"8 Attack Damage","italic":false,"color":"blue"}]']},Enchantments:[{}],HideFlags:127} 1
+item replace entity @a[tag=ganondorf] hotbar.1 with minecraft:trident{Unbreakable:1,display:{Name:'[{"text":"Trident of Power","italic":false,"color":"dark_gray","bold":true}]'},Enchantments:[{id:"loyalty",lvl:1}],HideFlags:127} 1
 
-execute as @a[tag=ganondorf] run attribute @s minecraft:generic.movement_speed modifier add 0e3d2f24-511d-4c62-b31b-608e4cf9a0c4 "moveSpeed" -0.015 add
+execute as @a[tag=ganondorf] run attribute @s minecraft:generic.movement_speed base set 0.085
 
 # Greninja
 item replace entity @a[tag=greninja,tag=!shiny] armor.head with minecraft:player_head{display:{Name:'{"text":"Greninja"}'},SkullOwner:{Id:[I;1618951540,-1006943949,-1530596227,1823935312],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkyZmQyNjRjZmMwMmY1OGNjYTdhZGYwZmE2OThhYWY4ZWYyMzM5YjJlZTQ5N2MzYmNmZjc0ZWI5YWViYTkxMiJ9fX0="}]}}} 1
@@ -115,7 +115,7 @@ item replace entity @a[tag=krool] armor.feet with minecraft:leather_boots{Unbrea
 
 item replace entity @a[tag=krool] hotbar.0 with minecraft:red_dye{AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:7,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12164,30107,92130,-60214]},{AttributeName:"generic.attack_speed",Amount:-2.2,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-12164,30207,92130,-60414]}],display:{Name:'[{"text":"Boxing Glove","italic":false,"color":"red","bold":true}]',Lore:['[{"text":"7 Attack Damage","italic":false,"color":"gray"}]']},HideFlags:127} 1
 
-execute as @a[tag=krool] run attribute @s minecraft:generic.movement_speed modifier add 0e3d2f24-511d-4c62-b31b-608e4cf9a0c4 "moveSpeed" -0.015 add
+execute as @a[tag=krool] run attribute @s minecraft:generic.movement_speed base set 0.085
 
 # Kirby
 item replace entity @a[tag=kirby] armor.head with minecraft:player_head{display:{Name:'{"text":"Kirby"}'},SkullOwner:{Id:[I;-624331535,135152144,-1569286093,527604348],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljYjU5ZTBmMGIzZDBkYzhiMjFjZDJhYmZmOGYyNjdmYjZjYWFkOTdmN2IxZDBiMmIwNzg1NTdlNjZjY2QxIn19fQ=="}]}}} 1
@@ -207,11 +207,11 @@ item replace entity @a[tag=snake] armor.chest with minecraft:leather_chestplate{
 item replace entity @a[tag=snake] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:9609900},HideFlags:68} 1
 item replace entity @a[tag=snake] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:2369332},HideFlags:68} 1
 
-give @a[tag=snake,tag=snake.psg1] minecraft:carrot_on_a_stick{PSG1:1,CustomModelData:6,Unbreakable:1,display:{Name:'[{"text":"PSG-1","italic":false,"color":"green","bold":true}]'},HideFlags:127,AttributeModifiers:[{AttributeName:"generic.movement_speed",Amount:-0.03,Slot:mainhand,Name:"generic.movement_speed",UUID:[I;-121931,25316,1626,-50632]}]} 1
-give @a[tag=snake,tag=snake.famas] minecraft:carrot_on_a_stick{Famas:1,CustomModelData:5,Unbreakable:1,display:{Name:'[{"text":"FAMAS","italic":false,"color":"green","bold":true}]'},HideFlags:127,AttributeModifiers:[{AttributeName:"generic.movement_speed",Amount:-0.01,Slot:mainhand,Name:"generic.movement_speed",UUID:[I;-121931,25316,1626,-50632]}]} 1
-give @a[tag=snake,tag=snake.s1000] minecraft:carrot_on_a_stick{S1000:1,CustomModelData:7,Unbreakable:1,display:{Name:'[{"text":"S1000","italic":false,"color":"green","bold":true}]'},HideFlags:127,AttributeModifiers:[{AttributeName:"generic.movement_speed",Amount:-0.005,Slot:mainhand,Name:"generic.movement_speed",UUID:[I;-121931,25316,1626,-50632]}]} 1
+give @a[tag=snake,tag=snake.psg1] minecraft:carrot_on_a_stick{PSG1:1,CustomModelData:6,Unbreakable:1,display:{Name:'[{"text":"PSG-1","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snake.famas] minecraft:carrot_on_a_stick{Famas:1,CustomModelData:5,Unbreakable:1,display:{Name:'[{"text":"FAMAS","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
+give @a[tag=snake,tag=snake.s1000] minecraft:carrot_on_a_stick{S1000:1,CustomModelData:7,Unbreakable:1,display:{Name:'[{"text":"S1000","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
 give @a[tag=snake,tag=snake.socom] minecraft:carrot_on_a_stick{Socom:1,CustomModelData:8,Unbreakable:1,display:{Name:'[{"text":"SOCOM","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
-give @a[tag=snake] minecraft:iron_sword{CustomModelData:2,Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:2,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,34731,13025,-69462]},{AttributeName:"generic.attack_speed",Amount:1.5,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,34831,13025,-69662]}],display:{Name:'[{"text":"CQC Knife","italic":false,"color":"green","bold":true}]'},HideFlags:4} 1
+give @a[tag=snake] minecraft:iron_sword{CustomModelData:2,Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:4,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,34731,13025,-69462]},{AttributeName:"generic.attack_speed",Amount:1.0,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,34831,13025,-69662]}],display:{Name:'[{"text":"CQC Knife","italic":false,"color":"green","bold":true}]'},HideFlags:4} 1
 give @a[tag=snake,tag=snake.apm] minecraft:gray_terracotta{CustomModelData:1,display:{Name:'[{"text":"Anti-Personnel Mine (Drop to Activate)","italic":false,"color":"green","bold":true}]'},HideFlags:127} 2
 give @a[tag=snake,tag=snake.sg] minecraft:carrot_on_a_stick{SG:1,CustomModelData:9,Unbreakable:1b,display:{Name:'[{"text":"Smoke Grenade","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
 
@@ -229,6 +229,18 @@ scoreboard players set @a[tag=snake,tag=snake.socom] snake.socomF 0
 scoreboard players set @a[tag=snake,tag=snake.sg] snake.sgM 2
 scoreboard players set @a[tag=snake,tag=snake.sg] snake.sgA 1
 
+execute as @a[tag=snake,scores={capacity=0}] run attribute @s generic.movement_speed base set 0.105
+execute as @a[tag=snake,scores={capacity=1}] run attribute @s generic.movement_speed base set 0.099
+execute as @a[tag=snake,scores={capacity=2}] run attribute @s generic.movement_speed base set 0.098
+execute as @a[tag=snake,scores={capacity=3}] run attribute @s generic.movement_speed base set 0.097
+execute as @a[tag=snake,scores={capacity=4}] run attribute @s generic.movement_speed base set 0.096
+execute as @a[tag=snake,scores={capacity=5}] run attribute @s generic.movement_speed base set 0.095
+execute as @a[tag=snake,scores={capacity=6}] run attribute @s generic.movement_speed base set 0.094
+execute as @a[tag=snake,scores={capacity=7}] run attribute @s generic.movement_speed base set 0.093
+execute as @a[tag=snake,scores={capacity=8}] run attribute @s generic.movement_speed base set 0.092
+execute as @a[tag=snake,scores={capacity=9}] run attribute @s generic.movement_speed base set 0.091
+execute as @a[tag=snake,scores={capacity=10}] run attribute @s generic.movement_speed base set 0.090
+
 # Sonic
 item replace entity @a[tag=sonic] armor.head with minecraft:player_head{display:{Name:'{"text":"Sonic"}'},SkullOwner:{Id:[I;1298989397,1555318664,-1438256815,-1766009294],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTAzODE3MzdkNGRhNTI4ODIzNTQ3MjUxYjE0NTU2OGQxNTI1M2E4N2IxMTE5M2MzZGFmZjZhZTM1NTc3NSJ9fX0="}]}}} 1
 item replace entity @a[tag=sonic] armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{color:3101912},HideFlags:68} 1
@@ -236,6 +248,8 @@ item replace entity @a[tag=sonic] armor.legs with minecraft:leather_leggings{Unb
 item replace entity @a[tag=sonic] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:14626350},HideFlags:68} 1
 
 item replace entity @a[tag=sonic] hotbar.0 with minecraft:diamond_sword{Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_speed",Amount:5,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-121615,33831,13025,-67662]},{AttributeName:"generic.attack_damage",Amount:3,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-121615,33931,13025,-67862]}],display:{Name:'[{"text":"Mania Punch","italic":false,"color":"#3366cc","bold":true}]'},HideFlags:4} 1
+
+execute as @a[tag=sonic] run attribute @s generic.movement_speed base set 0.1125
 
 # All
 item modify entity @a[tag=alive] armor.feet ssbrc:feather_falling

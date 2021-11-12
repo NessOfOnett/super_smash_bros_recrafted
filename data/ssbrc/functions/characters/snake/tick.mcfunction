@@ -56,7 +56,7 @@ execute as @e[tag=apm.active] at @s positioned ~ ~0.5 ~ if entity @a[distance=..
 
 # Smoke Grenade
 execute as @e[tag=smokeGrenade,tag=!active,predicate=ssbrc:no_vehicle] run function ssbrc:characters/snake/weapons/smoke_grenade/fire
-execute at @e[tag=smokeGrenade,tag=active] run particle minecraft:smoke ~ ~ ~ 1.5 1.5 1.5 0.05 500 force @a
+execute at @e[tag=smokeGrenade,tag=active] run particle minecraft:smoke ~ ~ ~ 1.5 1.5 1.5 0.05 400 force @a
 
 scoreboard players remove @e[tag=smokeGrenade,tag=active] timer 1
 kill @e[tag=smokeGrenade,tag=active,scores={timer=..0}]

@@ -1,3 +1,4 @@
+function ssbrc:logic/resets/attributes
 function ssbrc:logic/resets/gamerules
 function ssbrc:logic/resets/schedule
 function ssbrc:logic/resets/scoreboards

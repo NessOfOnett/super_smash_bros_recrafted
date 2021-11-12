@@ -3,7 +3,7 @@ tag @a remove captainfalcon
 tag @a remove charizard
 tag @a remove donkeykong
 tag @a remove fox
-tag @a remove ganon
+tag @a remove ganondorf
 tag @a remove greninja
 tag @a remove hero
 tag @a remove joker
