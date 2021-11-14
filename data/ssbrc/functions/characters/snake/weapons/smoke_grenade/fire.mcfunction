@@ -22,8 +22,10 @@ kill @e[tag=direction]
 
 scoreboard players remove @s snake.sgA 1
 
-execute if score @s snake.sgA matches 0 run tag @s add snake.sgR
-scoreboard players set @s[tag=snake.sgR] snake.sgR 300
+tag @s add snake.sgF
+scoreboard players set @s[tag=snake.sgF] snake.sgF 300
 
 tag @e[tag=smokeGrenade] add active
 scoreboard players set @e[tag=smokeGrenade] timer 300
+
+clear @s[tag=snake.sg,scores={snake.sgA=..0}] minecraft:carrot_on_a_stick{SG:1}

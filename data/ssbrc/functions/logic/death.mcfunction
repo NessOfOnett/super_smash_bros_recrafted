@@ -2,6 +2,9 @@ scoreboard players remove @s stocks 1
 
 attribute @s minecraft:generic.max_health base set 40
 tag @s add needsHeal
+
+attribute @s generic.max_health base set 40
+
 schedule function ssbrc:logic/heal 5t replace
 
 function ssbrc:logic/restore_items

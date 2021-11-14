@@ -1,4 +1,4 @@
-tag @s add kaclangUsed
+tag @s add kaclang
 
 clear @s #ssbrc:swords
 clear @s minecraft:carrot_on_a_stick
@@ -27,4 +27,4 @@ attribute @s generic.knockback_resistance base set 1000000.0
 
 scoreboard players remove @s mana 3
 
-schedule function ssbrc:characters/hero/magic/kaclang_off 10s replace
+scoreboard players set @s timer 200
