@@ -80,10 +80,8 @@ scoreboard objectives add snake.socomF dummy
 
 scoreboard objectives remove snake.sgA
 scoreboard objectives add snake.sgA dummy
-scoreboard objectives remove snake.sgM
-scoreboard objectives add snake.sgM dummy
-scoreboard objectives remove snake.sgR
-scoreboard objectives add snake.sgR dummy
+scoreboard objectives remove snake.sgF
+scoreboard objectives add snake.sgF dummy
 
 scoreboard objectives remove stocks
 scoreboard objectives add stocks dummy

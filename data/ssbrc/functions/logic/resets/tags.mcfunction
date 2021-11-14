@@ -60,6 +60,7 @@ tag @a remove snake.psg1R
 tag @a remove snake.s1000
 tag @a remove snake.s1000R
 tag @a remove snake.sg
+tag @a remove snake.sgF
 tag @a remove snake.socom
 tag @a remove snake.socomR
 tag @a remove teleportMe

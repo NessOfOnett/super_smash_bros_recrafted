@@ -226,8 +226,8 @@ scoreboard players set @a[tag=snake,tag=snake.s1000] snake.s1000F 0
 scoreboard players set @a[tag=snake,tag=snake.socom] snake.socomM 2
 scoreboard players set @a[tag=snake,tag=snake.socom] snake.socomA 8
 scoreboard players set @a[tag=snake,tag=snake.socom] snake.socomF 0
-scoreboard players set @a[tag=snake,tag=snake.sg] snake.sgM 2
-scoreboard players set @a[tag=snake,tag=snake.sg] snake.sgA 1
+scoreboard players set @a[tag=snake,tag=snake.sg] snake.sgA 2
+scoreboard players set @a[tag=snake,tag=snake.sg] snake.sgF 0
 
 execute as @a[tag=snake,scores={capacity=0}] run attribute @s generic.movement_speed base set 0.105
 execute as @a[tag=snake,scores={capacity=1}] run attribute @s generic.movement_speed base set 0.099
