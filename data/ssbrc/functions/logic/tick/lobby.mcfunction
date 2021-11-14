@@ -10,5 +10,5 @@ effect give @a minecraft:resistance 1000000 255 true
 effect give @a minecraft:saturation 1000000 255 true
 
 # InQuognito Stand
-execute at @e[type=minecraft:marker,tag=InQuognitoStand] run particle minecraft:portal ~ ~ ~ 0.075 0.075 0.075 0.5 5 normal @a
-execute at @e[type=minecraft:armor_stand,tag=InQuognitoStand] run particle minecraft:reverse_portal ~ ~1.0 ~ 0.075 0.075 0.075 0.1 1 normal @a
+#execute at @e[type=minecraft:marker,tag=InQuognitoStand] run particle minecraft:portal ~ ~ ~ 0.075 0.075 0.075 0.5 5 normal @a
+#execute at @e[type=minecraft:armor_stand,tag=InQuognitoStand] run particle minecraft:reverse_portal ~ ~1.0 ~ 0.075 0.075 0.075 0.1 1 normal @a

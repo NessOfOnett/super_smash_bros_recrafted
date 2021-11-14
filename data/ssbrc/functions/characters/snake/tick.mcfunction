@@ -8,7 +8,6 @@ execute as @s[tag=snake.sg,scores={useAbility=1..},nbt={SelectedItem:{tag:{SG:1}
 scoreboard players set @s useAbility 0
 
 # Ammo HUD
-title @s actionbar ""
 title @s[tag=snake.psg1,nbt={SelectedItem:{tag:{PSG1:1}}},scores={snake.psg1M=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.psg1A"},"color":"green"},{"text":" | ","color":"white"},{"score":{"name":"@s","objective":"snake.psg1M"},"color":"dark_green"}]
 title @s[tag=snake.psg1,nbt={SelectedItem:{tag:{PSG1:1}}},scores={snake.psg1M=..0,snake.psg1A=..0}] actionbar {"text":"Out of Ammo!","color":"red"}
 title @s[tag=snake.famas,nbt={SelectedItem:{tag:{Famas:1}}},scores={snake.famasM=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.famasA"},"color":"green"},{"text":" | ","color":"white"},{"score":{"name":"@s","objective":"snake.famasM"},"color":"dark_green"}]
@@ -18,6 +17,7 @@ title @s[tag=snake.s1000,nbt={SelectedItem:{tag:{S1000:1}}},scores={snake.s1000M
 title @s[tag=snake.socom,nbt={SelectedItem:{tag:{Socom:1}}},scores={snake.socomM=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.socomA"},"color":"green"},{"text":" | ","color":"white"},{"score":{"name":"@s","objective":"snake.socomM"},"color":"dark_green"}]
 title @s[tag=snake.socom,nbt={SelectedItem:{tag:{Socom:1}}},scores={snake.socomM=..0,snake.socomA=..0}] actionbar {"text":"Out of Ammo!","color":"red"}
 title @s[tag=snake.sg,nbt={SelectedItem:{tag:{SG:1}}},scores={snake.sgA=0..}] actionbar {"score":{"name":"@s","objective":"snake.sgA"},"color":"green"}
+title @s actionbar ""
 
 # Reload
 scoreboard players remove @s[tag=snake.psg1R] snake.psg1R 1
