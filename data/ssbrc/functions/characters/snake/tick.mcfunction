@@ -17,26 +17,24 @@ title @s[tag=snake.s1000,nbt={SelectedItem:{tag:{S1000:1}}},scores={snake.s1000M
 title @s[tag=snake.s1000,nbt={SelectedItem:{tag:{S1000:1}}},scores={snake.s1000M=..0,snake.s1000A=..0}] actionbar {"text":"Out of Ammo!","color":"red"}
 title @s[tag=snake.socom,nbt={SelectedItem:{tag:{Socom:1}}},scores={snake.socomM=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.socomA"},"color":"green"},{"text":" | ","color":"white"},{"score":{"name":"@s","objective":"snake.socomM"},"color":"dark_green"}]
 title @s[tag=snake.socom,nbt={SelectedItem:{tag:{Socom:1}}},scores={snake.socomM=..0,snake.socomA=..0}] actionbar {"text":"Out of Ammo!","color":"red"}
-title @s[tag=snake.sg,nbt={SelectedItem:{tag:{SG:1}}},scores={snake.sgM=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.sgA"},"color":"green"},{"text":" | ","color":"white"},{"score":{"name":"@s","objective":"snake.sgM"},"color":"dark_green"}]
-title @s[tag=snake.sg,nbt={SelectedItem:{tag:{SG:1}}},scores={snake.sgM=..0,snake.sgA=..0}] actionbar {"text":"Out of Ammo!","color":"red"}
+title @s[tag=snake.sg,nbt={SelectedItem:{tag:{SG:1}}},scores={snake.sgA=0..}] actionbar {"score":{"name":"@s","objective":"snake.sgA"},"color":"green"}
 
 # Reload
 scoreboard players remove @s[tag=snake.psg1R] snake.psg1R 1
 scoreboard players remove @s[tag=snake.famasR] snake.famasR 1
 scoreboard players remove @s[tag=snake.s1000R] snake.s1000R 1
 scoreboard players remove @s[tag=snake.socomR] snake.socomR 1
-scoreboard players remove @s[tag=snake.sgR] snake.sgR 1
 
 execute if score @s[tag=snake.psg1R] snake.psg1R matches ..0 run function ssbrc:characters/snake/weapons/psg1/reload
 execute if score @s[tag=snake.famasR] snake.famasR matches ..0 run function ssbrc:characters/snake/weapons/famas/reload
 execute if score @s[tag=snake.s1000R] snake.s1000R matches ..0 run function ssbrc:characters/snake/weapons/s1000/reload
 execute if score @s[tag=snake.socomR] snake.socomR matches ..0 run function ssbrc:characters/snake/weapons/socom/reload
-execute if score @s[tag=snake.sgR] snake.sgR matches ..0 run function ssbrc:characters/snake/weapons/smoke_grenade/reload
 
 # Rate of Fire
 scoreboard players remove @s[scores={snake.famasF=1..}] snake.famasF 1
 scoreboard players remove @s[scores={snake.s1000F=1..}] snake.s1000F 1
 scoreboard players remove @s[scores={snake.socomF=1..}] snake.socomF 1
+scoreboard players remove @s[scores={snake.sgF=1..}] snake.sgF 1
 
 # Anti-Personnel Mine
 scoreboard players add @e[type=minecraft:item,nbt={Item:{id:"minecraft:gray_terracotta",Count:1b,tag:{CustomModelData:1}}}] snake.apm 1

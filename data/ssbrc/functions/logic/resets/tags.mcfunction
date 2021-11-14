@@ -45,9 +45,10 @@ tag @a remove ability.jokerUsed
 tag @a remove ability.ryu
 tag @a remove alive
 tag @a remove characterPicked
-tag @a remove overflowReached
+tag @a remove kaclang
 tag @a remove magicLost
 tag @a remove needsHeal
+tag @a remove overflowReached
 tag @a remove pickingCharacter
 tag @a remove pickingMap
 tag @a remove selectingLoadout
@@ -60,6 +61,7 @@ tag @a remove snake.psg1R
 tag @a remove snake.s1000
 tag @a remove snake.s1000R
 tag @a remove snake.sg
+tag @a remove snake.sgF
 tag @a remove snake.socom
 tag @a remove snake.socomR
 tag @a remove teleportMe
