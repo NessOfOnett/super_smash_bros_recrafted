@@ -36,6 +36,13 @@ scoreboard players remove @s[scores={snake.s1000F=1..}] snake.s1000F 1
 scoreboard players remove @s[scores={snake.socomF=1..}] snake.socomF 1
 scoreboard players remove @s[scores={snake.sgF=1..}] snake.sgF 1
 
+# Bullet Range
+scoreboard players add @e[tag=bullet] temp 1
+
+kill @e[tag=famasBullet,scores={temp=12..}]
+kill @e[tag=s1000Bullet,scores={temp=3..}]
+kill @e[tag=socomBullet,scores={temp=6..}]
+
 # Anti-Personnel Mine
 scoreboard players add @e[type=minecraft:item,nbt={Item:{id:"minecraft:gray_terracotta",Count:1b,tag:{CustomModelData:1}}}] snake.apm 1
 execute at @e[type=minecraft:item,scores={snake.apm=45..}] run summon minecraft:glow_item_frame ~ ~-0.5 ~ {Facing:1b,Fixed:1b,Invisible:1b,Item:{id:"minecraft:gray_terracotta",Count:1b,tag:{CustomModelData:2}},Tags:["apm.inactive"]}
@@ -60,4 +67,4 @@ scoreboard players remove @e[tag=smokeGrenade,tag=active] timer 1
 kill @e[tag=smokeGrenade,tag=active,scores={timer=..0}]
 
 # Bullet Trails
-execute at @e[tag=sniperBullet] run particle minecraft:end_rod ~ ~ ~ 0.0 0.0 0.0 0.0 10 normal @a
+execute at @e[tag=psg1Bullet] run particle minecraft:end_rod ~ ~ ~ 0.0 0.0 0.0 0.0 10 normal @a
