@@ -3,6 +3,7 @@ function ssbrc:logic/resets/scoreboards/stats
 scoreboard objectives add capacity dummy
 scoreboard objectives add flag.dead deathCount
 scoreboard objectives add health health
+scoreboard objectives add id dummy
 scoreboard objectives add integers dummy
 scoreboard objectives add itemCount dummy
 scoreboard objectives add magicBurst dummy
@@ -32,6 +33,7 @@ scoreboard objectives add snake.sgA dummy
 scoreboard objectives add snake.sgF dummy
 scoreboard objectives add stocks dummy
 scoreboard objectives add swordBeam dummy
+scoreboard objectives add swordSpin dummy
 scoreboard objectives add timer dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add useAbility minecraft.used:minecraft.carrot_on_a_stick

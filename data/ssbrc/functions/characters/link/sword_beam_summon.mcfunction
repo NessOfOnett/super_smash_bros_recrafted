@@ -1,4 +1,6 @@
-execute if entity @s[scores={useAbility=1..},nbt={SelectedItem:{tag:{awakened:1}}}] at @s anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^ {Tags:["linkSwordBeam"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
-execute at @s[scores={useAbility=1..},nbt={SelectedItem:{tag:{awakened:1}}}] anchored eyes run tp @e[tag=linkSwordBeam,tag=!adjusted] ^ ^-0.3 ^1 ~ ~
+summon minecraft:area_effect_cloud ^ ^ ^ {Tags:["linkSwordBeam","temp.spawn"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
+tp @e[tag=linkSwordBeam,tag=!adjusted] ^ ^-0.3 ^1 ~ ~
+function ssbrc:characters/link/sword_beam_id
 
 tag @e[tag=linkSwordBeam,tag=!adjusted] add adjusted
+scoreboard players set @s swordBeam 20

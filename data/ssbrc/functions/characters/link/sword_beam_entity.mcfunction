@@ -10,5 +10,4 @@ scoreboard players add @s temp 1
 kill @s[scores={temp=20..}]
 execute unless block ^ ^ ^0.1 minecraft:air run kill @s
 
-effect give @a[distance=..1,scores={swordBeam=..0}] minecraft:instant_damage 1 0 true
-scoreboard players set @a[distance=..1] swordBeam 20
+execute as @a[distance=..1] unless score @s id = @e[tag=linkSwordBeam,sort=nearest,limit=1] id run effect give @s minecraft:instant_damage 1 0 true

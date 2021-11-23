@@ -133,10 +133,12 @@ item replace entity @a[tag=link] armor.chest with minecraft:leather_chestplate{U
 item replace entity @a[tag=link] armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:16383998},HideFlags:68} 1
 item replace entity @a[tag=link] armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:7886668},HideFlags:68} 1
 
-item replace entity @a[tag=link] hotbar.0 with carrot_on_a_stick{awakened:1,Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:9,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-1211022,10969,201940,-21938]},{AttributeName:"generic.attack_speed",Amount:-1.2,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-1211022,11069,201940,-22138]}],display:{Name:'[{"text":"Master Sword","italic":false,"color":"aqua"}]'},HideFlags:127} 1
+item replace entity @a[tag=link] hotbar.0 with carrot_on_a_stick{masterSword:1,awakened:1,Unbreakable:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:9,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-1211022,10969,201940,-21938]},{AttributeName:"generic.attack_speed",Amount:-1.2,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-1211022,11069,201940,-22138]}],display:{Name:'[{"text":"Master Sword","italic":false,"color":"aqua"}]'},HideFlags:127} 1
 item replace entity @a[tag=link] weapon.offhand with minecraft:shield{Damage:300,BlockEntityTag:{Base:11,Patterns:[{Pattern:"flo",Color:14},{Pattern:"hh",Color:11},{Pattern:"tt",Color:4},{Pattern:"ts",Color:11},{Pattern:"cbo",Color:8}]},HideFlags:127} 1
-item replace entity @a[tag=link] hotbar.1 with minecraft:bow{Unbreakable:1,display:{Name:'[{"text":"Hero\'s Bow","italic":false,"color":"#663300"}]'},Enchantments:[{id:"infinity",lvl:1}],HideFlags:1} 1
+item replace entity @a[tag=link] hotbar.1 with minecraft:bow{Unbreakable:1,display:{Name:'[{"text":"Hero\'s Bow","italic":false,"color":"#663300"}]'},Enchantments:[{id:"infinity",lvl:1}],HideFlags:127} 1
 item replace entity @a[tag=link] hotbar.8 with minecraft:arrow 1
+
+scoreboard players set @a[tag=link] swordBeam 0
 
 # Mario
 item replace entity @a[tag=mario] armor.head with minecraft:player_head{display:{Name:'{"text":"Mario"}'},SkullOwner:{Id:[I;1715157156,-1632483711,-1885321956,-1727835003],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBjMjU0OWE4OTM3MjY5ODhmMzQyOGJlZjc5OTg3NWJhODcxNjg4YWU2NGViMGNmZGM0M2Y3ZDZlMjRjNmMifX19"}]}}} 1

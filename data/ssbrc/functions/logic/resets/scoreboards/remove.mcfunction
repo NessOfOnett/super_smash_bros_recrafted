@@ -1,6 +1,7 @@
 scoreboard objectives remove capacity
 scoreboard objectives remove flag.dead
 scoreboard objectives remove health
+scoreboard objectives remove id
 scoreboard objectives remove integers
 scoreboard objectives remove itemCount
 scoreboard objectives remove magicBurst
@@ -32,6 +33,7 @@ scoreboard objectives remove snake.sgA
 scoreboard objectives remove snake.sgF
 scoreboard objectives remove stocks
 scoreboard objectives remove swordBeam
+scoreboard objectives remove swordSpin
 scoreboard objectives remove timer
 scoreboard objectives remove temp
 scoreboard objectives remove useAbility

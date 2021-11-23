@@ -19,6 +19,8 @@ execute store result score #playersPlaying temp run team list alive
 scoreboard players set @a[team=alive] stocks 3
 scoreboard objectives setdisplay sidebar stocks
 
+execute if entity @a[tag=link] run summon minecraft:armor_stand 5000000.5 25.0 5000000.5 {Tags:["spinner"],Invulnerable:1b,Invisible:1b,NoGravity:1b}
+
 tag @a[team=!spectators] add teleportMe
 schedule function ssbrc:logic/start_teleport 2t replace
 
