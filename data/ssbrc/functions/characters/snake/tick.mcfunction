@@ -7,6 +7,11 @@ execute as @s[tag=snake.sg,scores={useAbility=1..},nbt={SelectedItem:{tag:{SG:1}
 
 scoreboard players set @s useAbility 0
 
+# Glowing
+scoreboard players add @a[tag=snake] timer 1
+execute as @a[tag=snake,scores={timer=1200..}] run function ssbrc:characters/snake/reset_glowing
+execute as @a[tag=snake,scores={timer=1200..}] run tellraw @s [{"text":"Otacon","color":"green"},{"text":": ","color":"white"},{"text":"Snake, your position has been compromised!","color":"yellow"}]
+
 # Ammo HUD
 title @s actionbar ""
 title @s[tag=snake.psg1,nbt={SelectedItem:{tag:{PSG1:1}}},scores={snake.psg1M=-1..}] actionbar [{"score":{"name":"@s","objective":"snake.psg1A"},"color":"green"},{"text":" | ","color":"white"},{"score":{"name":"@s","objective":"snake.psg1M"},"color":"dark_green"}]

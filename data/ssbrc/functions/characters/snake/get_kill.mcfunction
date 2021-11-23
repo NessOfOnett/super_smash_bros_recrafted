@@ -44,4 +44,4 @@ tag @s remove socomGive
 tag @s remove apmGive
 tag @s remove sgGive
 
-advancement revoke @s only ssbrc:snake_kill
+advancement revoke @s only ssbrc:utility/snake_kill

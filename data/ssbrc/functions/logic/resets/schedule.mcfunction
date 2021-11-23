@@ -1,6 +1,5 @@
+schedule clear ssbrc:logic/timer_tick
 schedule clear ssbrc:logic/map_voting/timer_tick
-schedule clear ssbrc:logic/snake_timer_tick
-schedule clear ssbrc:logic/start_countdown_timer_tick
 schedule clear ssbrc:logic/start_music
 
 # Maps

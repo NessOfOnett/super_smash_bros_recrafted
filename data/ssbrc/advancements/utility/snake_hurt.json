@@ -5,6 +5,6 @@
 		}
 	},
 	"rewards": {
-		"function": "ssbrc:logic/reset_snake_glowing"
+		"function": "ssbrc:characters/snake/reset_glowing"
 	}
 }

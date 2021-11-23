@@ -20,6 +20,7 @@ execute if score $sectorZ map matches 1 run function ssbrc:logic/tick/sector_z
 # Specific characters
 execute if score $start map matches 1 as @a[team=alive,tag=hero] if entity @s run function ssbrc:characters/hero/tick
 execute if score $start map matches 1 as @a[team=alive,tag=joker] if entity @s run function ssbrc:characters/joker/tick
+execute if score $start map matches 1 as @a[team=alive,tag=link] if entity @s run function ssbrc:characters/link/tick
 execute if score $start map matches 1 as @a[team=alive,tag=pit] if entity @s run function ssbrc:characters/pit/tick
 execute if score $start map matches 1 as @a[team=alive,tag=ryu] if entity @s run function ssbrc:characters/ryu/tick
 execute if score $start map matches 1 as @a[team=alive,tag=snake] if entity @s run function ssbrc:characters/snake/tick

@@ -1,10 +1,15 @@
+function ssbrc:logic/resets/scoreboards/stats
+function ssbrc:logic/resets/scoreboards/remove
+function ssbrc:logic/resets/scoreboards/create
+function ssbrc:logic/resets/scoreboards/constants
+function ssbrc:logic/resets/scoreboards/variables
+
+function ssbrc:logic/resets/advancements
 function ssbrc:logic/resets/attributes
 function ssbrc:logic/resets/gamerules
 function ssbrc:logic/resets/schedule
-function ssbrc:logic/resets/scoreboards
 function ssbrc:logic/resets/teams
 function ssbrc:logic/resets/players
-function ssbrc:logic/resets/variables
 
 forceload add -544 32 -497 79
 forceload add 0 96 63 175
