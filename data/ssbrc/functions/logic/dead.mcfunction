@@ -3,7 +3,7 @@ team join dead
 scoreboard players reset @s stocks
 
 tag @s add needsHeal
-schedule function ssbrc:logic/health/set 5t replace
+schedule function ssbrc:logic/heal 5t replace
 
 title @s actionbar ""
 
