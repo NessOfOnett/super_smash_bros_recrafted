@@ -12,6 +12,8 @@ execute if score $startCountdown timer matches 0 run effect clear @a slowness
 execute if score $startCountdown timer matches 0 run function ssbrc:logic/kits
 execute if score $startCountdown timer matches 0 run function ssbrc:logic/start_music
 execute if score $startCountdown timer matches 0 run function ssbrc:logic/snake_timer_tick
+execute if score $startCountdown timer matches 0 run tag @a add needsHeal
+execute if score $startCountdown timer matches 0 run schedule function ssbrc:logic/heal 5t replace
 
 execute if score $startCountdown timer matches 0 run kill @e[tag=tpDest]
 
