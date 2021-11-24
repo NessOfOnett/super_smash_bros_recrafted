@@ -2,6 +2,8 @@ tellraw @a [{"selector":"@s","bold":true,"color":"red"},{"text":" has run out of
 team join dead
 scoreboard players reset @s stocks
 
+execute as @a run attribute @s generic.max_health base set 40.0
+
 title @s actionbar ""
 
 execute store result score #playersLeft stocks run team list alive
