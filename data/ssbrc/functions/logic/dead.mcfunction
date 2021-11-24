@@ -3,6 +3,8 @@ team join dead
 scoreboard players reset @s stocks
 
 execute as @a run attribute @s generic.max_health base set 40.0
+tag @s add needsHeal
+schedule function ssbrc:logic/heal 1t replace
 
 title @s actionbar ""
 
