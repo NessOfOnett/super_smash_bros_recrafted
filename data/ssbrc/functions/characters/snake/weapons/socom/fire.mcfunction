@@ -32,7 +32,7 @@ execute store result entity @e[tag=projectile,limit=1] Motion[2] double 0.01 run
 tag @e[tag=projectile] remove projectile
 kill @e[tag=direction]
 
-execute at @s run playsound minecraft:entity.bat.loop player @a
+execute at @s run playsound ssbrc:generic_fire player @a
 
 scoreboard players remove @s snake.socomA 1
 scoreboard players set @s snake.socomF 10
