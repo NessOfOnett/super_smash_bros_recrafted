@@ -22,8 +22,10 @@ title @s[tag=snake.sg,nbt={SelectedItem:{tag:{SG:1}}},scores={snake.sgA=0..}] ac
 # Reload
 scoreboard players remove @s[scores={snake.psg1R=1..}] snake.psg1R 1
 scoreboard players remove @s[tag=snake.famasR] snake.famasR 1
+execute as @a[scores={snake.famasR=45}] at @s run playsound ssbrc:generic_reload player @a
 scoreboard players remove @s[tag=snake.s1000R] snake.s1000R 1
 scoreboard players remove @s[tag=snake.socomR] snake.socomR 1
+execute as @a[scores={snake.socomR=35}] at @s run playsound ssbrc:generic_reload player @a
 
 execute if score @s[tag=snake.psg1R] snake.psg1R matches ..0 at @s run function ssbrc:characters/snake/weapons/psg1/reload
 execute if score @s[tag=snake.famasR] snake.famasR matches ..0 at @s run function ssbrc:characters/snake/weapons/famas/reload
