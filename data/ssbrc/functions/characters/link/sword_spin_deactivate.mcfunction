@@ -13,13 +13,13 @@ execute as @s[predicate=ssbrc:awakened,scores={swordSpin=121..}] run summon mine
 function ssbrc:characters/link/sword_beam_id
 execute as @s[predicate=ssbrc:awakened,scores={swordSpin=121..}] run summon minecraft:area_effect_cloud ~ ~1.25 ~-1 {Rotation:[180f,0f],Tags:["linkSwordBeam","linkMiniBeam","temp.spawn"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 function ssbrc:characters/link/sword_beam_id
-execute as @s[predicate=ssbrc:awakened,scores={swordSpin=141..}] run summon minecraft:area_effect_cloud ~1 ~1.25 ~-1 {Rotation:[-145f,0f],Tags:["linkSwordBeam","linkMiniBeam","temp.spawn"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
+execute as @s[predicate=ssbrc:awakened,scores={swordSpin=181..}] run summon minecraft:area_effect_cloud ~1 ~1.25 ~-1 {Rotation:[-145f,0f],Tags:["linkSwordBeam","linkMiniBeam","temp.spawn"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 function ssbrc:characters/link/sword_beam_id
-execute as @s[predicate=ssbrc:awakened,scores={swordSpin=141..}] run summon minecraft:area_effect_cloud ~1 ~1.25 ~1 {Rotation:[-45f,0f],Tags:["linkSwordBeam","linkMiniBeam","temp.spawn"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
+execute as @s[predicate=ssbrc:awakened,scores={swordSpin=181..}] run summon minecraft:area_effect_cloud ~1 ~1.25 ~1 {Rotation:[-45f,0f],Tags:["linkSwordBeam","linkMiniBeam","temp.spawn"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 function ssbrc:characters/link/sword_beam_id
-execute as @s[predicate=ssbrc:awakened,scores={swordSpin=141..}] run summon minecraft:area_effect_cloud ~-1 ~1.25 ~1 {Rotation:[45f,0f],Tags:["linkSwordBeam","linkMiniBeam","temp.spawn"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
+execute as @s[predicate=ssbrc:awakened,scores={swordSpin=181..}] run summon minecraft:area_effect_cloud ~-1 ~1.25 ~1 {Rotation:[45f,0f],Tags:["linkSwordBeam","linkMiniBeam","temp.spawn"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 function ssbrc:characters/link/sword_beam_id
-execute as @s[predicate=ssbrc:awakened,scores={swordSpin=141..}] run summon minecraft:area_effect_cloud ~-1 ~1.25 ~-1 {Rotation:[135f,0f],Tags:["linkSwordBeam","linkMiniBeam","temp.spawn"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
+execute as @s[predicate=ssbrc:awakened,scores={swordSpin=181..}] run summon minecraft:area_effect_cloud ~-1 ~1.25 ~-1 {Rotation:[135f,0f],Tags:["linkSwordBeam","linkMiniBeam","temp.spawn"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 function ssbrc:characters/link/sword_beam_id
 
 tag @s remove self

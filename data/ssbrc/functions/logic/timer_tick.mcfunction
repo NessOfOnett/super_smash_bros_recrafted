@@ -4,7 +4,7 @@ scoreboard players add $gameTime timer 1
 # Start Countdown
 execute if score $startCountdown timer matches 0..4 run scoreboard players remove $startCountdown timer 1
 
-execute if score $startCountdown timer matches 3 as @a at @s run playsound minecraft:entity.bat.death voice @s
+execute if score $startCountdown timer matches 3 as @a at @s run playsound ssbrc:smash_ultimate_countdown voice @s
 execute if score $startCountdown timer matches 3 run title @a title {"text":"3","color":"dark_red"}
 execute if score $startCountdown timer matches 2 run title @a title {"text":"2","color":"red"}
 execute if score $startCountdown timer matches 1 run title @a title {"text":"1","color":"gold"}
