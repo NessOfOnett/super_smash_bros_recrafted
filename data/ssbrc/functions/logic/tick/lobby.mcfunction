@@ -8,6 +8,7 @@ tp @a[x=-29.5,y=6.0,z=-159.5,distance=..1] -520.5 5.0 55.5 90.0 0.0
 effect give @a minecraft:regeneration 1000000 255 true
 effect give @a minecraft:resistance 1000000 255 true
 effect give @a minecraft:saturation 1000000 255 true
+effect give @a minecraft:speed 1000000 1 true
 
 # InQuognito Stand
 #execute at @e[type=minecraft:marker,tag=InQuognitoStand] run particle minecraft:portal ~ ~ ~ 0.075 0.075 0.075 0.5 5 normal @a
