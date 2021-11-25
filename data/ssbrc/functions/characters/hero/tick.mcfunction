@@ -45,7 +45,7 @@ execute as @e[type=minecraft:fireball,scores={temp=10..}] store result score @s 
 execute as @e[scores={motionX=..25,motionY=..25,motionZ=..25}] run data merge entity @s {ExplosionPower:2,power:[0.0,-0.075,0.0]}
 
 # Kaclang
-scoreboard players remove @s[tag=kaclang,scores={timer=1..}] timer 1
+scoreboard players remove @s[scores={timer=1..}] timer 1
 execute if entity @s[tag=kaclang,scores={timer=..0}] run function ssbrc:characters/hero/magic/kaclang_off
 scoreboard players reset @s[scores={timer=..0}] timer
 
