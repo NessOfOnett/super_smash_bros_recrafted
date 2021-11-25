@@ -35,7 +35,7 @@ execute if score @s[tag=snake.socomR] snake.socomR matches ..0 at @s run functio
 # Rate of Fire
 scoreboard players remove @s[scores={snake.famasF=1..}] snake.famasF 1
 scoreboard players remove @s[scores={snake.s1000F=1..}] snake.s1000F 1
-execute as @a[scores={snake.s1000F=15}] at @s run playsound ssbrc:shotgun_reload player @a
+execute as @a[scores={snake.s1000A=1..,snake.s1000F=15}] at @s run playsound ssbrc:shotgun_reload player @a
 scoreboard players remove @s[scores={snake.socomF=1..}] snake.socomF 1
 scoreboard players remove @s[scores={snake.sgF=1..}] snake.sgF 1
 
