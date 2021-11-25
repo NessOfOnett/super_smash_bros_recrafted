@@ -6,7 +6,7 @@
 		"predicate": {
 			"type": "minecraft:area_effect_cloud",
 			"vehicle": {
-				"type": "minecraft:potion"
+				"type": "minecraft:snowball"
 			}
 		}
 	}

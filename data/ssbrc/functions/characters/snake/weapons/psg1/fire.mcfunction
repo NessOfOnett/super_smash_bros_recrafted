@@ -11,7 +11,7 @@ scoreboard players operation #targetX pos -= #playerX pos
 scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
-execute at @s anchored eyes run summon minecraft:arrow ^ ^ ^1 {damage:1.25,Tags:["sniperBullet","bullet","projectile"],NoGravity:1b}
+execute at @s anchored eyes run summon minecraft:arrow ^ ^ ^1 {damage:1.25,Tags:["psg1Bullet","bullet","projectile"],NoGravity:1b}
 
 execute store result entity @e[tag=projectile,limit=1] Motion[0] double 0.01 run scoreboard players get #targetX pos
 execute store result entity @e[tag=projectile,limit=1] Motion[1] double 0.01 run scoreboard players get #targetY pos
@@ -20,7 +20,7 @@ execute store result entity @e[tag=projectile,limit=1] Motion[2] double 0.01 run
 tag @e[tag=projectile] remove projectile
 kill @e[tag=direction]
 
-execute at @s run playsound minecraft:entity.bat.loop player @a
+execute at @s run playsound ssbrc:sniper_fire player @a
 
 scoreboard players remove @s snake.psg1A 1
 

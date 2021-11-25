@@ -4,7 +4,7 @@ function ssbrc:characters/snake/weapons/s1000/bullet
 function ssbrc:characters/snake/weapons/s1000/bullet
 function ssbrc:characters/snake/weapons/s1000/bullet
 
-execute at @s run playsound minecraft:entity.bat.takeoff player @a
+execute at @s run playsound ssbrc:shotgun_fire player @a
 
 scoreboard players remove @s snake.s1000A 1
 scoreboard players set @s snake.s1000F 20

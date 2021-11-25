@@ -2,6 +2,9 @@ tellraw @a [{"selector":"@s","bold":true,"color":"red"},{"text":" has run out of
 team join dead
 scoreboard players reset @s stocks
 
+tag @s add needsHeal
+schedule function ssbrc:logic/heal 5t replace
+
 title @s actionbar ""
 
 execute store result score #playersLeft stocks run team list alive

@@ -11,7 +11,7 @@ scoreboard players operation #targetX pos -= #playerX pos
 scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
-execute as @s at @s anchored eyes run summon minecraft:snowball ~ ~ ~ {Passengers:[{id:"minecraft:area_effect_cloud",Tags:["smokeGrenade"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}]}
+execute as @s at @s anchored eyes run summon minecraft:snowball ~ ~ ~ {Tags:["projectile"],Passengers:[{id:"minecraft:area_effect_cloud",Tags:["smokeGrenade"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}]}
 
 execute store result entity @e[tag=projectile,limit=1] Motion[0] double 0.001 run scoreboard players get #targetX pos
 execute store result entity @e[tag=projectile,limit=1] Motion[1] double 0.001 run scoreboard players get #targetY pos
@@ -24,8 +24,6 @@ scoreboard players remove @s snake.sgA 1
 
 tag @s add snake.sgF
 scoreboard players set @s[tag=snake.sgF] snake.sgF 300
-
-tag @e[tag=smokeGrenade] add active
 scoreboard players set @e[tag=smokeGrenade] timer 300
 
 clear @s[tag=snake.sg,scores={snake.sgA=..0}] minecraft:carrot_on_a_stick{SG:1}
