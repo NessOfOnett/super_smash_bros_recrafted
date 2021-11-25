@@ -29,6 +29,8 @@ scoreboard players remove @s[scores={snake.psg1R=1..}] snake.psg1R 1
 scoreboard players remove @s[tag=snake.famasR] snake.famasR 1
 execute as @a[scores={snake.famasR=45}] at @s run playsound ssbrc:generic_reload player @a
 scoreboard players remove @s[tag=snake.s1000R] snake.s1000R 1
+execute as @a[scores={snake.s1000M=1..,snake.s1000R=35}] at @s run playsound ssbrc:shotgun_shell player @a
+execute as @a[scores={snake.s1000M=1..,snake.s1000R=15}] at @s run playsound ssbrc:shotgun_reload player @a
 scoreboard players remove @s[tag=snake.socomR] snake.socomR 1
 execute as @a[scores={snake.socomR=35}] at @s run playsound ssbrc:generic_reload player @a
 
