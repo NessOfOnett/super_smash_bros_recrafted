@@ -1,4 +1,3 @@
-function ssbrc:logic/resets/advancements
 function ssbrc:logic/resets/attributes
 function ssbrc:logic/resets/gamerules
 function ssbrc:logic/resets/schedule
