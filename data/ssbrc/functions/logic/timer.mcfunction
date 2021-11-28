@@ -13,7 +13,7 @@ execute if score $startCountdown timer matches 0 run title @a title {"text":"GO!
 execute if score $startCountdown timer matches 0 run effect clear @a jump_boost
 execute if score $startCountdown timer matches 0 run effect clear @a slowness
 execute if score $startCountdown timer matches 0 run function ssbrc:logic/kits
-execute if score $startCountdown timer matches 0 run function ssbrc:logic/start_music
+execute if score $startCountdown timer matches 0 run function ssbrc:logic/pre_game/music
 
 execute if score $startCountdown timer matches 0 run kill @e[tag=tpDest]
 
@@ -21,4 +21,4 @@ execute if score $startCountdown timer matches 0 run scoreboard players set $sta
 
 execute if score $startCountdown timer matches 0 run scoreboard players reset $startCountdown timer
 
-schedule function ssbrc:logic/timer_tick 1s replace
+schedule function ssbrc:logic/timer 1s replace

@@ -19,4 +19,4 @@ execute if score $shadowMosesIsland map matches 1 as @a at @s run playsound ssbr
 execute if score $spearPillar map matches 1 as @a at @s run playsound ssbrc:spear_pillar music @s
 execute if score $wilyCastle map matches 1 as @a at @s run playsound ssbrc:wily_castle music @s
 
-schedule function ssbrc:logic/start_music 300s replace
+schedule function ssbrc:logic/pre_game/start_music 300s replace

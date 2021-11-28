@@ -1,5 +1,5 @@
 scoreboard players set max random 4
-function ssbrc:rng/lcg
+function ssbrc:math/rng/lcg
 
 #########################
 # IMPROVE CURVE QUALITY #

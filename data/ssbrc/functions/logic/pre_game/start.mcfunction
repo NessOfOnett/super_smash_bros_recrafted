@@ -1,7 +1,7 @@
 function ssbrc:logic/resets/gamerules
 
 scoreboard players set $mapVote timer 0
-schedule clear ssbrc:logic/map_voting/timer_tick
+schedule clear ssbrc:logic/pre_game/map_voting/timer
 title @a actionbar ""
 
 gamemode adventure @a
@@ -22,9 +22,9 @@ scoreboard objectives setdisplay sidebar stocks
 execute if entity @a[tag=link] run summon minecraft:armor_stand 5000000.5 25.0 5000000.5 {Tags:["spinner"],Invulnerable:1b,Invisible:1b,NoGravity:1b}
 
 tag @a[team=!spectators] add teleportMe
-schedule function ssbrc:logic/start_teleport 2t replace
+schedule function ssbrc:logic/pre_game/teleport_begin 2t replace
 
 scoreboard players set $startCountdown timer 4
-schedule function ssbrc:logic/timer_tick 1s replace
+schedule function ssbrc:logic/timer 1s replace
 
 forceload add 0 0 0 0

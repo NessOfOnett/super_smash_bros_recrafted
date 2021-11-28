@@ -1,4 +1,4 @@
-schedule clear ssbrc:logic/timer_tick
+schedule clear ssbrc:logic/stats/timer
 
 execute if entity @s[tag=bowser] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Bowser","bold":true,"color":"yellow"}]
 execute if entity @s[tag=captainfalcon] run title @a subtitle [{"text":"Selected Character: ","color":"gold"},{"text":"Captain Falcon","bold":true,"color":"yellow"}]
@@ -23,4 +23,4 @@ execute if entity @s[tag=sonic] run title @a subtitle [{"text":"Selected Charact
 
 title @a title [{"selector":"@s","bold":true,"color":"yellow"},{"text":" wins!","color":"gold"}]
 
-function ssbrc:logic/stats
+function ssbrc:logic/post_game/update_stats

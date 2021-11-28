@@ -1,5 +1,5 @@
 scoreboard players set max random 4
-function ssbrc:rng/lcg
+function ssbrc:math/rng/lcg
 
 fill 780 12 188 782 12 188 minecraft:white_concrete replace
 setblock 778 9 188 minecraft:white_concrete replace

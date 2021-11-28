@@ -1,6 +1,6 @@
-schedule clear ssbrc:logic/timer_tick
+schedule clear ssbrc:logic/timer
 schedule clear ssbrc:logic/map_voting/timer_tick
-schedule clear ssbrc:logic/start_music
+schedule clear ssbrc:logic/pre_game/music
 
 # Maps
 schedule clear ssbrc:maps/battlefield

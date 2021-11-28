@@ -8,6 +8,7 @@ scoreboard objectives remove magicBurst
 scoreboard objectives remove mana
 scoreboard objectives remove map
 scoreboard objectives remove mapVote
+scoreboard objectives remove math
 scoreboard objectives remove motionX
 scoreboard objectives remove motionY
 scoreboard objectives remove motionZ
@@ -39,3 +40,4 @@ scoreboard objectives remove temp
 scoreboard objectives remove useAbility
 scoreboard objectives remove useChargeAbility
 scoreboard objectives remove vars
+scoreboard objectives remove waveBeam

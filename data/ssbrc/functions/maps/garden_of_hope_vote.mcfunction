@@ -1,6 +1,6 @@
 scoreboard players add @e[tag=voteCounter,tag=gardenOfHope] mapVote 1
 
-function ssbrc:logic/map_voting/update_counters
+function ssbrc:logic/pre_game/map_voting/update_counters
 tag @s add gardenOfHope
 
 team leave @s

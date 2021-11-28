@@ -1,4 +1,5 @@
 kill @e[type=!minecraft:player]
+
 summon minecraft:glow_item_frame -0.5 5.0 14.5 {Fixed:1b,Facing:3b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:24}}}
 summon minecraft:glow_item_frame 1.5 5.0 14.5 {Fixed:1b,Facing:3b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:25}}}
 summon minecraft:glow_item_frame 3.5 5.0 14.5 {Fixed:1b,Facing:3b,Item:{id:"minecraft:filled_map",Count:1b,tag:{map:26}}}
@@ -80,7 +81,7 @@ execute store result score #playersAll temp run team list temp
 team empty temp
 
 scoreboard players set $mapVote timer 26
-function ssbrc:logic/map_voting/timer_tick
+function ssbrc:logic/pre_game/map_voting/timer
 tp @a 3.5 3.0 21.5 0.0 0.0
 
 team join waiting @a

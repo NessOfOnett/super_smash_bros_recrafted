@@ -1,5 +1,5 @@
 scoreboard players set max random 6
-function ssbrc:rng/lcg
+function ssbrc:math/rng/lcg
 
 execute if score result random matches 0 run tag @s[tag=snake.psg1] add psg1Give
 execute if score result random matches 0 run scoreboard players add @s[tag=psg1Give,scores={snake.psg1A=1..}] snake.psg1M 4

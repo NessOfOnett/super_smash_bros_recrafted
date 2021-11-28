@@ -1,5 +1,5 @@
 scoreboard players set max random 8
-function ssbrc:rng/lcg
+function ssbrc:math/rng/lcg
 
 execute if score $battlefield map matches 1 if score result random matches 0 run spawnpoint @s 302 22 -567
 execute if score $battlefield map matches 1 if score result random matches 1 run spawnpoint @s 302 22 -557

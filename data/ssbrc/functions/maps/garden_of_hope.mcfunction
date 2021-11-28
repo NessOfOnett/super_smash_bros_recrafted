@@ -7,4 +7,4 @@ summon minecraft:area_effect_cloud 580.5 16.0 508.5 {Age:-2147483648,Duration:-1
 summon minecraft:area_effect_cloud 562.5 16.0 528.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
 summon minecraft:area_effect_cloud 560.5 16.0 549.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
 
-function ssbrc:logic/start
+function ssbrc:logic/pre_game/start

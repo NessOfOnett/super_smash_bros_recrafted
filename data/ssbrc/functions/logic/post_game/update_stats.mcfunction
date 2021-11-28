@@ -84,4 +84,4 @@ scoreboard players add @s[tag=samus] samus.wS 1
 scoreboard players add @s[tag=snake] snake.wS 1
 scoreboard players add @s[tag=sonic] sonic.wS 1
 
-function ssbrc:logic/advancements
+function ssbrc:logic/stats/advancements

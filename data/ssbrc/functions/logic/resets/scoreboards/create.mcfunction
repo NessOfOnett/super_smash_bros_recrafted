@@ -10,6 +10,7 @@ scoreboard objectives add magicBurst dummy
 scoreboard objectives add mana dummy
 scoreboard objectives add map dummy
 scoreboard objectives add mapVote dummy
+scoreboard objectives add math dummy
 scoreboard objectives add motionX dummy
 scoreboard objectives add motionY dummy
 scoreboard objectives add motionZ dummy
@@ -39,3 +40,4 @@ scoreboard objectives add temp dummy
 scoreboard objectives add useAbility minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add useChargeAbility minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add vars dummy
+scoreboard objectives add waveBeam dummy

@@ -1,6 +1,6 @@
 {
 	"values": [
 		"ssbrc:logic/load",
-		"ssbrc:rng/load"
+		"ssbrc:math/rng/load"
 	]
 }
