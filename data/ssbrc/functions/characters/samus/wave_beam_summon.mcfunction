@@ -9,3 +9,6 @@ function ssbrc:characters/samus/wave_beam_id
 
 tag @e[tag=samusWaveBeam,tag=!adjusted] add adjusted
 scoreboard players set @s waveBeam 40
+
+scoreboard players operation $RayLength temp = $out math
+execute as @e[tag=samusWaveBeam] at @s run function ssbrc:characters/samus/wave_beam_raycast_loop

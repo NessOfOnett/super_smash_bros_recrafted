@@ -5,7 +5,7 @@ advancement grant @a[tag=mario,scores={mario.k=15..}] only ssbrc:characters/mari
 advancement grant @a[tag=mario,scores={mario.wS=3..}] only ssbrc:characters/mario/master
 
 # Mario
-advancement grant @s[tag=mario,scores={stocks=2..}] only ssbrc:characters/mario/1_up
+advancement grant @s[tag=mario,scores={stocks=2..}] only ssbrc:characters/mario/survivalist
 execute unless entity @a[tag=!bowser,tag=!kingboo,tag=!luigi,tag=!mario] run advancement grant @a[tag=mario] only ssbrc:characters/mario/a_super_mario_party
 execute if entity @a[tag=gamenwatch,tag=flatZone] run advancement grant @s[tag=mario] only ssbrc:characters/mario/bombs_away
 execute unless entity @a[tag=!castleSiege,tag=!hyruleCastle,tag=!princessPeachCastle,tag=!suzakuCastle,tag=!wilyCastle] run advancement grant @a[tag=mario] only ssbrc:characters/mario/in_another_castle

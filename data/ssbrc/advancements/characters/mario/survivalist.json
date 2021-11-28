@@ -5,69 +5,42 @@
 			"nbt": "{SkullOwner:{Id:[I;1715157156,-1632483711,-1885321956,-1727835003],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBjMjU0OWE4OTM3MjY5ODhmMzQyOGJlZjc5OTg3NWJhODcxNjg4YWU2NGViMGNmZGM0M2Y3ZDZlMjRjNmMifX19\"}]}}}"
 		},
 		"title": {
-			"text": "Three Trouble Kings",
-			"color": "dark_red",
+			"text": "Survivalist",
+			"color": "yellow",
 			"bold": false,
 			"italic": false
 		},
 		"description": {
-			"text": "Emerge victorious against ",
+			"text": "Win with ",
 			"color": "gray",
 			"bold": false,
 			"italic": false,
 			"extra": [
 				{
-					"text": "Bowser",
-					"color": "red",
-					"bold": false,
-					"italic": false,
-					"obfuscated": true
-				},
-				{
-					"text": ", ",
-					"color": "gray",
+					"text": "more than one",
+					"color": "blue",
 					"bold": false,
 					"italic": false
 				},
 				{
-					"text": "Ganondorf",
-					"color": "red",
-					"bold": false,
-					"italic": false,
-					"obfuscated": true
-				},
-				{
-					"text": ", and ",
-					"color": "gray",
-					"bold": false,
-					"italic": false
-				},
-				{
-					"text": "King K. Rool",
-					"color": "red",
-					"bold": false,
-					"italic": false,
-					"obfuscated": true
-				},
-				{
-					"text": ".",
+					"text": " stock left.",
 					"color": "gray",
 					"bold": false,
 					"italic": false
 				}
 			]
 		},
-		"frame": "goal",
+		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true
 	},
-	"parent": "ssbrc:characters/mario/slayer",
+	"parent": "ssbrc:characters/mario/veteran",
 	"criteria": {
 		"impossible": {
 			"trigger": "minecraft:impossible"
 		}
 	},
 	"rewards": {
-		"function": "ssbrc:advancements/mario/three_trouble_kings"
+		"function": "ssbrc:advancements/mario/survivalist"
 	}
 }
