@@ -3,5 +3,5 @@ title @s[tag=selectingLoadout,tag=!snake.sg] actionbar {"text":"You do not have 
 scoreboard players operation @s[tag=selectingLoadout,tag=snake.sg] capacity -= #snake.sgWeight vars
 title @s[tag=selectingLoadout,tag=snake.sg] actionbar [{"text":"You have de-selected the Smoke Grenade.","color":"red"}]
 
-execute if entity @s[tag=snake.sg] run function ssbrc:characters/snake/display_capacity
+execute if entity @s[tag=snake.sg] run function ssbrc:characters/snake/menu/loadout/display_capacity
 tag @s[tag=selectingLoadout,tag=snake.sg] remove snake.sg

@@ -1,7 +1,6 @@
 scoreboard players reset * map
 scoreboard players set $draculasCastle map 1
 scoreboard players set #mapPicked mapVote 1
-
 forceload add -1120 0 -1041 79
 
 kill @e[type=!minecraft:player]

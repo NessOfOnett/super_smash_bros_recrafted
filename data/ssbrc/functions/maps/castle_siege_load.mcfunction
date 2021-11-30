@@ -1,7 +1,6 @@
 scoreboard players reset * map
 scoreboard players set $castleSiege map 1
 scoreboard players set #mapPicked mapVote 1
-
 forceload add 1616 417 1663 495
 
 kill @e[type=!minecraft:player]

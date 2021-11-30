@@ -15,6 +15,7 @@ scoreboard objectives add motionX dummy
 scoreboard objectives add motionY dummy
 scoreboard objectives add motionZ dummy
 scoreboard objectives add pos dummy
+scoreboard objectives add selectFavorite minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add snake.apm dummy
 scoreboard objectives add snake.famasA dummy
 scoreboard objectives add snake.famasR dummy

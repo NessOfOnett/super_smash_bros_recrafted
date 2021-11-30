@@ -1,5 +1,5 @@
 # Lobby
-execute if score $none map matches 1 run function ssbrc:logic/tick/lobby
+execute if score $none temp matches 1 run function ssbrc:logic/tick/lobby
 
 # While game is active
 execute if score $start map matches 1 run function ssbrc:logic/tick/generic

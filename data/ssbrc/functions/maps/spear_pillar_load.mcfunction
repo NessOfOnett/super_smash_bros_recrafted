@@ -1,7 +1,6 @@
 scoreboard players reset * map
 scoreboard players set $spearPillar map 1
 scoreboard players set #mapPicked mapVote 1
-
 forceload add 784 -64 831 -1
 
 kill @e[type=!minecraft:player]

@@ -1,7 +1,6 @@
 scoreboard players reset * map
 scoreboard players set $magicant map 1
 scoreboard players set #mapPicked mapVote 1
-
 forceload add 608 -912 687 -833
 
 kill @e[type=!minecraft:player]

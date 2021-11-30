@@ -1,7 +1,6 @@
 scoreboard players reset * map
 scoreboard players set $flatZone map 1
 scoreboard players set #mapPicked mapVote 1
-
 forceload add 752 176 799 223
 
 fill 791 5 201 791 6 202 minecraft:white_concrete replace

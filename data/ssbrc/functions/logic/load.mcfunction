@@ -4,12 +4,12 @@ function ssbrc:logic/resets/scoreboards/create
 function ssbrc:logic/resets/scoreboards/constants
 function ssbrc:logic/resets/scoreboards/variables
 
+tag @a remove loaded
+
 function ssbrc:logic/resets/advancements
-function ssbrc:logic/resets/attributes
 function ssbrc:logic/resets/gamerules
 function ssbrc:logic/resets/schedule
 function ssbrc:logic/resets/teams
-function ssbrc:logic/resets/players
 
 forceload add -544 32 -497 79
 forceload add 0 96 63 175
@@ -21,7 +21,3 @@ time set noon
 weather clear
 
 setworldspawn -521 5 55
-spawnpoint @a -521 5 55 90.0
-tp @a -520.5 5.0 55.5 90.0 0.0
-
-stopsound @a

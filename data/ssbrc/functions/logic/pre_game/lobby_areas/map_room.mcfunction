@@ -76,7 +76,8 @@ data modify entity @e[tag=voteCounter,tag=shadowMosesIsland,limit=1] CustomName 
 data modify entity @e[tag=voteCounter,tag=spearPillar,limit=1] CustomName set from block 5000004 50 5000000 Text3
 data modify entity @e[tag=voteCounter,tag=wilyCastle,limit=1] CustomName set from block 5000004 50 5000000 Text4
 
-team join temp @a
+gamemode spectator @a[team=spectator]
+team join temp @a[team=!spectator]
 execute store result score #playersAll temp run team list temp
 team empty temp
 
@@ -84,5 +85,5 @@ scoreboard players set $mapVote timer 26
 function ssbrc:logic/pre_game/map_voting/timer
 tp @a 3.5 3.0 21.5 0.0 0.0
 
-team join waiting @a
-effect give @a minecraft:glowing 1000000 0 true
+team join waiting @a[team=!spectator]
+effect give @a[team=!spectator] minecraft:glowing 1000000 0 true

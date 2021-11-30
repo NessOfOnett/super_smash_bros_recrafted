@@ -1,14 +1,19 @@
 function ssbrc:logic/resets/tags
 
-gamemode adventure @a
-clear @a
+gamemode adventure @s
+clear @s
 
-team empty spectator
+team leave @s
 
-xp set @a 0 levels
-xp set @a 0 points
-recipe take @a *
+xp set @s 0 levels
+xp set @s 0 points
+recipe take @s *
 
-effect clear @a
+effect clear @s
 
-title @a actionbar ""
+title @s actionbar ""
+
+spawnpoint @s -521 5 55 90.0
+tp @s -520.5 5.0 55.5 90.0 0.0
+
+stopsound @s

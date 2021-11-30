@@ -1,7 +1,6 @@
 scoreboard players reset * map
 scoreboard players set $mementos map 1
 scoreboard players set #mapPicked mapVote 1
-
 forceload add -1248 800 -1121 959
 
 kill @e[type=!minecraft:player]

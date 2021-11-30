@@ -14,6 +14,7 @@ scoreboard objectives remove motionY
 scoreboard objectives remove motionZ
 scoreboard objectives remove pos
 scoreboard objectives remove random
+scoreboard objectives remove selectFavorite
 scoreboard objectives remove snake.apm
 scoreboard objectives remove snake.famasA
 scoreboard objectives remove snake.famasM
