@@ -1,33 +1,20 @@
-name: FTP
-
-on:
-push:
-  branches: [ master ]
+on: push
+name: FTP File Sync
 jobs:
-  build:
+  web-deploy:
+    name: Deploy
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-        working-directory: https://github.com/InQuognito/super_smash_bros_recrafted/
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 2
+    - name: Get latest code
+      uses: actions/checkout@v2
 
-      - name: Install Composer Dependencies
-      run: composer install --prefer-dist --no-progress --no-suggest
-
-      - name: Install NPM packages
-        run: npm install
-
-      - name: Generate bundled theme with all assets
-        run: npm run bundle
-
-      - name: FTP Deploy to WP Engine (Staging)
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        ftp-server: ${{ secrets.FTP_HOSTNAME }}
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: https://github.com/InQuognito/super_smash_bros_recrafted/
+        server: https://app.nodecraft.com/
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: ${{ secrets.FTP_PORT }}
+
+        local-dir:
+        server-dir: instance/34ded34e-9b3f-4fcf-882a-99e81f7a9042#!/instance/file-manager/list?path=%2Fworld%2Fdatapacks%2Fsuper_smash_bros_recrafted-master/
