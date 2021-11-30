@@ -9,7 +9,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./themes/our-awesome-theme
+        working-directory: https://github.com/InQuognito/super_smash_bros_recrafted/
     steps:
       - uses: actions/checkout@v2
         with:
@@ -30,4 +30,4 @@ jobs:
         ftp-server: ${{ secrets.STAGING_FTP_HOSTNAME }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./our-awesome-theme/
+        local-dir: https://github.com/InQuognito/super_smash_bros_recrafted/
