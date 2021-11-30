@@ -2,7 +2,7 @@ item modify entity @s weapon.mainhand ssbrc:link_sword_awakened
 
 execute if entity @s[predicate=ssbrc:awakened,predicate=!ssbrc:sneaking,scores={useAbility=1..,swordBeam=..0}] at @s anchored eyes run function ssbrc:characters/link/sword_beam_summon
 execute if entity @s[predicate=ssbrc:sneaking,scores={useAbility=1..}] run function ssbrc:characters/link/sword_spin_activate
-execute if entity @s[predicate=!ssbrc:sneaking] at @s anchored eyes run function ssbrc:characters/link/sword_spin_deactivate
+execute if entity @s[predicate=!ssbrc:sneaking] at @s run function ssbrc:characters/link/sword_spin_deactivate
 scoreboard players reset @s useAbility
 
 execute as @e[tag=linkSwordBeam] at @s run function ssbrc:characters/link/sword_beam_entity

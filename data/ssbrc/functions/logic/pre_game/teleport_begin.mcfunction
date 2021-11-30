@@ -1,1 +1,1 @@
-execute as @r[tag=teleportMe] run function ssbrc:logic/pre_game/teleport_recursive
+execute as @e[tag=tpDest,sort=random,limit=1] at @s run function ssbrc:logic/pre_game/teleport_recursive

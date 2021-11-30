@@ -9,7 +9,7 @@ scoreboard objectives add greninja.k dummy
 scoreboard objectives add hero.k dummy
 scoreboard objectives add joker.k dummy
 scoreboard objectives add kirby.k dummy
-scoreboard objectives add krool.k dummy
+scoreboard objectives add kingkrool.k dummy
 scoreboard objectives add link.k dummy
 scoreboard objectives add mario.k dummy
 scoreboard objectives add megaman.k dummy
@@ -31,7 +31,7 @@ scoreboard objectives add greninja.gP dummy
 scoreboard objectives add hero.gP dummy
 scoreboard objectives add joker.gP dummy
 scoreboard objectives add kirby.gP dummy
-scoreboard objectives add krool.gP dummy
+scoreboard objectives add kingkrool.gP dummy
 scoreboard objectives add link.gP dummy
 scoreboard objectives add mario.gP dummy
 scoreboard objectives add megaman.gP dummy
@@ -53,7 +53,7 @@ scoreboard objectives add greninja.wS dummy
 scoreboard objectives add hero.wS dummy
 scoreboard objectives add joker.wS dummy
 scoreboard objectives add kirby.wS dummy
-scoreboard objectives add krool.wS dummy
+scoreboard objectives add kingkrool.wS dummy
 scoreboard objectives add link.wS dummy
 scoreboard objectives add mario.wS dummy
 scoreboard objectives add megaman.wS dummy

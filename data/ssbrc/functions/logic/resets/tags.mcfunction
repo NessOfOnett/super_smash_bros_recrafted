@@ -8,7 +8,7 @@ tag @a remove greninja
 tag @a remove hero
 tag @a remove joker
 tag @a remove kirby
-tag @a remove krool
+tag @a remove kingkrool
 tag @a remove link
 tag @a remove mario
 tag @a remove megaman

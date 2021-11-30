@@ -1,6 +1,6 @@
-tp @s @e[tag=tpDest,sort=random,limit=1]
-execute at @s run kill @e[tag=tpDest,distance=..1.5]
+tp @r[tag=teleportMe] @s
+tag @a[distance=..1] remove teleportMe
+kill @s
 function ssbrc:logic/stocks/respawn
-tag @s remove teleportMe
 
-execute as @r[tag=teleportMe] if entity @s run function ssbrc:logic/init/teleport_recursive
+execute as @e[tag=tpDest,sort=random,limit=1] at @s run function ssbrc:logic/pre_game/teleport_recursive

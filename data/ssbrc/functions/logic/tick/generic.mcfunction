@@ -1,5 +1,5 @@
 gamemode spectator @a[team=dead]
-gamemode spectator @a[team=spectators]
+gamemode spectator @a[team=spectator]
 
 execute as @a run attribute @s generic.max_health base set 40.0
 

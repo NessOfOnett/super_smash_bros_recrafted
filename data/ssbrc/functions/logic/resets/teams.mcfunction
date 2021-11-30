@@ -1,11 +1,11 @@
 team remove alive
 team remove dead
-team remove spectators
+team remove spectator
 team remove temp
 team remove waiting
 team add alive
 team add dead
-team add spectators
+team add spectator
 team add temp
 team add waiting
 
@@ -29,15 +29,15 @@ team modify dead prefix "[DEAD] "
 team modify dead seeFriendlyInvisibles true
 team modify dead suffix ""
 
-team modify spectators color gray
-team modify spectators collisionRule never
-team modify spectators deathMessageVisibility hideForOwnTeam
-team modify spectators displayName "Spectators"
-team modify spectators friendlyFire false
-team modify spectators nametagVisibility always
-team modify spectators prefix "[SPEC] "
-team modify spectators seeFriendlyInvisibles true
-team modify spectators suffix ""
+team modify spectator color gray
+team modify spectator collisionRule never
+team modify spectator deathMessageVisibility hideForOwnTeam
+team modify spectator displayName "Spectator"
+team modify spectator friendlyFire false
+team modify spectator nametagVisibility always
+team modify spectator prefix "[SPEC] "
+team modify spectator seeFriendlyInvisibles true
+team modify spectator suffix ""
 
 team modify temp color white
 team modify temp collisionRule always

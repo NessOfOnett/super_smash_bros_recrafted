@@ -1,7 +1,8 @@
 tag @s add self
 
 execute if score @s swordSpin matches 41..80 run effect give @a[tag=!self,distance=..2] minecraft:instant_damage 1 0 true
-execute if score @s swordSpin matches 81..120 run effect give @a[tag=!self,distance=..2.25] minecraft:instant_damage 1 0 true
+execute if score @s[predicate=!ssbrc:awakened] swordSpin matches 81.. run effect give @a[tag=!self,distance=..2.25] minecraft:instant_damage 1 0 true
+execute if score @s[predicate=ssbrc:awakened] swordSpin matches 81..120 run effect give @a[tag=!self,distance=..2.25] minecraft:instant_damage 1 0 true
 execute if score @s[predicate=ssbrc:awakened] swordSpin matches 121..140 run effect give @a[tag=!self,distance=..2.25] minecraft:instant_damage 2 0 true
 execute if score @s[predicate=ssbrc:awakened] swordSpin matches 141.. run effect give @a[tag=!self,distance=..2.5] minecraft:instant_damage 2 0 true
 

@@ -1,4 +1,4 @@
-tellraw @s[tag=!samus] [{"text":"You have selected ","color":"white"},{"text":"Samus","color":"gold"},{"text":"!","color":"white"}]
+tellraw @s[tag=!samus] {"text":"You have selected Samus!","color":"gold"}
 execute as @s run function ssbrc:characters/remove_tags
 tag @s[tag=!samus] add samus
 tag @s add characterPicked
