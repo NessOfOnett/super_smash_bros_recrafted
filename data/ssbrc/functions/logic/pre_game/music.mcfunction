@@ -1,22 +1,105 @@
-execute if score $battlefield map matches 1 as @a at @s run playsound ssbrc:battlefield_intro music @s
-execute if score $castleSiege map matches 1 as @a at @s run playsound ssbrc:castle_siege_intro music @s
-execute if score $draculasCastle map matches 1 as @a at @s run playsound ssbrc:draculas_castle_intro music @s
-execute if score $dreamLand map matches 1 as @a at @s run playsound ssbrc:dream_land_intro music @s
-execute if score $finalDestination map matches 1 as @a at @s run playsound ssbrc:final_destination_intro music @s
-execute if score $flatZone map matches 1 as @a at @s run playsound ssbrc:flat_zone_intro music @s
-execute if score $gardenOfHope map matches 1 as @a at @s run playsound ssbrc:garden_of_hope_intro music @s
-execute if score $greatBay map matches 1 as @a at @s run playsound ssbrc:great_bay_intro music @s
-execute if score $greatPlateau map matches 1 as @a at @s run playsound ssbrc:great_plateau_intro music @s
-execute if score $greenHillZone map matches 1 as @a at @s run playsound ssbrc:green_hill_zone_intro music @s
-execute if score $icicleMountain map matches 1 as @a at @s run playsound ssbrc:icicle_mountain_intro music @s
-execute if score $jungleJapes map matches 1 as @a at @s run playsound ssbrc:jungle_japes_intro music @s
-execute if score $magicant map matches 1 as @a at @s run playsound ssbrc:magicant_intro music @s
-execute if score $mementos map matches 1 as @a at @s run playsound ssbrc:mementos_intro music @s
-execute if score $mushroomKingdom map matches 1 as @a at @s run playsound ssbrc:mushroom_kingdom_intro music @s
-execute if score $saturnValley map matches 1 as @a at @s run playsound ssbrc:saturn_valley_intro music @s
-execute if score $sectorZ map matches 1 as @a at @s run playsound ssbrc:sector_z_intro music @s
-execute if score $shadowMosesIsland map matches 1 as @a at @s run playsound ssbrc:shadow_moses_island_intro music @s
-execute if score $spearPillar map matches 1 as @a at @s run playsound ssbrc:spear_pillar_intro music @s
-execute if score $wilyCastle map matches 1 as @a at @s run playsound ssbrc:wily_castle_intro music @s
+scoreboard players set max random 2
+function ssbrc:math/rng/lcg_music
 
-schedule function ssbrc:logic/pre_game/music 300s replace
+#execute if score $battlefield map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $battlefield map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $battlefield map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $battlefield map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $castleSiege map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $castleSiege map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $castleSiege map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $castleSiege map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $draculasCastle map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $draculasCastle map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $draculasCastle map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $draculasCastle map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $dreamLand map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $dreamLand map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $dreamLand map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $dreamLand map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $finalDestination map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $finalDestination map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $finalDestination map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $finalDestination map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $flatZone map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $flatZone map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $flatZone map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $flatZone map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $gardenOfHope map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $gardenOfHope map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $gardenOfHope map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $gardenOfHope map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $greatBay map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $greatBay map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $greatBay map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $greatBay map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $greatPlateau map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $greatPlateau map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $greatPlateau map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $greatPlateau map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $greenHillZone map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $greenHillZone map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $greenHillZone map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $greenHillZone map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $icicleMountain map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $icicleMountain map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $icicleMountain map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $icicleMountain map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $jungleJapes map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $jungleJapes map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $jungleJapes map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $jungleJapes map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $magicant map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $magicant map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $magicant map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $magicant map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $mementos map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $mementos map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $mementos map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $mementos map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $mushroomKingdom map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $mushroomKingdom map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $mushroomKingdom map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $mushroomKingdom map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $saturnValley map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $saturnValley map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $saturnValley map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $saturnValley map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+execute if score $sectorZ map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:area_6_intro music @s
+execute if score $sectorZ map matches 1 if score result_music random matches 0 run tellraw @a [{"text":"Now Playing: ","bold":true,"color":"gold"},{"text":"Area 6","color":"yellow"}]
+execute if score $sectorZ map matches 1 if score result_music random matches 0 run schedule function ssbrc:logic/pre_game/music_loop 900t replace
+#execute if score $sectorZ map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:star_wolf_intro music @s
+#execute if score $sectorZ map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+execute if score $shadowMosesIsland map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:encounter_intro music @s
+execute if score $shadowMosesIsland map matches 1 if score result_music random matches 0 run tellraw @a [{"text":"Now Playing: ","bold":true,"color":"gold"},{"text":"Encounter","color":"yellow"}]
+execute if score $shadowMosesIsland map matches 1 if score result_music random matches 0 run schedule function ssbrc:logic/pre_game/music_loop 2720t replace
+execute if score $shadowMosesIsland map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:metal_gear_online_3_main_theme music @s
+execute if score $shadowMosesIsland map matches 1 if score result_music random matches 1 run tellraw @a [{"text":"Now Playing: ","bold":true,"color":"gold"},{"text":"Metal Gear 3 Online Main Theme","color":"yellow"}]
+execute if score $shadowMosesIsland map matches 1 if score result_music random matches 1 run schedule function ssbrc:logic/pre_game/music_loop 3900t replace
+
+#execute if score $spearPillar map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $spearPillar map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $spearPillar map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $spearPillar map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+
+#execute if score $wilyCastle map matches 1 if score result_music random matches 0 as @a at @s run playsound ssbrc:aquos_arena_intro music @s
+#execute if score $wilyCastle map matches 1 if score result_music random matches 0 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace
+#execute if score $wilyCastle map matches 1 if score result_music random matches 1 as @a at @s run playsound ssbrc:battle_on_the_big_bridge_intro music @s
+#execute if score $wilyCastle map matches 1 if score result_music random matches 1 as @a at @s run schedule function ssbrc:logic/pre_game/music_loop 0t replace

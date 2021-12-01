@@ -33,7 +33,7 @@ execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot1.ness,nbt={SelectedIte
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot1.pit,nbt={SelectedItemSlot:3},scores={selectFavorite=1..}] run function ssbrc:characters/pit/menu/select_character
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot1.ryu,nbt={SelectedItemSlot:3},scores={selectFavorite=1..}] run function ssbrc:characters/ryu/menu/select_character
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot1.samus,nbt={SelectedItemSlot:3},scores={selectFavorite=1..}] run function ssbrc:characters/samus/menu/select_character
-execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot1.snake,nbt={SelectedItemSlot:3},scores={selectFavorite=1..}] run function ssbrc:characters/snake/menu/select_character
+execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot1.snake,nbt={SelectedItemSlot:3},scores={selectFavorite=1..}] run function ssbrc:characters/snake/menu/loadout/prompt
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot1.sonic,nbt={SelectedItemSlot:3},scores={selectFavorite=1..}] run function ssbrc:characters/sonic/menu/select_character
 
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot2.bowser,nbt={SelectedItemSlot:4},scores={selectFavorite=1..}] run function ssbrc:characters/bowser/menu/select_character
@@ -54,7 +54,7 @@ execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot2.ness,nbt={SelectedIte
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot2.pit,nbt={SelectedItemSlot:4},scores={selectFavorite=1..}] run function ssbrc:characters/pit/menu/select_character
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot2.ryu,nbt={SelectedItemSlot:4},scores={selectFavorite=1..}] run function ssbrc:characters/ryu/menu/select_character
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot2.samus,nbt={SelectedItemSlot:4},scores={selectFavorite=1..}] run function ssbrc:characters/samus/menu/select_character
-execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot2.snake,nbt={SelectedItemSlot:4},scores={selectFavorite=1..}] run function ssbrc:characters/snake/menu/select_character
+execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot2.snake,nbt={SelectedItemSlot:4},scores={selectFavorite=1..}] run function ssbrc:characters/snake/menu/loadout/prompt
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot2.sonic,nbt={SelectedItemSlot:4},scores={selectFavorite=1..}] run function ssbrc:characters/sonic/menu/select_character
 
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot3.bowser,nbt={SelectedItemSlot:5},scores={selectFavorite=1..}] run function ssbrc:characters/bowser/menu/select_character
@@ -75,7 +75,7 @@ execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot3.ness,nbt={SelectedIte
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot3.pit,nbt={SelectedItemSlot:5},scores={selectFavorite=1..}] run function ssbrc:characters/pit/menu/select_character
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot3.ryu,nbt={SelectedItemSlot:5},scores={selectFavorite=1..}] run function ssbrc:characters/ryu/menu/select_character
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot3.samus,nbt={SelectedItemSlot:5},scores={selectFavorite=1..}] run function ssbrc:characters/samus/menu/select_character
-execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot3.snake,nbt={SelectedItemSlot:5},scores={selectFavorite=1..}] run function ssbrc:characters/snake/menu/select_character
+execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot3.snake,nbt={SelectedItemSlot:5},scores={selectFavorite=1..}] run function ssbrc:characters/snake/menu/loadout/prompt
 execute as @a[predicate=!ssbrc:sneaking,tag=favorite.slot3.sonic,nbt={SelectedItemSlot:5},scores={selectFavorite=1..}] run function ssbrc:characters/sonic/menu/select_character
 
 execute as @a[predicate=ssbrc:sneaking,tag=favorite.slot1.bowser,nbt={SelectedItemSlot:3},scores={selectFavorite=1..}] run function ssbrc:characters/bowser/menu/prompt
