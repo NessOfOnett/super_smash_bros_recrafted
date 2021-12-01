@@ -16,4 +16,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
 
-        server-dir: world/datapacks/super_smash_bros_recrafted
+        server-dir: world/datapacks/super_smash_bros_recrafted/
