@@ -21,3 +21,6 @@ time set noon
 weather clear
 
 setworldspawn -521 5 55
+
+
+say this is a new change!~
