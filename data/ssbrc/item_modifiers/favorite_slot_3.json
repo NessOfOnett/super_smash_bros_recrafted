@@ -30,7 +30,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.bowser:1,CustomModelData:1}",
+		"tag": "{favorite.bowser:1,CustomModelData:101}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -62,7 +62,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.captainfalcon:1,CustomModelData:1}",
+		"tag": "{favorite.captainfalcon:1,CustomModelData:102}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -94,7 +94,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.charizard:1,CustomModelData:1}",
+		"tag": "{favorite.charizard:1,CustomModelData:103}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -126,7 +126,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.donkeykong:1,CustomModelData:1}",
+		"tag": "{favorite.donkeykong:1,CustomModelData:104}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -158,7 +158,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.fox:1,CustomModelData:1}",
+		"tag": "{favorite.fox:1,CustomModelData:105}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -190,7 +190,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.ganondorf:1,CustomModelData:1}",
+		"tag": "{favorite.ganondorf:1,CustomModelData:106}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -222,7 +222,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.greninja:1,CustomModelData:1}",
+		"tag": "{favorite.greninja:1,CustomModelData:107}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -254,7 +254,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.hero:1,CustomModelData:1}",
+		"tag": "{favorite.hero:1,CustomModelData:108}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -286,7 +286,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.joker:1,CustomModelData:1}",
+		"tag": "{favorite.joker:1,CustomModelData:109}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -318,7 +318,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.kingkrool:1,CustomModelData:1}",
+		"tag": "{favorite.kingkrool:1,CustomModelData:110}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -350,7 +350,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.kirby:1,CustomModelData:1}",
+		"tag": "{favorite.kirby:1,CustomModelData:111}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -382,7 +382,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.link:1,CustomModelData:1}",
+		"tag": "{favorite.link:1,CustomModelData:112}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -414,7 +414,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.mario:1,CustomModelData:1}",
+		"tag": "{favorite.mario:1,CustomModelData:113}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -446,7 +446,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.megaman:1,CustomModelData:1}",
+		"tag": "{favorite.megaman:1,CustomModelData:114}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -478,7 +478,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.ness:1,CustomModelData:1}",
+		"tag": "{favorite.ness:1,CustomModelData:115}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -510,7 +510,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.pit:1,CustomModelData:1}",
+		"tag": "{favorite.pit:1,CustomModelData:116}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -542,7 +542,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.ryu:1,CustomModelData:1}",
+		"tag": "{favorite.ryu:1,CustomModelData:117}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -574,7 +574,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.samus:1,CustomModelData:1}",
+		"tag": "{favorite.samus:1,CustomModelData:118}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -606,7 +606,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.snake:1,CustomModelData:1}",
+		"tag": "{favorite.snake:1,CustomModelData:119}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -638,7 +638,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.sonic:1,CustomModelData:1}",
+		"tag": "{favorite.sonic:1,CustomModelData:120}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
