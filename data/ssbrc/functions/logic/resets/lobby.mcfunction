@@ -7,7 +7,7 @@ summon minecraft:area_effect_cloud -528.5 5.5 50.5 {CustomName:'{"text":"Credits
 summon minecraft:area_effect_cloud -29.5 5.5 -161.5 {CustomName:'{"text":"Return to Lobby","color":"white"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 summon minecraft:area_effect_cloud 35.5 6.25 152.5 {CustomName:'{"text":"Start Game","color":"white"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 
-summon minecraft:armor_stand -535.502 7.0 55.472 {Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,DisabledSlots:4144959,Pose:{LeftArm:[203f,323f,0f],LeftLeg:[349f,349f,0f],RightArm:[39f,342f,0f],RightLeg:[14f,355f,0f]},Rotation:[268f,0f],ArmorItems:[{id:"minecraft:golden_boots",Count:1b},{id:"minecraft:golden_leggings",Count:1b},{id:"minecraft:golden_chestplate",Count:1b},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q1NDI1NGRkMTNjNzczNGM3NTY4MmNkZGZhNThmYzhmMWIzMjc1NTk2ODEyMDdhOTUxZDdkODI0OGMzYjZkYyJ9fX0="}]},Id:[I;-1250428246,800932900,-2037594897,-491368369]}}}]}
+summon minecraft:armor_stand -535.502 7.0 55.472 {Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,DisabledSlots:4144959,Pose:{LeftArm:[203f,323f,0f],LeftLeg:[349f,349f,0f],RightArm:[39f,342f,0f],RightLeg:[14f,355f,0f]},Rotation:[268f,0f],ArmorItems:[{id:"minecraft:golden_boots",Count:1b},{id:"minecraft:golden_leggings",Count:1b},{id:"minecraft:golden_chestplate",Count:1b},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:1131}}]}
 
 # Kit Select
 summon minecraft:area_effect_cloud 56.5 8.0 156.5 {CustomName:'{"text":"Bowser","color":"green"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
