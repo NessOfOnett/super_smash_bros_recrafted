@@ -128,5 +128,5 @@ tag @s remove favorite.slot3.samus
 tag @s remove favorite.slot3.snake
 tag @s remove favorite.slot3.sonic
 
+tellraw @s[scores={reset=0..}] {"text":"All data has been successfully reset.","color":"dark_red"}
 scoreboard players reset @s reset
-tellraw @s {"text":"All data has been successfully reset.","color":"dark_red"}
