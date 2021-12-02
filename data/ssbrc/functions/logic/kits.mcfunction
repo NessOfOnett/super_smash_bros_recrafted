@@ -1,5 +1,5 @@
 item replace entity @a[team=alive] armor.head with minecraft:barrier
-item modify entity @a[team=alive] armor.head ssbrc:kits/head
+execute as @a[team=alive] run item modify entity @s armor.head ssbrc:kits/head
 
 item replace entity @a[team=alive,tag=!ganondorf,tag=!kingkrool,tag=!pit,tag=!samus] armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:127}
 execute as @a[team=alive,tag=!ganondorf,tag=!kingkrool,tag=!pit,tag=!samus] run item modify entity @s armor.chest ssbrc:kits/chest_color
