@@ -2,7 +2,7 @@
 	"display": {
 		"icon": {
 			"item": "minecraft:barrier",
-			"nbt": "{CustomModelData:104}"
+			"nbt": "{CustomModelData:119}"
 		},
 		"title": {
 			"text": "Veteran",
@@ -34,13 +34,13 @@
 		"show_toast": true,
 		"announce_to_chat": true
 	},
-	"parent": "ssbrc:characters/donkeykong/novice",
+	"parent": "ssbrc:characters/snake/novice",
 	"criteria": {
 		"impossible": {
 			"trigger": "minecraft:impossible"
 		}
 	},
 	"rewards": {
-		"function": "ssbrc:advancements/donkeykong/veteran"
+		"function": "ssbrc:advancements/snake/veteran"
 	}
 }

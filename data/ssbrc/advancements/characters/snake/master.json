@@ -2,28 +2,40 @@
 	"display": {
 		"icon": {
 			"item": "minecraft:barrier",
-			"nbt": "{CustomModelData:104}"
+			"nbt": "{CustomModelData:119}"
 		},
 		"title": {
-			"text": "Veteran",
+			"text": "Master",
 			"color": "yellow",
 			"bold": false,
 			"italic": false
 		},
 		"description": {
-			"text": "Play ",
+			"text": "Win ",
 			"color": "gray",
 			"bold": false,
 			"italic": false,
 			"extra": [
 				{
-					"text": "10",
+					"text": "3",
 					"color": "blue",
 					"bold": false,
 					"italic": false
 				},
 				{
-					"text": " games.",
+					"text": " games ",
+					"color": "gray",
+					"bold": false,
+					"italic": false
+				},
+				{
+					"text": "in a row",
+					"color": "blue",
+					"bold": false,
+					"italic": false
+				},
+				{
+					"text": ".",
 					"color": "gray",
 					"bold": false,
 					"italic": false
@@ -34,13 +46,13 @@
 		"show_toast": true,
 		"announce_to_chat": true
 	},
-	"parent": "ssbrc:characters/donkeykong/novice",
+	"parent": "ssbrc:characters/snake/veteran",
 	"criteria": {
 		"impossible": {
 			"trigger": "minecraft:impossible"
 		}
 	},
 	"rewards": {
-		"function": "ssbrc:advancements/donkeykong/veteran"
+		"function": "ssbrc:advancements/snake/master"
 	}
 }

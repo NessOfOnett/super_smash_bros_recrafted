@@ -2,11 +2,11 @@
 	"display": {
 		"icon": {
 			"item": "minecraft:barrier",
-			"nbt": "{CustomModelData:104}"
+			"nbt": "{CustomModelData:113}"
 		},
 		"title": {
-			"text": "Donkey Kong",
-			"color": "gold",
+			"text": "Template",
+			"color": "red",
 			"bold": true,
 			"italic": false,
 			"extra": [
@@ -45,19 +45,19 @@
 		"master": {
 			"trigger": "minecraft:impossible"
 		},
-		"a_super_donkeykong_party": {
+		"unique1": {
 			"trigger": "minecraft:impossible"
 		},
-		"bombs_away": {
+		"unique2": {
 			"trigger": "minecraft:impossible"
 		},
-		"in_another_castle": {
+		"unique3": {
 			"trigger": "minecraft:impossible"
 		},
-		"partners_in_time": {
+		"unique4": {
 			"trigger": "minecraft:impossible"
 		},
-		"three_trouble_kings": {
+		"unique5": {
 			"trigger": "minecraft:impossible"
 		}
 	},
@@ -78,22 +78,22 @@
 			"master"
 		],
 		[
-			"a_super_donkeykong_party"
+			"unique1"
 		],
 		[
-			"bombs_away"
+			"unique2"
 		],
 		[
-			"in_another_castle"
+			"unique3"
 		],
 		[
-			"partners_in_time"
+			"unique4"
 		],
 		[
-			"three_trouble_kings"
+			"unique5"
 		]
 	],
 	"rewards": {
-		"function": "ssbrc:advancements/donkeykong/mastery"
+		"function": "ssbrc:advancements/template/mastery"
 	}
 }

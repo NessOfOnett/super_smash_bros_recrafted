@@ -2,28 +2,28 @@
 	"display": {
 		"icon": {
 			"item": "minecraft:barrier",
-			"nbt": "{CustomModelData:104}"
+			"nbt": "{CustomModelData:113}"
 		},
 		"title": {
-			"text": "Veteran",
+			"text": "Survivalist",
 			"color": "yellow",
 			"bold": false,
 			"italic": false
 		},
 		"description": {
-			"text": "Play ",
+			"text": "Win with ",
 			"color": "gray",
 			"bold": false,
 			"italic": false,
 			"extra": [
 				{
-					"text": "10",
+					"text": "more than one",
 					"color": "blue",
 					"bold": false,
 					"italic": false
 				},
 				{
-					"text": " games.",
+					"text": " stock left.",
 					"color": "gray",
 					"bold": false,
 					"italic": false
@@ -34,13 +34,13 @@
 		"show_toast": true,
 		"announce_to_chat": true
 	},
-	"parent": "ssbrc:characters/donkeykong/novice",
+	"parent": "ssbrc:characters/template/veteran",
 	"criteria": {
 		"impossible": {
 			"trigger": "minecraft:impossible"
 		}
 	},
 	"rewards": {
-		"function": "ssbrc:advancements/donkeykong/veteran"
+		"function": "ssbrc:advancements/template/survivalist"
 	}
 }
