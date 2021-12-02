@@ -129,3 +129,4 @@ tag @s remove favorite.slot3.snake
 tag @s remove favorite.slot3.sonic
 
 scoreboard players reset @s reset
+tellraw @s {"text":"All data has been successfully reset.","color":"dark_red"}
