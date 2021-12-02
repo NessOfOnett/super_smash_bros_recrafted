@@ -15,7 +15,7 @@ execute if score $startCountdown timer matches 0 run effect clear @a slowness
 execute if score $startCountdown timer matches 0 run function ssbrc:logic/kits
 execute if score $startCountdown timer matches 0 run function ssbrc:logic/pre_game/music
 
-execute if score $startCountdown timer matches 0 run kill @e[tag=tpDest]
+execute if score $startCountdown timer matches 0 run tag @e[tag=tpDest] remove tpDest
 
 execute if score $startCountdown timer matches 0 run scoreboard players set $start map 1
 

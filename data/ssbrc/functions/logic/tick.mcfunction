@@ -4,7 +4,7 @@ execute if score $none temp matches 1 run function ssbrc:logic/tick/lobby
 # While game is active
 execute if score $start map matches 1 run function ssbrc:logic/tick/generic
 
-execute if score $start map matches 1 as @e[type=minecraft:arrow,tag=!counted] if entity @s run function ssbrc:logic/tick/arrows/count
+execute if score $start map matches 1 as @e[type=#minecraft:arrows,tag=!counted] if entity @s run function ssbrc:logic/tick/arrows/count
 
 execute if score $start map matches 1 unless score $sectorZ map matches 1 run function ssbrc:logic/tick/effects
 

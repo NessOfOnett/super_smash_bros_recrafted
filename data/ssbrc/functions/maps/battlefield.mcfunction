@@ -1,10 +1,10 @@
-summon minecraft:area_effect_cloud 302.5 22.0 -566.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud 302.5 22.0 -556.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud 296.5 19.0 -561.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud 308.5 19.0 -561.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud 302.5 16.0 -556.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud 302.5 16.0 -566.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud 308.5 16.0 -561.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
-summon minecraft:area_effect_cloud 296.5 16.0 -561.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tpDest"]}
+summon minecraft:marker 302.5 22.0 -566.5 {Tags:["spawnpoint","tpDest"]}
+summon minecraft:marker 302.5 22.0 -556.5 {Tags:["spawnpoint","tpDest"]}
+summon minecraft:marker 296.5 19.0 -561.5 {Tags:["spawnpoint","tpDest"]}
+summon minecraft:marker 308.5 19.0 -561.5 {Tags:["spawnpoint","tpDest"]}
+summon minecraft:marker 302.5 16.0 -556.5 {Tags:["spawnpoint","tpDest"]}
+summon minecraft:marker 302.5 16.0 -566.5 {Tags:["spawnpoint","tpDest"]}
+summon minecraft:marker 308.5 16.0 -561.5 {Tags:["spawnpoint","tpDest"]}
+summon minecraft:marker 296.5 16.0 -561.5 {Tags:["spawnpoint","tpDest"]}
 
 function ssbrc:logic/pre_game/start
