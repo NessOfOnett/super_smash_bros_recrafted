@@ -1,3 +1,5 @@
+tag @s remove favorite.slot2
+
 tag @a remove favorite.slot2.bowser
 tag @a remove favorite.slot2.captainfalcon
 tag @a remove favorite.slot2.charizard
