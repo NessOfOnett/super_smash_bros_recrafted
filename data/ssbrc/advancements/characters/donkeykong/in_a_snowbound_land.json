@@ -61,7 +61,7 @@
 		"show_toast": true,
 		"announce_to_chat": true
 	},
-	"parent": "ssbrc:characters/donkeykong/in_another_castle",
+	"parent": "ssbrc:characters/donkeykong/veteran",
 	"criteria": {
 		"impossible": {
 			"trigger": "minecraft:impossible"
