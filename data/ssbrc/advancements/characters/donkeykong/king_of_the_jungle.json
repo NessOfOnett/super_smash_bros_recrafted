@@ -1,0 +1,58 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Id:[I;-1633119098,-154909704,-2057754720,1126340412],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTExYmU3NTkyMzNjNzQ3MzRiMjExZWNlNTU1ZDU4NWEyMjlhMzk5ZDVhOTJiMzYxNGFiNDdjMDQ2ZDc4NSJ9fX0=\"}]}}}"
+		},
+		"title": {
+			"text": "King of the Jungle",
+			"color": "light_purple",
+			"bold": false,
+			"italic": false
+		},
+		"description": {
+			"text": "Won a match on ",
+			"color": "gray",
+			"bold": false,
+			"italic": false,
+			"extra": [
+				{
+					"text": "Jungle Japes",
+					"color": "blue",
+					"bold": false,
+					"italic": false
+				},
+				{
+					"text": " and ",
+					"color": "gray",
+					"bold": false,
+					"italic": false
+				},
+				{
+					"text": "Frozen Hijinx",
+					"color": "blue",
+					"bold": false,
+					"italic": false
+				},
+				{
+					"text": ".",
+					"color": "gray",
+					"bold": false,
+					"italic": false
+				}
+			]
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true
+	},
+	"parent": "ssbrc:characters/donkeykong/veteran",
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"function": "ssbrc:advancements/donkeykong/king_of_the_jungle"
+	}
+}

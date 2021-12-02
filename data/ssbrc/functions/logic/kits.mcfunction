@@ -261,3 +261,5 @@ item modify entity @a[tag=alive] armor.head ssbrc:curse_of_binding
 item modify entity @a[tag=alive] armor.chest ssbrc:curse_of_binding
 item modify entity @a[tag=alive] armor.legs ssbrc:curse_of_binding
 item modify entity @a[tag=alive] armor.feet ssbrc:curse_of_binding
+
+execute at @a[tag=shiny] run particle minecraft:electric_spark ~ ~0.5 ~ 0.2 0.2 0.2 1.5 5 normal @a
