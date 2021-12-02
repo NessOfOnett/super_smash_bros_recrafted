@@ -2,7 +2,10 @@ item replace entity @a[team=alive] armor.head with minecraft:barrier
 item modify entity @a[team=alive] armor.head ssbrc:kits/head
 
 item replace entity @a[team=alive,tag=!ganondorf,tag=!kingkrool,tag=!pit,tag=!samus] armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:127}
+item modify entity @a[team=alive,tag=!ganondorf,tag=!kingkrool,tag=!pit,tag=!samus] armor.chest ssbrc:kits/chest_color
+
 item replace entity @a[team=alive] armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:127}
+
 item replace entity @a[team=alive,tag=!captainfalcon,tag=!fox] armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:127}
 
 execute as @a[tag=bowser] run function ssbrc:logic/kits/bowser
