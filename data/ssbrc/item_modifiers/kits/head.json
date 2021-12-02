@@ -5,7 +5,7 @@
 		"name": {
 			"text": "Bowser",
 			"color": "dark_green",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -37,7 +37,7 @@
 		"name": {
 			"text": "Captain Falcon",
 			"color": "red",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -69,7 +69,7 @@
 		"name": {
 			"text": "Charizard",
 			"color": "gold",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -101,7 +101,7 @@
 		"name": {
 			"text": "Charizard",
 			"color": "black",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -133,7 +133,7 @@
 		"name": {
 			"text": "Donkey Kong",
 			"color": "gold",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -165,7 +165,7 @@
 		"name": {
 			"text": "Fox",
 			"color": "white",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -197,7 +197,7 @@
 		"name": {
 			"text": "Ganondorf",
 			"color": "black",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -229,7 +229,7 @@
 		"name": {
 			"text": "Greninja",
 			"color": "aqua",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -261,7 +261,7 @@
 		"name": {
 			"text": "Greninja",
 			"color": "black",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -293,7 +293,7 @@
 		"name": {
 			"text": "Hero",
 			"color": "yellow",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -325,7 +325,7 @@
 		"name": {
 			"text": "Joker",
 			"color": "dark_red",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -357,7 +357,7 @@
 		"name": {
 			"text": "King K. Rool",
 			"color": "dark_green",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -389,7 +389,7 @@
 		"name": {
 			"text": "Kirby",
 			"color": "light_purple",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -419,9 +419,9 @@
 		"function": "minecraft:set_name",
 		"entity": "this",
 		"name": {
-			"text": "link",
+			"text": "Link",
 			"color": "dark_green",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -451,9 +451,9 @@
 		"function": "minecraft:set_name",
 		"entity": "this",
 		"name": {
-			"text": "mario",
+			"text": "Mario",
 			"color": "red",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -485,7 +485,7 @@
 		"name": {
 			"text": "Megaman",
 			"color": "dark_aqua",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -517,7 +517,7 @@
 		"name": {
 			"text": "Ness",
 			"color": "dark_purple",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -549,7 +549,7 @@
 		"name": {
 			"text": "Pit",
 			"color": "white",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -581,7 +581,7 @@
 		"name": {
 			"text": "Ryu",
 			"color": "white",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -613,7 +613,7 @@
 		"name": {
 			"text": "Samus",
 			"color": "gold",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -645,7 +645,7 @@
 		"name": {
 			"text": "Snake",
 			"color": "gray",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
@@ -677,7 +677,7 @@
 		"name": {
 			"text": "Sonic",
 			"color": "blue",
-			"bold": false,
+			"bold": true,
 			"italic": false
 		},
 		"conditions": [
