@@ -20,7 +20,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:101}",
+		"tag": "{CustomModelData:110}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -52,7 +52,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:102}",
+		"tag": "{CustomModelData:120}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -84,7 +84,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:103}",
+		"tag": "{CustomModelData:130}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -116,7 +116,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:1031}",
+		"tag": "{CustomModelData:131}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -148,7 +148,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:104}",
+		"tag": "{CustomModelData:140}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -180,7 +180,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:105}",
+		"tag": "{CustomModelData:150}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -212,7 +212,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:106}",
+		"tag": "{CustomModelData:160}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -244,7 +244,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:107}",
+		"tag": "{CustomModelData:170}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -276,7 +276,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:1071}",
+		"tag": "{CustomModelData:171}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -308,7 +308,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:108}",
+		"tag": "{CustomModelData:180}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -340,7 +340,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:109}",
+		"tag": "{CustomModelData:190}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -372,7 +372,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:110}",
+		"tag": "{CustomModelData:200}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -404,7 +404,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:111}",
+		"tag": "{CustomModelData:210}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -436,7 +436,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:112}",
+		"tag": "{CustomModelData:220}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -468,7 +468,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:1121}",
+		"tag": "{CustomModelData:221}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -500,7 +500,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:1122}",
+		"tag": "{CustomModelData:222}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -532,7 +532,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:1123}",
+		"tag": "{CustomModelData:223}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -557,20 +557,52 @@
 				"condition": "minecraft:entity_properties",
 				"entity": "this",
 				"predicate": {
-					"nbt": "{Tags:[\"mario\"]}"
+					"nbt": "{Tags:[\"mario\",\"default\"]}"
 				}
 			}
 		]
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:113}",
+		"tag": "{CustomModelData:230}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
 				"entity": "this",
 				"predicate": {
-					"nbt": "{Tags:[\"mario\"]}"
+					"nbt": "{Tags:[\"mario\",\"default\"]}"
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_name",
+		"entity": "this",
+		"name": {
+			"text": "Golden Mario",
+			"color": "gold",
+			"bold": true,
+			"italic": false
+		},
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Tags:[\"mario\",\"gold\"]}"
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{CustomModelData:231}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Tags:[\"mario\",\"gold\"]}"
 				}
 			}
 		]
@@ -596,7 +628,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:114}",
+		"tag": "{CustomModelData:240}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -628,7 +660,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:115}",
+		"tag": "{CustomModelData:250}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -660,7 +692,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:116}",
+		"tag": "{CustomModelData:260}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -692,7 +724,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:117}",
+		"tag": "{CustomModelData:270}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -724,7 +756,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:118}",
+		"tag": "{CustomModelData:280}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -756,7 +788,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:119}",
+		"tag": "{CustomModelData:290}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -788,7 +820,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:120}",
+		"tag": "{CustomModelData:300}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
