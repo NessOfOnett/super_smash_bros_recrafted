@@ -1,5 +1,5 @@
 gamemode spectator @s
-tp @s @e[tag=spawnpoint,sort=random,limit=1]
+tp @s @r[scores={flag.dead=..0}]
 
 scoreboard players remove @s stocks 1
 scoreboard players set @s respawn 60

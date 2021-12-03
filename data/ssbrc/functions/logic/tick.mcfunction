@@ -13,6 +13,7 @@ execute if score $start map matches 1 unless score $sectorZ map matches 1 run fu
 # While specific map is active
 execute if score $battlefield map matches 1 run function ssbrc:logic/tick/maps/battlefield
 execute if score $flatZone map matches 1 run function ssbrc:logic/tick/maps/flat_zone
+execute if score $gardenOfHope map matches 1 run function ssbrc:logic/tick/maps/garden_of_hope
 execute if score $greatBay map matches 1 run function ssbrc:logic/tick/maps/great_bay
 execute if score $greatPlateau map matches 1 run function ssbrc:logic/tick/maps/great_plateau
 execute if score $greenHillZone map matches 1 run function ssbrc:logic/tick/maps/green_hill_zone
