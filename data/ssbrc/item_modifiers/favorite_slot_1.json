@@ -130,7 +130,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.donkeykong:1,CustomModelData:104}",
+		"tag": "{favorite.donkeykong:1,CustomModelData:140}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -386,7 +386,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.link:1,CustomModelData:112}",
+		"tag": "{favorite.link:1,CustomModelData:220}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -418,7 +418,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.mario:1,CustomModelData:113}",
+		"tag": "{favorite.mario:1,CustomModelData:230}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",

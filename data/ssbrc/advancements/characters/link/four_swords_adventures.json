@@ -2,7 +2,7 @@
 	"display": {
 		"icon": {
 			"item": "minecraft:barrier",
-			"nbt": "{CustomModelData:112}"
+			"nbt": "{CustomModelData:220}"
 		},
 		"title": {
 			"text": "Four Swords Adventures",
