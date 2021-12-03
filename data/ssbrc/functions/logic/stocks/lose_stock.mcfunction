@@ -1,5 +1,5 @@
 gamemode spectator @s
-effect give @s minecraft:blindness 1000000 255 true
+tp @s @e[tag=spawnpoint,sort=random,limit=1]
 
 scoreboard players remove @s stocks 1
 scoreboard players set @s respawn 60
