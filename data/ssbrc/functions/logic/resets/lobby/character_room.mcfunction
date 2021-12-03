@@ -60,5 +60,7 @@ summon minecraft:armor_stand 61.5 6.0 150.5 {Tags:["lobbyStand","sonic"],Rotatio
 
 execute as @e[tag=lobbyStand] run data merge entity @s {Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,DisabledSlots:4144959}
 
+execute as @e[tag=lobbyStand] run item replace entity @s armor.head with minecraft:barrier
 execute as @e[tag=lobbyStand] run item modify entity @s armor.head ssbrc:kits/head
-execute as @e[tag=lobbyStand] run item replace entity @s armor.chest with minecraft:leather_chestplate
+execute as @e[tag=lobbyStand,tag=!mario,tag=!gold] run item replace entity @s armor.chest with minecraft:leather_chestplate
+execute as @e[tag=lobbyStand,tag=!mario,tag=!gold] run item modify entity @s armor.head ssbrc:kits/chest_color
