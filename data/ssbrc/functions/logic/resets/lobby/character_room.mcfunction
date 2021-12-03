@@ -5,7 +5,7 @@ summon minecraft:area_effect_cloud 44.5 8.0 158.5 {CustomName:'{"text":"Captain 
 summon minecraft:armor_stand 44.5 6.0 160.5 {Tags:["lobbyStand","captainfalcon"],Rotation:[180f,0f],ArmorItems:[{id:"minecraft:golden_boots",Count:1b},{},{},{}]}
 
 summon minecraft:area_effect_cloud 19.5 8.0 156.5 {CustomName:'{"text":"Charizard","color":"gold"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
-summon minecraft:armor_stand 19.5 6.0 158.5 {Tags:["lobbyStand","charizard"],Rotation:[180f,0f]}
+summon minecraft:armor_stand 19.5 6.0 158.5 {Tags:["lobbyStand","charizard","default"],Rotation:[180f,0f]}
 
 summon minecraft:area_effect_cloud 26.5 8.0 142.5 {CustomName:'{"text":"Donkey Kong","color":"gold"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 summon minecraft:armor_stand 26.5 6.0 140.5 {Tags:["lobbyStand","donkeykong"],Rotation:[0f,0f]}
@@ -17,7 +17,7 @@ summon minecraft:area_effect_cloud 51.5 8.0 156.5 {CustomName:'{"text":"Ganondor
 summon minecraft:armor_stand 51.5 6.0 158.5 {Tags:["lobbyStand","ganondorf"],Rotation:[-180f,0f],ArmorItems:[{},{},{id:"minecraft:netherite_chestplate",Count:1b},{}]}
 
 summon minecraft:area_effect_cloud 14.5 8.0 156.5 {CustomName:'{"text":"Greninja","color":"aqua"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
-summon minecraft:armor_stand 14.5 6.0 158.5 {Tags:["lobbyStand","greninja"],Rotation:[-180f,0f]}
+summon minecraft:armor_stand 14.5 6.0 158.5 {Tags:["lobbyStand","greninja","default"],Rotation:[-180f,0f]}
 
 summon minecraft:area_effect_cloud 14.5 8.0 148.5 {CustomName:'{"text":"Hero","color":"yellow"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 summon minecraft:armor_stand 14.5 6.0 146.5 {Tags:["lobbyStand","hero"],Rotation:[0f,0f]}
@@ -44,7 +44,7 @@ summon minecraft:area_effect_cloud 32.5 8.0 159.5 {CustomName:'{"text":"Ness","c
 summon minecraft:armor_stand 32.5 6.0 161.5 {Tags:["lobbyStand","ness"],Rotation:[-180f,0f]}
 
 summon minecraft:area_effect_cloud 51.5 8.0 148.5 {CustomName:'{"text":"Pit","color":"white"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
-summon minecraft:armor_stand 51.5 6.0 146.5 {Tags:["lobbyStand","pit"],Rotation:[0f,0f]}
+summon minecraft:armor_stand 51.5 6.0 146.5 {Tags:["lobbyStand","pit"],Rotation:[0f,0f],ArmorItems:[{},{},{id:"minecraft:elytra",Count:1b},{}]}
 
 summon minecraft:area_effect_cloud 19.5 8.0 148.5 {CustomName:'{"text":"Ryu","color":"white"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 summon minecraft:armor_stand 19.5 6.0 146.5 {Tags:["lobbyStand","ryu"],Rotation:[0f,0f]}

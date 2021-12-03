@@ -33,7 +33,7 @@
 				"condition": "minecraft:entity_properties",
 				"entity": "this",
 				"predicate": {
-					"nbt": "{Tags:[\"charizard\"]}"
+					"nbt": "{Tags:[\"charizard\",\"default\"]}"
 				}
 			}
 		]
@@ -85,7 +85,7 @@
 				"condition": "minecraft:entity_properties",
 				"entity": "this",
 				"predicate": {
-					"nbt": "{Tags:[\"greninja\"]}"
+					"nbt": "{Tags:[\"greninja\",\"default\"]}"
 				}
 			}
 		]
@@ -202,7 +202,7 @@
 				"condition": "minecraft:entity_properties",
 				"entity": "this",
 				"predicate": {
-					"nbt": "{Tags:[\"mario\"]}"
+					"nbt": "{Tags:[\"mario\",\"default\"]}"
 				}
 			}
 		]
