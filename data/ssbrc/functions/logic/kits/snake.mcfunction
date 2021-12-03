@@ -1,6 +1,3 @@
-item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:9609900},HideFlags:68} 1
-item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1,display:{color:2369332},HideFlags:68} 1
-
 give @s[tag=snake.psg1] minecraft:carrot_on_a_stick{PSG1:1,CustomModelData:6,Unbreakable:1,display:{Name:'[{"text":"PSG-1","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
 give @s[tag=snake.famas] minecraft:carrot_on_a_stick{Famas:1,CustomModelData:5,Unbreakable:1,display:{Name:'[{"text":"FAMAS","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1
 give @s[tag=snake.s1000] minecraft:carrot_on_a_stick{S1000:1,CustomModelData:7,Unbreakable:1,display:{Name:'[{"text":"S1000","italic":false,"color":"green","bold":true}]'},HideFlags:127} 1

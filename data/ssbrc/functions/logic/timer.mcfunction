@@ -12,7 +12,7 @@ execute if score $startCountdown timer matches 0 run title @a title {"text":"GO!
 
 execute if score $startCountdown timer matches 0 run effect clear @a jump_boost
 execute if score $startCountdown timer matches 0 run effect clear @a slowness
-execute if score $startCountdown timer matches 0 run function ssbrc:logic/kits
+execute if score $startCountdown timer matches 0 as @a[team=alive] run function ssbrc:logic/kits
 execute if score $startCountdown timer matches 0 run function ssbrc:logic/pre_game/music
 
 execute if score $startCountdown timer matches 0 run tag @e[tag=tpDest] remove tpDest

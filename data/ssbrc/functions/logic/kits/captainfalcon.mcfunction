@@ -1,5 +1,4 @@
-item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:3164387,Name:'[{"text":"Falcon Armor","italic":false,"bold":true,"color":"dark_blue"}]'},HideFlags:127} 1
-item replace entity @s armor.feet with minecraft:golden_boots{Unbreakable:1,display:{Name:'[{"text":"Falcon Armor","italic":false,"bold":true,"color":"dark_blue"}]'},HideFlags:127} 1
+item replace entity @s armor.feet with minecraft:golden_boots{Unbreakable:1,HideFlags:127} 1
 
 item replace entity @s hotbar.0 with minecraft:golden_sword{Unbreakable:1,display:{Name:'[{"text":"Raptor Boost","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"fire_aspect",lvl:1}],HideFlags:126} 1
 item replace entity @s hotbar.1 with minecraft:bow{Unbreakable:1,display:{Name:'[{"text":"Blaster","italic":false,"color":"gold","bold":true}]'},Enchantments:[{id:"power",lvl:1}],HideFlags:127} 1
