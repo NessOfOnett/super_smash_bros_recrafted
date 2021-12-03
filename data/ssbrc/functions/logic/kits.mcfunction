@@ -5,9 +5,10 @@ item replace entity @s[tag=!ganondorf,tag=!kingkrool,tag=!pit,tag=!samus] armor.
 execute as @s[tag=!ganondorf,tag=!kingkrool,tag=!pit,tag=!samus] run item modify entity @s armor.chest ssbrc:kits/chest_color
 
 item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:127}
-item modify entity @s armor.chest ssbrc:kits/legs_color
+item modify entity @s armor.legs ssbrc:kits/legs_color
 
 item replace entity @s[tag=!captainfalcon,tag=!fox] armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:127}
+item modify entity @s armor.feet ssbrc:kits/feet_color
 
 execute as @s[tag=bowser] run function ssbrc:logic/kits/bowser
 execute as @s[tag=captainfalcon] run function ssbrc:logic/kits/captainfalcon
