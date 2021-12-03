@@ -84,4 +84,5 @@ tag @s remove snake.sg
 tag @s remove snake.sgF
 tag @s remove snake.socom
 tag @s remove snake.socomR
+tag @s remove swordSpin
 tag @s remove teleportMe
