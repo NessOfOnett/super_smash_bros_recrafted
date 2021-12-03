@@ -20,6 +20,8 @@ effect give @a[team=!spectator] minecraft:jump_boost 1000000 200 true
 team join alive @a[team=!spectator]
 execute store result score #playersPlaying temp run team list alive
 
+scoreboard players set @a[team=alive] flag.dead 0
+
 scoreboard players set @a[team=alive] stocks 3
 scoreboard objectives setdisplay sidebar stocks
 
