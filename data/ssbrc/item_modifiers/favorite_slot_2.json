@@ -34,7 +34,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.bowser:1,CustomModelData:101}",
+		"tag": "{favorite.bowser:1,CustomModelData:110}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -66,7 +66,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.captainfalcon:1,CustomModelData:102}",
+		"tag": "{favorite.captainfalcon:1,CustomModelData:120}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -98,7 +98,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.charizard:1,CustomModelData:103}",
+		"tag": "{favorite.charizard:1,CustomModelData:130}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -162,7 +162,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.fox:1,CustomModelData:105}",
+		"tag": "{favorite.fox:1,CustomModelData:150}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -194,7 +194,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.ganondorf:1,CustomModelData:106}",
+		"tag": "{favorite.ganondorf:1,CustomModelData:160}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -226,7 +226,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.greninja:1,CustomModelData:107}",
+		"tag": "{favorite.greninja:1,CustomModelData:170}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -258,7 +258,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.hero:1,CustomModelData:108}",
+		"tag": "{favorite.hero:1,CustomModelData:180}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -290,7 +290,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.joker:1,CustomModelData:109}",
+		"tag": "{favorite.joker:1,CustomModelData:190}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -322,7 +322,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.kingkrool:1,CustomModelData:110}",
+		"tag": "{favorite.kingkrool:1,CustomModelData:200}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -354,7 +354,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.kirby:1,CustomModelData:111}",
+		"tag": "{favorite.kirby:1,CustomModelData:210}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -450,7 +450,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.megaman:1,CustomModelData:114}",
+		"tag": "{favorite.megaman:1,CustomModelData:240}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -482,7 +482,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.ness:1,CustomModelData:115}",
+		"tag": "{favorite.ness:1,CustomModelData:250}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -514,7 +514,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.pit:1,CustomModelData:116}",
+		"tag": "{favorite.pit:1,CustomModelData:260}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -546,7 +546,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.ryu:1,CustomModelData:117}",
+		"tag": "{favorite.ryu:1,CustomModelData:270}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -578,7 +578,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.samus:1,CustomModelData:118}",
+		"tag": "{favorite.samus:1,CustomModelData:280}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -610,7 +610,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.snake:1,CustomModelData:119}",
+		"tag": "{favorite.snake:1,CustomModelData:290}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
@@ -642,7 +642,7 @@
 	},
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{favorite.sonic:1,CustomModelData:120}",
+		"tag": "{favorite.sonic:1,CustomModelData:300}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_properties",
