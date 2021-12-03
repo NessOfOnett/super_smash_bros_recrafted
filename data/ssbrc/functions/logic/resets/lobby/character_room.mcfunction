@@ -58,6 +58,8 @@ summon minecraft:armor_stand 9.5 6.0 150.5 {Tags:["lobbyStand","snake"],Rotation
 summon minecraft:area_effect_cloud 59.5 8.0 150.5 {CustomName:'{"text":"Sonic","color":"blue"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 summon minecraft:armor_stand 61.5 6.0 150.5 {Tags:["lobbyStand","sonic"],Rotation:[90f,0f]}
 
+summon minecraft:area_effect_cloud 35.5 6.5 159.5 {CustomName:'{"text":"Spectate","color":"white"}',CustomNameVisible:1b,Age:-2147483648,Duration:-1,WaitTime:-2147483648}
+
 execute as @e[tag=lobbyStand] run data merge entity @s {Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,DisabledSlots:4144959}
 
 execute as @e[tag=lobbyStand] run item replace entity @s armor.head with minecraft:barrier
