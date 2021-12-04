@@ -11,12 +11,12 @@ kill @s[tag=!linkMiniBeam,scores={temp=20..}]
 kill @s[tag=linkMiniBeam,scores={temp=10..}]
 execute unless block ^ ^ ^0.1 minecraft:air run kill @s
 
-#execute as @a if score @s id = @e[tag=linkSwordBeam,sort=nearest,limit=1] id run tag @s add self
+execute as @a if score @s id = @e[tag=linkSwordBeam,sort=nearest,limit=1] id run tag @s add self
 
-execute positioned ^-0.50 ^ ^-0.2 run effect give @a[distance=..0.15] minecraft:instant_damage 1 0 true
-execute positioned ^-0.25 ^ ^-0.1 run effect give @a[distance=..0.15] minecraft:instant_damage 1 0 true
-execute positioned ^ ^ ^ run effect give @a[distance=..0.15] minecraft:instant_damage 1 0 true
-execute positioned ^0.25 ^ ^-0.1 run effect give @a[distance=..0.15] minecraft:instant_damage 1 0 true
-execute positioned ^0.50 ^ ^-0.2 run effect give @a[distance=..0.15] minecraft:instant_damage 1 0 true
+execute positioned ^-0.50 ^ ^-0.2 run effect give @a[tag=!self,dx=0.15,dy=0.15,dz=0.15] minecraft:instant_damage 1 0 true
+execute positioned ^-0.25 ^ ^-0.1 run effect give @a[tag=!self,dx=0.15,dy=0.15,dz=0.15] minecraft:instant_damage 1 0 true
+execute positioned ^ ^ ^ run effect give @a[tag=!self,dx=0.15,dy=0.15,dz=0.15] minecraft:instant_damage 1 0 true
+execute positioned ^0.25 ^ ^-0.1 run effect give @a[tag=!self,dx=0.15,dy=0.15,dz=0.15] minecraft:instant_damage 1 0 true
+execute positioned ^0.50 ^ ^-0.2 run effect give @a[tag=!self,dx=0.15,dy=0.15,dz=0.15] minecraft:instant_damage 1 0 true
 
-#execute as @a if score @s id = @e[tag=linkSwordBeam,sort=nearest,limit=1] id run tag @s[tag=self] remove self
+execute as @a if score @s id = @e[tag=linkSwordBeam,sort=nearest,limit=1] id run tag @s[tag=self] remove self
