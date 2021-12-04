@@ -1,14 +1,11 @@
-execute store result score @s health run data get entity @s Health
+execute if score @s[tag=!abilityUsed] health <= #joker.finalGuardThreshold vars run function ssbrc:characters/joker/ability
 
-execute if score @s[tag=!ability.jokerUsed] health matches 1..4 run function ssbrc:characters/joker/ability
-execute at @s[tag=ability.joker] run particle minecraft:glow ~ ~1.0 ~ 0.1 0.1 0.1 1.0 5 normal @a
+execute at @s[tag=abilityActive] run particle minecraft:glow ~ ~1.0 ~ 0.1 0.1 0.1 1.0 5 normal @a
 
-execute at @a[tag=joker,tag=ability.joker] run particle minecraft:dust 0 255 0 0 ~ ~ ~ 0.15 1.0 0.15 0.05 15 normal @a
+scoreboard players remove @s[tag=abilityActive,scores={timer=1..}] timer 1
 
-scoreboard players remove @s[tag=ability.joker,scores={timer=1..}] timer 1
+effect clear @s[tag=abilityActive,scores={timer=..0}]
+execute as @s[tag=abilityActive,scores={timer=..0}] run attribute @s generic.knockback_resistance base set 0.0
 
-effect clear @a[tag=ability.joker,scores={timer=..0}]
-execute as @a[tag=ability.joker,scores={timer=..0}] run attribute @s generic.knockback_resistance base set 0.0
-
-tag @a[tag=ability.joker,scores={timer=..0}] remove ability.joker
-scoreboard players reset @a[tag=ability.joker,scores={timer=..0}] timer
+tag @s[tag=abilityActive,scores={timer=..0}] remove abilityActive
+scoreboard players reset @s[tag=abilityActive,scores={timer=..0}] timer

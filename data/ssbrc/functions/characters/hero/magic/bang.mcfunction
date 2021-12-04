@@ -20,4 +20,4 @@ execute store result entity @e[tag=projectile,limit=1] Motion[2] double 0.001 ru
 tag @e[tag=projectile] remove projectile
 kill @e[tag=direction]
 
-scoreboard players remove @s mana 2
+scoreboard players operation @s mana -= #hero.bangManaCost vars

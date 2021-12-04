@@ -16,5 +16,5 @@ execute if score result random matches 2 run tellraw @s [{"text":"Oracle","color
 
 scoreboard players set @s timer 80
 
-tag @s add ability.joker
-tag @s add ability.jokerUsed
+tag @s add abilityActive
+tag @s add abilityUsed

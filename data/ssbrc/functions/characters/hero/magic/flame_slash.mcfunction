@@ -1,4 +1,4 @@
-scoreboard players remove @s mana 1
+scoreboard players operation @s mana -= #hero.flameSlashManaCost vars
 
 function ssbrc:characters/hero/flame_slash_particles
 

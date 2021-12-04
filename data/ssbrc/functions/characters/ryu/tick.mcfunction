@@ -2,15 +2,21 @@ execute as @s[scores={useAbility=1..}] run function ssbrc:characters/ryu/ability
 
 scoreboard players set @s useAbility 0
 
-scoreboard players remove @s[tag=ability.ryu,scores={timer=1..}] timer 1
+scoreboard players remove @s[tag=abilityActive,scores={timer=1..}] timer 1
 
-execute as @a[tag=ability.ryu,scores={timer=..0}] run item replace entity @s armor.head with minecraft:player_head{display:{Name:'{"text":"Ryu"}'},SkullOwner:{Id:[I;2099890581,115490875,-1948141411,-5868919],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjk1YTQ5YzNhNDVlNjg4MzdkMzRkZmViYTAxOGJiYmJkZWYzZmMxMzU3YThiMWRjOTQ1MzI0ODY3ZmI0NDk3NCJ9fX0="}]}}} 1
-execute as @a[tag=ability.ryu,scores={timer=..0}] run item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1,display:{color:15990781},HideFlags:68} 1
-execute as @a[tag=ability.ryu,scores={timer=..0}] run item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1,display:{color:15990781},HideFlags:68} 1
+item replace entity @s[tag=abilityActive,scores={timer=..0}] armor.head with minecraft:barrier
+item replace entity @s[tag=abilityActive,scores={timer=..0}] armor.chest with minecraft:leather_chestplate{Unbreakable:1,HideFlags:127}
+item replace entity @s[tag=abilityActive,scores={timer=..0}] armor.legs with minecraft:leather_leggings{Unbreakable:1,HideFlags:127}
 
-execute as @a[tag=ability.ryu,scores={timer=..0}] run item modify entity @s armor.head ssbrc:curse_of_binding
-execute as @a[tag=ability.ryu,scores={timer=..0}] run item modify entity @s armor.chest ssbrc:curse_of_binding
-execute as @a[tag=ability.ryu,scores={timer=..0}] run item modify entity @s armor.legs ssbrc:curse_of_binding
+item modify entity @s[tag=abilityActive,scores={timer=..0}] armor.head ssbrc:kits/head
+item modify entity @s[tag=abilityActive,scores={timer=..0}] armor.chest ssbrc:kits/chest_color
+item modify entity @s[tag=abilityActive,scores={timer=..0}] armor.legs ssbrc:kits/legs_color
 
-tag @a[tag=ability.ryu,scores={timer=..0}] remove ability.ryu
-scoreboard players reset @a[scores={timer=..0}] timer
+item modify entity @s[tag=abilityActive,scores={timer=..0}] armor.head ssbrc:curse_of_binding
+item modify entity @s[tag=abilityActive,scores={timer=..0}] armor.chest ssbrc:curse_of_binding
+item modify entity @s[tag=abilityActive,scores={timer=..0}] armor.legs ssbrc:curse_of_binding
+
+attribute @s[tag=abilityActive,scores={timer=..0}] minecraft:generic.attack_speed base set 3.0
+
+tag @s[tag=abilityActive,scores={timer=..0}] remove abilityActive
+scoreboard players reset @s[scores={timer=..0}] timer

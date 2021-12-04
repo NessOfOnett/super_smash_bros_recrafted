@@ -10,6 +10,8 @@ item modify entity @s armor.legs ssbrc:kits/legs_color
 item replace entity @s[tag=!captainfalcon,tag=!fox] armor.feet with minecraft:leather_boots{Unbreakable:1,HideFlags:127}
 item modify entity @s armor.feet ssbrc:kits/feet_color
 
+attribute @s generic.attack_speed base set 4.0
+
 execute as @s[tag=bowser] run function ssbrc:logic/kits/bowser
 execute as @s[tag=captainfalcon] run function ssbrc:logic/kits/captainfalcon
 execute as @s[tag=charizard] run function ssbrc:logic/kits/charizard

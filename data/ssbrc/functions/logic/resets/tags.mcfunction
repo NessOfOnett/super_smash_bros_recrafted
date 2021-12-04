@@ -138,9 +138,9 @@ tag @s remove spearPillar
 tag @s remove wilyCastle
 
 # Misc
-tag @s remove ability.joker
-tag @s remove ability.jokerUsed
-tag @s remove ability.ryu
+tag @s remove abilityActive
+tag @s remove abilityUsed
+tag @s remove abilityActive
 tag @s remove alive
 tag @s remove characterPicked
 tag @s remove kaclang
