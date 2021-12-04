@@ -20,6 +20,7 @@ scoreboard objectives add respawn dummy
 scoreboard objectives add selectFavorite minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add snake.apm dummy
 scoreboard objectives add snake.famasA dummy
+scoreboard objectives add snake.famasM dummy
 scoreboard objectives add snake.famasR dummy
 scoreboard objectives add snake.famasF dummy
 scoreboard objectives add snake.psg1A dummy
